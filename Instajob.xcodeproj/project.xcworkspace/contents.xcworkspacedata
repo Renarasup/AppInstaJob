@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:testPersistencia.xcodeproj">
+      location = "self:/Users/dcrozare/Desktop/testeUIcard/testPersistencia/Instajob.xcodeproj">
    </FileRef>
 </Workspace>

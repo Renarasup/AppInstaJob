@@ -17,7 +17,7 @@
                BlueprintIdentifier = "F5890F1D1F5F216D0049C731"
                BuildableName = "testPersistencia.app"
                BlueprintName = "testPersistencia"
-               ReferencedContainer = "container:testPersistencia.xcodeproj">
+               ReferencedContainer = "container:Instajob.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "F5890F1D1F5F216D0049C731"
             BuildableName = "testPersistencia.app"
             BlueprintName = "testPersistencia"
-            ReferencedContainer = "container:testPersistencia.xcodeproj">
+            ReferencedContainer = "container:Instajob.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "F5890F1D1F5F216D0049C731"
             BuildableName = "testPersistencia.app"
             BlueprintName = "testPersistencia"
-            ReferencedContainer = "container:testPersistencia.xcodeproj">
+            ReferencedContainer = "container:Instajob.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "F5890F1D1F5F216D0049C731"
             BuildableName = "testPersistencia.app"
             BlueprintName = "testPersistencia"
-            ReferencedContainer = "container:testPersistencia.xcodeproj">
+            ReferencedContainer = "container:Instajob.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
