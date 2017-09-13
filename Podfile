@@ -9,5 +9,8 @@ target 'testPersistencia' do
 
 	pod "JMMaskTextField-Swift"
     pod "SwiftMaskTextfield"
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
 end
 

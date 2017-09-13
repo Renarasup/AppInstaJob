@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/dcrozare/Desktop/testeUIcard/Instajob/Instajob.xcodeproj">
+      location = "group:Instajob.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Instajob.xcodeproj">
    </FileRef>
 </Workspace>

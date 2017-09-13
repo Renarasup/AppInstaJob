@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class registerViewController: UIViewController {
 
@@ -20,11 +21,23 @@ class registerViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         buttonCadastrar.layer.cornerRadius = 5
         
+        let database = Database.database().reference()
+        
+        let pontuacao = database.child("pontuacao")
+        let usuario = database.child("usuarios")
+        
+//        let usuario = database.child("usuarios")
+//        usuario.child("0001").setValue("Diego Crozare")
+        
+        usuario.observe(DataEventType.value, with: { (dados) in
+            print (dados)
+        })
     }
 
  
