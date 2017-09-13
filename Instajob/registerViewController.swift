@@ -12,6 +12,7 @@ class registerViewController: UIViewController {
 
     
    
+    @IBOutlet weak var buttonCadastrar: UIButton!
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var sobreNomeTextField: UITextField!
     @IBOutlet weak var textRegisterlogin: UITextField!
@@ -22,7 +23,8 @@ class registerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        buttonCadastrar.layer.cornerRadius = 5
+        
     }
 
  
@@ -47,6 +49,6 @@ class registerViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
    
-  
+    
 
 }

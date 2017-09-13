@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B4E9FBFAE86F6F848378BF6C26134C0 /* SwiftMaskTextfield-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05F206459E78EFF21F3B6A97394C7E /* SwiftMaskTextfield-dummy.m */; };
+		374A8CEBD4386950886099048289FC3E /* Pods-testPersistencia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF3C72BF44C0A043B437F3F746618A1 /* Pods-testPersistencia-dummy.m */; };
+		78BCF845A01FEA123D42FB1E0A89FE39 /* JMStringMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65213CAFBDB48822A5D9B078B49938AD /* JMStringMask.swift */; };
+		7AAD1131FAD85FA99AA3538E23F9F0D9 /* SwiftMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBB8FD7D342985C59563FA1DC920119 /* SwiftMaskTextField.swift */; };
+		7BAE10A4E34652555D8D73581D395B66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8D8E2ED80BC3DFB2709FCC5AE20B74CC /* JMMaskTextField-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B45416521D9760C8A1CD1C2937DC594 /* JMMaskTextField-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9019F106125034608B0732A393BBF1EB /* JMMaskTextField-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EA2E5B0400935BB86DEBDC7510B2AB /* JMMaskTextField-Swift-dummy.m */; };
+		B3C5FD87F42A77AD0BAED27F0D874C83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D44EBC3A43F9FF32CD6C08F5BAB10A50 /* SwiftMaskTextfield-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8656717B858BD47832B414D07FABCD8B /* SwiftMaskTextfield-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE8D78A2DC8CEBBF416A0E3BBCD4E985 /* Pods-testPersistencia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2797DBF26C9BA4E7F3D8A644E6D74597 /* Pods-testPersistencia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F40C487798494836F134B3EEA78C1EF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F898BC87331B67B27865FFD3C5CC1178 /* JMMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0B9233F44C9AC026AEFACDFBD073A2 /* JMMaskTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E614F6DDFFA99DF87A987CB9AF19349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24214B8F29AD89D208CA2B8D64EFB5B5;
+			remoteInfo = "JMMaskTextField-Swift";
+		};
+		6915BABCC2F38EB3809FA1F3D9F68BAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A36A84C19C8184F4E05DA07E55F940C;
+			remoteInfo = SwiftMaskTextfield;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B722BB51D4A19CAB7ADAD2E5EF08261 /* JMMaskTextField_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JMMaskTextField_Swift.framework; path = "JMMaskTextField-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		206496A218E90198655A30BD8FACDC8B /* Pods-testPersistencia-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testPersistencia-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24EA2E5B0400935BB86DEBDC7510B2AB /* JMMaskTextField-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JMMaskTextField-Swift-dummy.m"; sourceTree = "<group>"; };
+		2797DBF26C9BA4E7F3D8A644E6D74597 /* Pods-testPersistencia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testPersistencia-umbrella.h"; sourceTree = "<group>"; };
+		2B45416521D9760C8A1CD1C2937DC594 /* JMMaskTextField-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMMaskTextField-Swift-umbrella.h"; sourceTree = "<group>"; };
+		40C6626401143ED7D49F92AF9F302162 /* Pods-testPersistencia-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testPersistencia-acknowledgements.plist"; sourceTree = "<group>"; };
+		4DA44B17F8394CED788524243832BADB /* Pods-testPersistencia-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testPersistencia-frameworks.sh"; sourceTree = "<group>"; };
+		5E0B9233F44C9AC026AEFACDFBD073A2 /* JMMaskTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMMaskTextField.swift; path = JMMaskTextField/Classes/JMMaskTextField.swift; sourceTree = "<group>"; };
+		63C5001CA6BD2CC72C64EE25DED85C05 /* SwiftMaskTextfield.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMaskTextfield.xcconfig; sourceTree = "<group>"; };
+		65213CAFBDB48822A5D9B078B49938AD /* JMStringMask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMStringMask.swift; path = JMMaskTextField/Classes/JMStringMask.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66A5813A4CFF15D4FB2C7F7B0035BC47 /* Pods-testPersistencia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-testPersistencia.modulemap"; sourceTree = "<group>"; };
+		8656717B858BD47832B414D07FABCD8B /* SwiftMaskTextfield-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMaskTextfield-umbrella.h"; sourceTree = "<group>"; };
+		8E05F206459E78EFF21F3B6A97394C7E /* SwiftMaskTextfield-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMaskTextfield-dummy.m"; sourceTree = "<group>"; };
+		8EBB8FD7D342985C59563FA1DC920119 /* SwiftMaskTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftMaskTextField.swift; path = "swift-mask-textfield/Sources/Core/SwiftMaskTextField.swift"; sourceTree = "<group>"; };
+		90DBD113B44344A66D4374C7849DE84A /* JMMaskTextField-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "JMMaskTextField-Swift.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		965E807A702257090A698211CE3ADA6B /* Pods-testPersistencia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testPersistencia.debug.xcconfig"; sourceTree = "<group>"; };
+		9C06B0B3D4E1D6AC008078D1BA0F8175 /* Pods-testPersistencia-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testPersistencia-resources.sh"; sourceTree = "<group>"; };
+		B9C05DDDA058F202AC540B86B6372789 /* Pods-testPersistencia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testPersistencia.release.xcconfig"; sourceTree = "<group>"; };
+		C17B4E80C55CD4F0B8172C47440DAED1 /* SwiftMaskTextfield.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftMaskTextfield.framework; path = SwiftMaskTextfield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3502B331B6944500B011C5BC7218927 /* SwiftMaskTextfield.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftMaskTextfield.modulemap; sourceTree = "<group>"; };
+		C65E6E18C8544A1F0E685A40FF5E73AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF0157BB6538E319D6CF06A8D957E430 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4532C8D114532B50CF5F661A94F35DF /* JMMaskTextField-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMMaskTextField-Swift-prefix.pch"; sourceTree = "<group>"; };
+		DB5684D39DEB4F14FF936620F4C9DDDF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD942BB754C5A1D92351361EC258BAD /* SwiftMaskTextfield-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMaskTextfield-prefix.pch"; sourceTree = "<group>"; };
+		F5EE833541D140824D6437A783C4675F /* JMMaskTextField-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "JMMaskTextField-Swift.xcconfig"; sourceTree = "<group>"; };
+		F97997E6E56260F35326C882B3CECF4D /* Pods_testPersistencia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testPersistencia.framework; path = "Pods-testPersistencia.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCF3C72BF44C0A043B437F3F746618A1 /* Pods-testPersistencia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testPersistencia-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3023747C0357447A4B86992CC4B2C7AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C5FD87F42A77AD0BAED27F0D874C83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952752FAECFAD50BEC7363876EE60E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BAE10A4E34652555D8D73581D395B66 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DB3A7B43E56490C01F1DCB6F92E178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40C487798494836F134B3EEA78C1EF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10509BA104630A760C7C824933DF3ED3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EB74A2AC893A6CEBD23D12B5EA9098A /* JMMaskTextField-Swift */,
+				2FAD7CAA1CDF36615160F60E5A966491 /* SwiftMaskTextfield */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		173ACD16860F0DC6BB7358731A3B1900 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB5684D39DEB4F14FF936620F4C9DDDF /* Info.plist */,
+				C3502B331B6944500B011C5BC7218927 /* SwiftMaskTextfield.modulemap */,
+				63C5001CA6BD2CC72C64EE25DED85C05 /* SwiftMaskTextfield.xcconfig */,
+				8E05F206459E78EFF21F3B6A97394C7E /* SwiftMaskTextfield-dummy.m */,
+				EBD942BB754C5A1D92351361EC258BAD /* SwiftMaskTextfield-prefix.pch */,
+				8656717B858BD47832B414D07FABCD8B /* SwiftMaskTextfield-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftMaskTextfield";
+			sourceTree = "<group>";
+		};
+		1F93159169023B66BF0786DC75E21B55 /* Pods-testPersistencia */ = {
+			isa = PBXGroup;
+			children = (
+				C65E6E18C8544A1F0E685A40FF5E73AD /* Info.plist */,
+				66A5813A4CFF15D4FB2C7F7B0035BC47 /* Pods-testPersistencia.modulemap */,
+				206496A218E90198655A30BD8FACDC8B /* Pods-testPersistencia-acknowledgements.markdown */,
+				40C6626401143ED7D49F92AF9F302162 /* Pods-testPersistencia-acknowledgements.plist */,
+				FCF3C72BF44C0A043B437F3F746618A1 /* Pods-testPersistencia-dummy.m */,
+				4DA44B17F8394CED788524243832BADB /* Pods-testPersistencia-frameworks.sh */,
+				9C06B0B3D4E1D6AC008078D1BA0F8175 /* Pods-testPersistencia-resources.sh */,
+				2797DBF26C9BA4E7F3D8A644E6D74597 /* Pods-testPersistencia-umbrella.h */,
+				965E807A702257090A698211CE3ADA6B /* Pods-testPersistencia.debug.xcconfig */,
+				B9C05DDDA058F202AC540B86B6372789 /* Pods-testPersistencia.release.xcconfig */,
+			);
+			name = "Pods-testPersistencia";
+			path = "Target Support Files/Pods-testPersistencia";
+			sourceTree = "<group>";
+		};
+		242A0083285C618BFA0027B3A35E7085 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B722BB51D4A19CAB7ADAD2E5EF08261 /* JMMaskTextField_Swift.framework */,
+				F97997E6E56260F35326C882B3CECF4D /* Pods_testPersistencia.framework */,
+				C17B4E80C55CD4F0B8172C47440DAED1 /* SwiftMaskTextfield.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FAD7CAA1CDF36615160F60E5A966491 /* SwiftMaskTextfield */ = {
+			isa = PBXGroup;
+			children = (
+				8EBB8FD7D342985C59563FA1DC920119 /* SwiftMaskTextField.swift */,
+				173ACD16860F0DC6BB7358731A3B1900 /* Support Files */,
+			);
+			name = SwiftMaskTextfield;
+			path = SwiftMaskTextfield;
+			sourceTree = "<group>";
+		};
+		6EB74A2AC893A6CEBD23D12B5EA9098A /* JMMaskTextField-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5E0B9233F44C9AC026AEFACDFBD073A2 /* JMMaskTextField.swift */,
+				65213CAFBDB48822A5D9B078B49938AD /* JMStringMask.swift */,
+				E9727D9CEEE3822367505444BF60B0B4 /* Support Files */,
+			);
+			name = "JMMaskTextField-Swift";
+			path = "JMMaskTextField-Swift";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				10509BA104630A760C7C824933DF3ED3 /* Pods */,
+				242A0083285C618BFA0027B3A35E7085 /* Products */,
+				A78237016E4DD78B5CA62E6E2B76FDC6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A78237016E4DD78B5CA62E6E2B76FDC6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F93159169023B66BF0786DC75E21B55 /* Pods-testPersistencia */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E9727D9CEEE3822367505444BF60B0B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF0157BB6538E319D6CF06A8D957E430 /* Info.plist */,
+				90DBD113B44344A66D4374C7849DE84A /* JMMaskTextField-Swift.modulemap */,
+				F5EE833541D140824D6437A783C4675F /* JMMaskTextField-Swift.xcconfig */,
+				24EA2E5B0400935BB86DEBDC7510B2AB /* JMMaskTextField-Swift-dummy.m */,
+				D4532C8D114532B50CF5F661A94F35DF /* JMMaskTextField-Swift-prefix.pch */,
+				2B45416521D9760C8A1CD1C2937DC594 /* JMMaskTextField-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JMMaskTextField-Swift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B4563247F46EA2FFCEE3045FA93C2CBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44EBC3A43F9FF32CD6C08F5BAB10A50 /* SwiftMaskTextfield-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCA096705F72FD6543810B863054E55C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D8E2ED80BC3DFB2709FCC5AE20B74CC /* JMMaskTextField-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3EDF58504D5E1F21A65D36CFB6C166 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8D78A2DC8CEBBF416A0E3BBCD4E985 /* Pods-testPersistencia-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24214B8F29AD89D208CA2B8D64EFB5B5 /* JMMaskTextField-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D518BF8660E71C6887E639F6A13299A8 /* Build configuration list for PBXNativeTarget "JMMaskTextField-Swift" */;
+			buildPhases = (
+				B5B0FF4F4403993C700E03C7F0FDC51A /* Sources */,
+				F3DB3A7B43E56490C01F1DCB6F92E178 /* Frameworks */,
+				DCA096705F72FD6543810B863054E55C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JMMaskTextField-Swift";
+			productName = "JMMaskTextField-Swift";
+			productReference = 0B722BB51D4A19CAB7ADAD2E5EF08261 /* JMMaskTextField_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2A36A84C19C8184F4E05DA07E55F940C /* SwiftMaskTextfield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6042255C9C34618C4D61FAAB266DE7B0 /* Build configuration list for PBXNativeTarget "SwiftMaskTextfield" */;
+			buildPhases = (
+				0CE5A83E89027EF45F48C558EA910E37 /* Sources */,
+				952752FAECFAD50BEC7363876EE60E6A /* Frameworks */,
+				B4563247F46EA2FFCEE3045FA93C2CBA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMaskTextfield;
+			productName = SwiftMaskTextfield;
+			productReference = C17B4E80C55CD4F0B8172C47440DAED1 /* SwiftMaskTextfield.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8CF52D8F0B89C9DBEF2C0A19C7AE4C1 /* Pods-testPersistencia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2B7B7C090F36844A78EDB3E80DF306B /* Build configuration list for PBXNativeTarget "Pods-testPersistencia" */;
+			buildPhases = (
+				704BEB37997FD9EF0B8F31D82F4D7A85 /* Sources */,
+				3023747C0357447A4B86992CC4B2C7AE /* Frameworks */,
+				FD3EDF58504D5E1F21A65D36CFB6C166 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA24A8EBA03D4428FA7CE01C7B288FAC /* PBXTargetDependency */,
+				FF4248E926432663F9D85379907C790B /* PBXTargetDependency */,
+			);
+			name = "Pods-testPersistencia";
+			productName = "Pods-testPersistencia";
+			productReference = F97997E6E56260F35326C882B3CECF4D /* Pods_testPersistencia.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 242A0083285C618BFA0027B3A35E7085 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24214B8F29AD89D208CA2B8D64EFB5B5 /* JMMaskTextField-Swift */,
+				B8CF52D8F0B89C9DBEF2C0A19C7AE4C1 /* Pods-testPersistencia */,
+				2A36A84C19C8184F4E05DA07E55F940C /* SwiftMaskTextfield */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CE5A83E89027EF45F48C558EA910E37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4E9FBFAE86F6F848378BF6C26134C0 /* SwiftMaskTextfield-dummy.m in Sources */,
+				7AAD1131FAD85FA99AA3538E23F9F0D9 /* SwiftMaskTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		704BEB37997FD9EF0B8F31D82F4D7A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				374A8CEBD4386950886099048289FC3E /* Pods-testPersistencia-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B0FF4F4403993C700E03C7F0FDC51A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9019F106125034608B0732A393BBF1EB /* JMMaskTextField-Swift-dummy.m in Sources */,
+				F898BC87331B67B27865FFD3C5CC1178 /* JMMaskTextField.swift in Sources */,
+				78BCF845A01FEA123D42FB1E0A89FE39 /* JMStringMask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA24A8EBA03D4428FA7CE01C7B288FAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JMMaskTextField-Swift";
+			target = 24214B8F29AD89D208CA2B8D64EFB5B5 /* JMMaskTextField-Swift */;
+			targetProxy = 1E614F6DDFFA99DF87A987CB9AF19349 /* PBXContainerItemProxy */;
+		};
+		FF4248E926432663F9D85379907C790B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMaskTextfield;
+			target = 2A36A84C19C8184F4E05DA07E55F940C /* SwiftMaskTextfield */;
+			targetProxy = 6915BABCC2F38EB3809FA1F3D9F68BAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		016C054924622A0F2A8FA3A695F19913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63C5001CA6BD2CC72C64EE25DED85C05 /* SwiftMaskTextfield.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMaskTextfield/SwiftMaskTextfield-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMaskTextfield/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMaskTextfield/SwiftMaskTextfield.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftMaskTextfield;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0779BE1E773462548EF41330F5F0A3E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9C05DDDA058F202AC540B86B6372789 /* Pods-testPersistencia.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-testPersistencia/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testPersistencia/Pods-testPersistencia.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_testPersistencia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		26B6BD61B8346F6F81A96690A9294D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965E807A702257090A698211CE3ADA6B /* Pods-testPersistencia.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-testPersistencia/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testPersistencia/Pods-testPersistencia.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_testPersistencia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2BC3AEC13A9B332CA101C0C37DC5F05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5EE833541D140824D6437A783C4675F /* JMMaskTextField-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JMMaskTextField-Swift/JMMaskTextField-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JMMaskTextField-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JMMaskTextField-Swift/JMMaskTextField-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JMMaskTextField_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1510D14C321461AB60FAA75BF322628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63C5001CA6BD2CC72C64EE25DED85C05 /* SwiftMaskTextfield.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMaskTextfield/SwiftMaskTextfield-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMaskTextfield/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMaskTextfield/SwiftMaskTextfield.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftMaskTextfield;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E9D65038BF551340A4E75B3712FC95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5EE833541D140824D6437A783C4675F /* JMMaskTextField-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JMMaskTextField-Swift/JMMaskTextField-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JMMaskTextField-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JMMaskTextField-Swift/JMMaskTextField-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JMMaskTextField_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF26A3C5B6EDA309192C6025F703DE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF26A3C5B6EDA309192C6025F703DE0A /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6042255C9C34618C4D61FAAB266DE7B0 /* Build configuration list for PBXNativeTarget "SwiftMaskTextfield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1510D14C321461AB60FAA75BF322628 /* Debug */,
+				016C054924622A0F2A8FA3A695F19913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2B7B7C090F36844A78EDB3E80DF306B /* Build configuration list for PBXNativeTarget "Pods-testPersistencia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26B6BD61B8346F6F81A96690A9294D60 /* Debug */,
+				0779BE1E773462548EF41330F5F0A3E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D518BF8660E71C6887E639F6A13299A8 /* Build configuration list for PBXNativeTarget "JMMaskTextField-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E9D65038BF551340A4E75B3712FC95 /* Debug */,
+				2BC3AEC13A9B332CA101C0C37DC5F05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

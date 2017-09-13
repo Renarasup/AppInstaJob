@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5890F1D1F5F216D0049C731"
-               BuildableName = "Instajob.temp_caseinsensitive_rename.app"
-               BlueprintName = "testPersistencia"
-               ReferencedContainer = "container:Instajob.xcodeproj">
+               BlueprintIdentifier = "24214B8F29AD89D208CA2B8D64EFB5B5"
+               BuildableName = "JMMaskTextField_Swift.framework"
+               BlueprintName = "JMMaskTextField-Swift"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5890F1D1F5F216D0049C731"
-            BuildableName = "Instajob.temp_caseinsensitive_rename.app"
-            BlueprintName = "testPersistencia"
-            ReferencedContainer = "container:Instajob.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5890F1D1F5F216D0049C731"
-            BuildableName = "Instajob.temp_caseinsensitive_rename.app"
-            BlueprintName = "testPersistencia"
-            ReferencedContainer = "container:Instajob.xcodeproj">
+            BlueprintIdentifier = "24214B8F29AD89D208CA2B8D64EFB5B5"
+            BuildableName = "JMMaskTextField_Swift.framework"
+            BlueprintName = "JMMaskTextField-Swift"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5890F1D1F5F216D0049C731"
-            BuildableName = "Instajob.temp_caseinsensitive_rename.app"
-            BlueprintName = "testPersistencia"
-            ReferencedContainer = "container:Instajob.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

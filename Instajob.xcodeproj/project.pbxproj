@@ -7,27 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F585E8BA1F69734900BF9D04 /* NoticiasCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585E8B91F69734900BF9D04 /* NoticiasCandidatoViewController.swift */; };
 		F5890F221F5F216D0049C731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F211F5F216D0049C731 /* AppDelegate.swift */; };
-		F5890F241F5F216D0049C731 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F231F5F216D0049C731 /* ViewController.swift */; };
 		F5890F271F5F216D0049C731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5890F251F5F216D0049C731 /* Main.storyboard */; };
 		F5890F291F5F216D0049C731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5890F281F5F216D0049C731 /* Assets.xcassets */; };
 		F5890F2C1F5F216D0049C731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5890F2A1F5F216D0049C731 /* LaunchScreen.storyboard */; };
 		F5890F341F5F223F0049C731 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F331F5F223F0049C731 /* registerViewController.swift */; };
-		F58B48E91F681B9800F0C36C /* JMMaskTextFieldd in Resources */ = {isa = PBXBuildFile; fileRef = F58B48E81F681B9800F0C36C /* JMMaskTextFieldd */; };
+		F58B48EB1F682D8700F0C36C /* LoginEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B48EA1F682D8700F0C36C /* LoginEmpresaViewController.swift */; };
+		F58B48EE1F68370600F0C36C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F231F5F216D0049C731 /* ViewController.swift */; };
+		F58B48F01F6851B100F0C36C /* NoticiasEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B48EF1F6851B100F0C36C /* NoticiasEmpresaViewController.swift */; };
+		F58B48F21F68534900F0C36C /* TabelasNoticiasEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B48F11F68534900F0C36C /* TabelasNoticiasEmpresaViewController.swift */; };
 		F5D7211C1F66D56D00BA94C7 /* vagasCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7211B1F66D56D00BA94C7 /* vagasCandidatoViewController.swift */; };
 		F5D7211E1F66F5FC00BA94C7 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7211D1F66F5FC00BA94C7 /* PerfilViewController.swift */; };
+		F8F653AB21412B0629131B1A /* Pods_testPersistencia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6783B62CDF09D62F8548C27B /* Pods_testPersistencia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F5890F1E1F5F216D0049C731 /* Instajob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instajob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6783B62CDF09D62F8548C27B /* Pods_testPersistencia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testPersistencia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8198776B593C138EA9B1B9FF /* Pods-testPersistencia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPersistencia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia.debug.xcconfig"; sourceTree = "<group>"; };
+		917A6FB032FB5BD24C22D1F5 /* Pods-testPersistencia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPersistencia.release.xcconfig"; path = "Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia.release.xcconfig"; sourceTree = "<group>"; };
+		F585E8B91F69734900BF9D04 /* NoticiasCandidatoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasCandidatoViewController.swift; sourceTree = "<group>"; };
+		F5890F1E1F5F216D0049C731 /* Instajob.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instajob.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5890F211F5F216D0049C731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5890F231F5F216D0049C731 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5890F261F5F216D0049C731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5890F281F5F216D0049C731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5890F2B1F5F216D0049C731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F5890F2D1F5F216D0049C731 /* Instajobinfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Instajobinfo.plist; sourceTree = "<group>"; };
+		F5890F2D1F5F216D0049C731 /* Instajob.temp_caseinsensitive_renameinfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Instajob.temp_caseinsensitive_renameinfo.plist; sourceTree = "<group>"; };
 		F5890F331F5F223F0049C731 /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
-		F58B48E81F681B9800F0C36C /* JMMaskTextFieldd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JMMaskTextFieldd; sourceTree = "<group>"; };
+		F58B48EA1F682D8700F0C36C /* LoginEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginEmpresaViewController.swift; sourceTree = "<group>"; };
+		F58B48EF1F6851B100F0C36C /* NoticiasEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasEmpresaViewController.swift; sourceTree = "<group>"; };
+		F58B48F11F68534900F0C36C /* TabelasNoticiasEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabelasNoticiasEmpresaViewController.swift; sourceTree = "<group>"; };
 		F5D7211B1F66D56D00BA94C7 /* vagasCandidatoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vagasCandidatoViewController.swift; sourceTree = "<group>"; };
 		F5D7211D1F66F5FC00BA94C7 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,24 +47,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F653AB21412B0629131B1A /* Pods_testPersistencia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BFC3A04AD51C4AD1C088450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8198776B593C138EA9B1B9FF /* Pods-testPersistencia.debug.xcconfig */,
+				917A6FB032FB5BD24C22D1F5 /* Pods-testPersistencia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82B0E002AB0E28AACB55A5EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6783B62CDF09D62F8548C27B /* Pods_testPersistencia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5890F151F5F216D0049C731 = {
 			isa = PBXGroup;
 			children = (
 				F5890F201F5F216D0049C731 /* Instajob */,
 				F5890F1F1F5F216D0049C731 /* Products */,
+				6BFC3A04AD51C4AD1C088450 /* Pods */,
+				82B0E002AB0E28AACB55A5EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		F5890F1F1F5F216D0049C731 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F5890F1E1F5F216D0049C731 /* Instajob.app */,
+				F5890F1E1F5F216D0049C731 /* Instajob.temp_caseinsensitive_rename.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,11 +97,14 @@
 				F5890F251F5F216D0049C731 /* Main.storyboard */,
 				F5890F281F5F216D0049C731 /* Assets.xcassets */,
 				F5890F2A1F5F216D0049C731 /* LaunchScreen.storyboard */,
-				F5890F2D1F5F216D0049C731 /* Instajobinfo.plist */,
-				F58B48E81F681B9800F0C36C /* JMMaskTextFieldd */,
 				F5890F331F5F223F0049C731 /* registerViewController.swift */,
 				F5D7211B1F66D56D00BA94C7 /* vagasCandidatoViewController.swift */,
 				F5D7211D1F66F5FC00BA94C7 /* PerfilViewController.swift */,
+				F58B48EA1F682D8700F0C36C /* LoginEmpresaViewController.swift */,
+				F58B48EF1F6851B100F0C36C /* NoticiasEmpresaViewController.swift */,
+				F58B48F11F68534900F0C36C /* TabelasNoticiasEmpresaViewController.swift */,
+				F585E8B91F69734900BF9D04 /* NoticiasCandidatoViewController.swift */,
+				F5890F2D1F5F216D0049C731 /* Instajob.temp_caseinsensitive_renameinfo.plist */,
 			);
 			path = Instajob;
 			sourceTree = "<group>";
@@ -83,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5890F301F5F216D0049C731 /* Build configuration list for PBXNativeTarget "testPersistencia" */;
 			buildPhases = (
+				B3236AF3D683FF8821D57164 /* [CP] Check Pods Manifest.lock */,
 				F5890F1A1F5F216D0049C731 /* Sources */,
 				F5890F1B1F5F216D0049C731 /* Frameworks */,
 				F5890F1C1F5F216D0049C731 /* Resources */,
+				788A64CE27DA9BAC3DB70125 /* [CP] Embed Pods Frameworks */,
+				6373497D45E955A7EF991A9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -93,7 +129,7 @@
 			);
 			name = testPersistencia;
 			productName = testPersistencia;
-			productReference = F5890F1E1F5F216D0049C731 /* Instajob.app */;
+			productReference = F5890F1E1F5F216D0049C731 /* Instajob.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +171,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F58B48E91F681B9800F0C36C /* JMMaskTextFieldd in Resources */,
 				F5890F2C1F5F216D0049C731 /* LaunchScreen.storyboard in Resources */,
 				F5890F291F5F216D0049C731 /* Assets.xcassets in Resources */,
 				F5890F271F5F216D0049C731 /* Main.storyboard in Resources */,
@@ -144,16 +179,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6373497D45E955A7EF991A9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		788A64CE27DA9BAC3DB70125 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JMMaskTextField-Swift/JMMaskTextField_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMaskTextfield/SwiftMaskTextfield.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JMMaskTextField_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMaskTextfield.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3236AF3D683FF8821D57164 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testPersistencia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5890F1A1F5F216D0049C731 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58B48EE1F68370600F0C36C /* ViewController.swift in Sources */,
 				F5890F341F5F223F0049C731 /* registerViewController.swift in Sources */,
 				F5D7211C1F66D56D00BA94C7 /* vagasCandidatoViewController.swift in Sources */,
-				F5890F241F5F216D0049C731 /* ViewController.swift in Sources */,
 				F5890F221F5F216D0049C731 /* AppDelegate.swift in Sources */,
+				F58B48EB1F682D8700F0C36C /* LoginEmpresaViewController.swift in Sources */,
+				F58B48F01F6851B100F0C36C /* NoticiasEmpresaViewController.swift in Sources */,
 				F5D7211E1F66F5FC00BA94C7 /* PerfilViewController.swift in Sources */,
+				F585E8BA1F69734900BF9D04 /* NoticiasCandidatoViewController.swift in Sources */,
+				F58B48F21F68534900F0C36C /* TabelasNoticiasEmpresaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,24 +371,26 @@
 		};
 		F5890F311F5F216D0049C731 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8198776B593C138EA9B1B9FF /* Pods-testPersistencia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/Instajob/Instajobinfo.plist";
+				INFOPLIST_FILE = Instajob/Instajob.temp_caseinsensitive_renameinfo.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CardManager.Instajob;
-				PRODUCT_NAME = Instajob;
+				PRODUCT_NAME = Instajob.temp_caseinsensitive_rename;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		F5890F321F5F216D0049C731 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 917A6FB032FB5BD24C22D1F5 /* Pods-testPersistencia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/Instajob/Instajobinfo.plist";
+				INFOPLIST_FILE = Instajob/Instajob.temp_caseinsensitive_renameinfo.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CardManager.Instajob;
-				PRODUCT_NAME = Instajob;
+				PRODUCT_NAME = Instajob.temp_caseinsensitive_rename;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

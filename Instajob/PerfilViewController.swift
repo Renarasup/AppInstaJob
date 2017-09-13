@@ -11,7 +11,8 @@ import UIKit
 class PerfilViewController: UIViewController {
 
     
-    
+    @IBOutlet weak var buttonSalvarPerfil: UIButton!
+    @IBOutlet weak var buttonFecharPerfil: UIButton!
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var sobreNomeTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -21,7 +22,11 @@ class PerfilViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+     //formatando botao
+     buttonSalvarPerfil.layer.cornerRadius = 5
+     buttonFecharPerfil.layer.cornerRadius = 5
+     
+     //recebendo dados
      nomeTextField.text = defaults.string(forKey: "nome")
      sobreNomeTextField.text = defaults.string(forKey: "sobrenome")
      emailTextField.text = defaults.string(forKey: "email")

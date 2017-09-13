@@ -1,0 +1,15 @@
+PODS:
+  - JMMaskTextField-Swift (0.1.0)
+  - SwiftMaskTextfield (0.0.3)
+
+DEPENDENCIES:
+  - JMMaskTextField-Swift
+  - SwiftMaskTextfield
+
+SPEC CHECKSUMS:
+  JMMaskTextField-Swift: 109bedbe4fff7bf297a593c53660f57789a113c0
+  SwiftMaskTextfield: 22e993bee1f4968bfca8be7654c9046f952631d8
+
+PODFILE CHECKSUM: 6c3cfece513b8693e2c9a675d850b50acf86e967
+
+COCOAPODS: 1.3.1
