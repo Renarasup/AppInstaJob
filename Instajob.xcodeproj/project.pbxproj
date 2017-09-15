@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220F4DCF1F6B53B1006DD1A0 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F4DCE1F6B53B1006DD1A0 /* PrincipalViewController.swift */; };
+		220F4DD51F6B635A006DD1A0 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 220F4DD41F6B635A006DD1A0 /* fonts */; };
 		F585E8BA1F69734900BF9D04 /* NoticiasCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585E8B91F69734900BF9D04 /* NoticiasCandidatoViewController.swift */; };
 		F585E8BC1F699BEA00BF9D04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F585E8BB1F699BEA00BF9D04 /* GoogleService-Info.plist */; };
 		F5890F221F5F216D0049C731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F211F5F216D0049C731 /* AppDelegate.swift */; };
@@ -15,7 +17,7 @@
 		F5890F2C1F5F216D0049C731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5890F2A1F5F216D0049C731 /* LaunchScreen.storyboard */; };
 		F5890F341F5F223F0049C731 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F331F5F223F0049C731 /* registerViewController.swift */; };
 		F58B48EB1F682D8700F0C36C /* LoginEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B48EA1F682D8700F0C36C /* LoginEmpresaViewController.swift */; };
-		F58B48EE1F68370600F0C36C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F231F5F216D0049C731 /* ViewController.swift */; };
+		F58B48EE1F68370600F0C36C /* CandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F231F5F216D0049C731 /* CandidatoViewController.swift */; };
 		F58B48F01F6851B100F0C36C /* NoticiasEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B48EF1F6851B100F0C36C /* NoticiasEmpresaViewController.swift */; };
 		F58B48F21F68534900F0C36C /* TabelasNoticiasEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B48F11F68534900F0C36C /* TabelasNoticiasEmpresaViewController.swift */; };
 		F5D7211C1F66D56D00BA94C7 /* vagasCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7211B1F66D56D00BA94C7 /* vagasCandidatoViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220F4DCE1F6B53B1006DD1A0 /* PrincipalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
+		220F4DD41F6B635A006DD1A0 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		6783B62CDF09D62F8548C27B /* Pods_testPersistencia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testPersistencia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8198776B593C138EA9B1B9FF /* Pods-testPersistencia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPersistencia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia.debug.xcconfig"; sourceTree = "<group>"; };
 		917A6FB032FB5BD24C22D1F5 /* Pods-testPersistencia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPersistencia.release.xcconfig"; path = "Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia.release.xcconfig"; sourceTree = "<group>"; };
@@ -31,7 +35,7 @@
 		F585E8BB1F699BEA00BF9D04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5890F1E1F5F216D0049C731 /* Instajob.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instajob.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5890F211F5F216D0049C731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5890F231F5F216D0049C731 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5890F231F5F216D0049C731 /* CandidatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatoViewController.swift; sourceTree = "<group>"; };
 		F5890F261F5F216D0049C731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5890F281F5F216D0049C731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5890F2B1F5F216D0049C731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,8 +98,9 @@
 		F5890F201F5F216D0049C731 /* Instajob */ = {
 			isa = PBXGroup;
 			children = (
+				220F4DD41F6B635A006DD1A0 /* fonts */,
 				F5890F211F5F216D0049C731 /* AppDelegate.swift */,
-				F5890F231F5F216D0049C731 /* ViewController.swift */,
+				F5890F231F5F216D0049C731 /* CandidatoViewController.swift */,
 				F5890F251F5F216D0049C731 /* Main.storyboard */,
 				F5890F281F5F216D0049C731 /* Assets.xcassets */,
 				F5890F2A1F5F216D0049C731 /* LaunchScreen.storyboard */,
@@ -108,6 +113,7 @@
 				F585E8B91F69734900BF9D04 /* NoticiasCandidatoViewController.swift */,
 				F5890F2D1F5F216D0049C731 /* Instajob.temp_caseinsensitive_renameinfo.plist */,
 				F585E8BB1F699BEA00BF9D04 /* GoogleService-Info.plist */,
+				220F4DCE1F6B53B1006DD1A0 /* PrincipalViewController.swift */,
 			);
 			path = Instajob;
 			sourceTree = "<group>";
@@ -175,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5890F2C1F5F216D0049C731 /* LaunchScreen.storyboard in Resources */,
+				220F4DD51F6B635A006DD1A0 /* fonts in Resources */,
 				F585E8BC1F699BEA00BF9D04 /* GoogleService-Info.plist in Resources */,
 				F5890F291F5F216D0049C731 /* Assets.xcassets in Resources */,
 				F5890F271F5F216D0049C731 /* Main.storyboard in Resources */,
@@ -252,13 +259,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F58B48EE1F68370600F0C36C /* ViewController.swift in Sources */,
+				F58B48EE1F68370600F0C36C /* CandidatoViewController.swift in Sources */,
 				F5890F341F5F223F0049C731 /* registerViewController.swift in Sources */,
 				F5D7211C1F66D56D00BA94C7 /* vagasCandidatoViewController.swift in Sources */,
 				F5890F221F5F216D0049C731 /* AppDelegate.swift in Sources */,
 				F58B48EB1F682D8700F0C36C /* LoginEmpresaViewController.swift in Sources */,
 				F58B48F01F6851B100F0C36C /* NoticiasEmpresaViewController.swift in Sources */,
 				F5D7211E1F66F5FC00BA94C7 /* PerfilViewController.swift in Sources */,
+				220F4DCF1F6B53B1006DD1A0 /* PrincipalViewController.swift in Sources */,
 				F585E8BA1F69734900BF9D04 /* NoticiasCandidatoViewController.swift in Sources */,
 				F58B48F21F68534900F0C36C /* TabelasNoticiasEmpresaViewController.swift in Sources */,
 			);

@@ -11,19 +11,23 @@ import UIKit
 class NoticiasCandidatoViewController: UIViewController {
 
     
-    @IBOutlet weak var imgPerfil: UIImageView!
-    @IBOutlet weak var noticiaCandidato1: UIButton!
-    @IBOutlet weak var noticiaCandidato2: UIImageView!
-    @IBOutlet weak var noticiaCandidato3: UIImageView!
-    
-    @IBOutlet weak var tabBarNoticias: UITabBarItem!
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+//        imgPerfil.layer.cornerRadius = 42
+//        imgPerfil.clipsToBounds = true
+//        noticia1.layer.cornerRadius = 8
+//        noticia2.layer.cornerRadius = 8
+//        noticia3.layer.cornerRadius = 8
+        
+        
     }
-
+//
+//    @IBAction func buttonCancel(_ sender: Any) {
+//        
+//        dismiss(animated: true, completion: nil)
+//    }
     
 
 }

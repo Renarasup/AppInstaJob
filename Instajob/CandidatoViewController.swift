@@ -10,15 +10,21 @@ import UIKit
 import FirebaseAuth
 
 
-class ViewController: UIViewController {
+class CandidatoViewController: UIViewController {
 
    
     @IBOutlet weak var textLogin: UITextField!
     @IBOutlet weak var textSenha: UITextField!
+    @IBOutlet weak var buttonEntrar: UIButton!
+    @IBOutlet weak var buttonCadastrar: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        buttonEntrar.layer.cornerRadius = 10
+        buttonCadastrar.layer.cornerRadius = 10
+        
         
         
     }

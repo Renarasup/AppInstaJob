@@ -17,16 +17,21 @@ class PerfilViewController: UIViewController {
     @IBOutlet weak var sobreNomeTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var senhaTextField: UITextField!
+    @IBOutlet weak var fotoPerfil: UIImageView!
+    
+    
     
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
      //formatando botao
-     buttonSalvarPerfil.layer.cornerRadius = 5
-     buttonFecharPerfil.layer.cornerRadius = 5
+     buttonSalvarPerfil.layer.cornerRadius = 10
+     buttonFecharPerfil.layer.cornerRadius = 10
+     fotoPerfil.layer.cornerRadius = 42
+     fotoPerfil.clipsToBounds = true
      
-     //recebendo dados
+    //recebendo dados
      nomeTextField.text = defaults.string(forKey: "nome")
      sobreNomeTextField.text = defaults.string(forKey: "sobrenome")
      emailTextField.text = defaults.string(forKey: "email")
