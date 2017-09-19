@@ -10,13 +10,14 @@ import UIKit
 
 class NoticiasCandidatoViewController: UIViewController {
 
+    @IBOutlet weak var imgPerfil: UIImageView!
     
  
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        imgPerfil.layer.cornerRadius = 42
-//        imgPerfil.clipsToBounds = true
+            imgPerfil.layer.cornerRadius = 42
+            imgPerfil.clipsToBounds = true
 //        noticia1.layer.cornerRadius = 8
 //        noticia2.layer.cornerRadius = 8
 //        noticia3.layer.cornerRadius = 8

@@ -18,6 +18,8 @@ class PerfilViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var senhaTextField: UITextField!
     @IBOutlet weak var fotoPerfil: UIImageView!
+    @IBOutlet weak var labelTema: UILabel!
+    
     
     
     
@@ -31,14 +33,27 @@ class PerfilViewController: UIViewController {
      fotoPerfil.layer.cornerRadius = 42
      fotoPerfil.clipsToBounds = true
      
-    //recebendo dados
-     nomeTextField.text = defaults.string(forKey: "nome")
-     sobreNomeTextField.text = defaults.string(forKey: "sobrenome")
-     emailTextField.text = defaults.string(forKey: "email")
-     senhaTextField.text = defaults.string(forKey: "senha")
+    // Recebendo dados UserDefaults
+    // nomeTextField.text = defaults.string(forKey: "nome")
+    // sobreNomeTextField.text = defaults.string(forKey: "sobrenome")
+    // emailTextField.text = defaults.string(forKey: "email")
+    // senhaTextField.text = defaults.string(forKey: "senha")
+ 
     
     }
 
+    @IBAction func buttonTema(_ sender: UISwitch) {
+        
+        if sender.isOn == false{
+        self.view.backgroundColor  = UIColor.black
+        self.labelTema.textColor = UIColor.white
+        }else {
+            self.view.backgroundColor  = UIColor.white
+            self.labelTema.textColor = UIColor.black
+        }
+    }
+    
+    
     @IBAction func buttonSalvarPerfil(_ sender: Any) {
         
       defaults.set(nomeTextField.text, forKey: "nome")
