@@ -18,6 +18,7 @@ class PerfilViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var senhaTextField: UITextField!
     @IBOutlet weak var fotoPerfil: UIImageView!
+    @IBOutlet var labelDark: UIView!
     
     
     
@@ -58,4 +59,14 @@ class PerfilViewController: UIViewController {
         present(alertaController, animated: true, completion: nil)
     }
     
+    @IBAction func temaButton(_ sender: Any) {
+        
+        UIView.animate(withDuration:TimeInterval(2), animations: {
+            self.view.backgroundColor = UIColor.darkGray
+            
+        })
+      
+        
+    }
 }
+

@@ -35,7 +35,6 @@ class CandidatoViewController: UIViewController {
 ////        
 //        let userLogin = textLogin.text
 //        let userSenha = textSenha.text
-        
 //        let dataLogin = UserDefaults.standard.string(forKey: "email")
 //        let dataSenha = UserDefaults.standard.string(forKey: "senha")
 //        
@@ -48,8 +47,6 @@ class CandidatoViewController: UIViewController {
 //            present(alertaController, animated: true, completion: nil)
 //        
 //        }else {
-//            
-//            
 //            print ("login sucesso")
 //        }
        
