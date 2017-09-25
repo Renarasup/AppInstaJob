@@ -11,7 +11,7 @@ import UIKit
 class vagasCandidatoViewController: UITableViewController {
 
     
-    var dados:[String] = ["Desenvolvedor Java","Desenvolvedor Ios"]
+    var VagasAdd: [Vagas] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +23,26 @@ class vagasCandidatoViewController: UITableViewController {
         return 1
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dados.count
+        return VagasAdd.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
         
-            let celulas = "celulas"
-            let celula = tableView.dequeueReusableCell(withIdentifier: celulas, for: indexPath)
-            celula.textLabel?.text = dados[indexPath.row]
-            return celula
+        let Vagas: Vagas = VagasAdd [ indexPath.row ]
+        
+        let celulaReuso = "celulaReuso"
+        
+        let celula = tableView.dequeueReusableCell(withIdentifier: celulaReuso, for: indexPath) as! VagaCelula
+        celula.tituloLabel.text = Vagas.titulo
+        celula.imageEmpresa.image = Vagas.image
+        celula.descricaoLabel.text = Vagas.descricao
+        
+        
+        celula.imageEmpresa.layer.cornerRadius = 45
+        celula.imageEmpresa.clipsToBounds = true
+//        celula.textLabel?.text = Vagas.titulo
+//        celula.imageView?.image = Vagas.image
+        
+        return celula
         
     }
     
