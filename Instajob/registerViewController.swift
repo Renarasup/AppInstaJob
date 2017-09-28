@@ -18,7 +18,9 @@ class registerViewController: UIViewController {
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var sobreNomeTextField: UITextField!
     @IBOutlet weak var textRegisterlogin: UITextField!
+    @IBOutlet weak var textRegisterloginRepeat: UITextField!
     @IBOutlet weak var textRegisterSenha: UITextField!
+    @IBOutlet weak var textRegisterSenhaRepeat: UITextField!
     
     let defaults = UserDefaults.standard
     
