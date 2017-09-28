@@ -12,46 +12,40 @@ import FirebaseAuth
 
 class registerViewController: UIViewController {
 
-   
-   
     @IBOutlet weak var buttonCadastrar: UIButton!
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var sobreNomeTextField: UITextField!
     @IBOutlet weak var textRegisterlogin: UITextField!
-    @IBOutlet weak var textRegisterloginRepeat: UITextField!
+    @IBOutlet weak var textRegisterLoginRepeat: UITextField!
     @IBOutlet weak var textRegisterSenha: UITextField!
     @IBOutlet weak var textRegisterSenhaRepeat: UITextField!
     
     let defaults = UserDefaults.standard
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         buttonCadastrar.layer.cornerRadius = 5
         
-//        let database = Database.database().reference()
-//        
-//        let pontuacao = database.child("pontuacao")
-//        let usuario = database.child("usuarios")
+        let database = Database.database().reference()
         
-//        let usuario = database.child("usuarios")
-//        usuario.child("0001").setValue("Diego Crozare")
+        let pontuacao = database.child("pontuacao")
         
-//        usuario.observe(DataEventType.value, with: { (dados) in
-//            print (dados)
-//        })
-       
+        let usuario = database.child("usuarios")
+        usuario.child("0001").setValue("Diego Crozare")
+        
+        usuario.observe(DataEventType.value, with: { (dados) in
+            print (dados)
+        })
     }
-
  
     @IBAction func buttonCadastrar(_ sender: Any) {
-//        metodo para gravar local com o USERDEFAULTS
+//       metodo para gravar local com o USERDEFAULTS
 
-//        defaults.set(nomeTextField.text, forKey: "nome")
-//        defaults.set(sobreNomeTextField.text, forKey: "sobrenome")
-//        defaults.set(textRegisterlogin.text, forKey: "email")
-//        defaults.set(textRegisterSenha.text, forKey: "senha")
+      defaults.set(nomeTextField.text, forKey: "nome")
+        defaults.set(sobreNomeTextField.text, forKey: "sobrenome")
+        defaults.set(textRegisterlogin.text, forKey: "email")
+        defaults.set(textRegisterSenha.text, forKey: "senha")
         
         //exemplo de cadastro usando a verificacao se esta logado ou nao 
         
@@ -75,11 +69,9 @@ class registerViewController: UIViewController {
         let userData = dataBase.child("usuarios")
         userData.child("0002").setValue(nomeTextField.text)
         
-        
-        
-        
-//exemplo para criacao de usuario sem verificar se esta logado
-//        usuario .createUser(withEmail: "josi@hotmail.com", password: "654321", completion: nil)
+
+//        exemplo para criacao de usuario sem verificar se esta logado
+        usuario .createUser(withEmail: "josi@hotmail.com", password: "654321", completion: nil)
         
         
         nomeTextField.text = ""
@@ -95,7 +87,4 @@ class registerViewController: UIViewController {
         
         dismiss(animated: true, completion: nil)
     }
-   
-    
-
 }

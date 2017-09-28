@@ -21,34 +21,34 @@ class CandidatoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         buttonEntrar.layer.cornerRadius = 10
         buttonCadastrar.layer.cornerRadius = 10
-        
+       
         
         
     }
 
     @IBAction func buttonHome(_ sender: Any) {
         
-//          funcao UserDefaults
-////        
-//        let userLogin = textLogin.text
-//        let userSenha = textSenha.text
-//        let dataLogin = UserDefaults.standard.string(forKey: "email")
-//        let dataSenha = UserDefaults.standard.string(forKey: "senha")
-//        
-//        if userLogin != dataLogin || userSenha != dataSenha {
-//            
-//            let alertaController = UIAlertController(title: "Senha ou Email Incorreto", message: "insira os dados corretos para acessar o sistema", preferredStyle: .alert)
-//            let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: nil )
-//            alertaController.addAction(alertaConfirmar)
-//        
-//            present(alertaController, animated: true, completion: nil)
-//        
-//        }else {
-//            print ("login sucesso")
-//        }
+//        funcao UserDefaults
+       
+        let userLogin = textLogin.text
+        let userSenha = textSenha.text
+        let dataLogin = UserDefaults.standard.string(forKey: "email")
+        let dataSenha = UserDefaults.standard.string(forKey: "senha")
+        
+        if userLogin != dataLogin || userSenha != dataSenha {
+            
+            let alertaController = UIAlertController(title: "Senha ou Email Incorreto", message: "insira os dados corretos para acessar o sistema", preferredStyle: .alert)
+            let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: nil )
+            alertaController.addAction(alertaConfirmar)
+        
+            present(alertaController, animated: true, completion: nil)
+        
+        }else {
+            print ("login sucesso")
+        }
        
         let usuario = Auth.auth()
         

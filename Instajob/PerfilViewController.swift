@@ -10,6 +10,7 @@ import UIKit
 
 class PerfilViewController: UIViewController {
 
+  
     
     @IBOutlet weak var buttonSalvarPerfil: UIButton!
     @IBOutlet weak var buttonFecharPerfil: UIButton!
@@ -33,10 +34,10 @@ class PerfilViewController: UIViewController {
      fotoPerfil.clipsToBounds = true
      
     //recebendo dados
-     nomeTextField.text = defaults.string(forKey: "nome")
-     sobreNomeTextField.text = defaults.string(forKey: "sobrenome")
-     emailTextField.text = defaults.string(forKey: "email")
-     senhaTextField.text = defaults.string(forKey: "senha")
+//     nomeTextField.text = defaults.string(forKey: "nome")
+//     sobreNomeTextField.text = defaults.string(forKey: "sobrenome")
+//     emailTextField.text = defaults.string(forKey: "email")
+//     senhaTextField.text = defaults.string(forKey: "senha")
     
     }
 
@@ -58,6 +59,11 @@ class PerfilViewController: UIViewController {
         alertaController.addAction(alertaConfirmar)
         present(alertaController, animated: true, completion: nil)
     }
+   
+    @IBAction func buttonDismiss(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func temaButton(_ sender: Any) {
         
@@ -65,8 +71,13 @@ class PerfilViewController: UIViewController {
             self.view.backgroundColor = UIColor.darkGray
             
         })
-      
-        
     }
+    
+    
+    
+    
+    
+   
+    
 }
 

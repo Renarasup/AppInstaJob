@@ -32,6 +32,9 @@ class LoginEmpresaViewController: UIViewController {
     @IBAction func buttonCadastrarEmpresa(_ sender: Any) {
     }
     
+    @IBAction func buttonDismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     
     

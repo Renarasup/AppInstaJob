@@ -29,6 +29,9 @@
 		F58B48EB1F682D8700F0C36C /* LoginEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B48EA1F682D8700F0C36C /* LoginEmpresaViewController.swift */; };
 		F58B48EE1F68370600F0C36C /* CandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F231F5F216D0049C731 /* CandidatoViewController.swift */; };
 		F58B48F01F6851B100F0C36C /* NoticiasEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B48EF1F6851B100F0C36C /* NoticiasEmpresaViewController.swift */; };
+		F59293F91F7D1EB300923D65 /* Noticia1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59293F81F7D1EB300923D65 /* Noticia1ViewController.swift */; };
+		F59293FB1F7D1EC300923D65 /* Noticia2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59293FA1F7D1EC300923D65 /* Noticia2ViewController.swift */; };
+		F59293FD1F7D1ED200923D65 /* Noticia3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59293FC1F7D1ED200923D65 /* Noticia3ViewController.swift */; };
 		F5D7211C1F66D56D00BA94C7 /* vagasCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7211B1F66D56D00BA94C7 /* vagasCandidatoViewController.swift */; };
 		F5D7211E1F66F5FC00BA94C7 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7211D1F66F5FC00BA94C7 /* PerfilViewController.swift */; };
 		F8F653AB21412B0629131B1A /* Pods_testPersistencia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6783B62CDF09D62F8548C27B /* Pods_testPersistencia.framework */; };
@@ -62,6 +65,9 @@
 		F5890F331F5F223F0049C731 /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		F58B48EA1F682D8700F0C36C /* LoginEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginEmpresaViewController.swift; sourceTree = "<group>"; };
 		F58B48EF1F6851B100F0C36C /* NoticiasEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasEmpresaViewController.swift; sourceTree = "<group>"; };
+		F59293F81F7D1EB300923D65 /* Noticia1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia1ViewController.swift; sourceTree = "<group>"; };
+		F59293FA1F7D1EC300923D65 /* Noticia2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia2ViewController.swift; sourceTree = "<group>"; };
+		F59293FC1F7D1ED200923D65 /* Noticia3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia3ViewController.swift; sourceTree = "<group>"; };
 		F5D7211B1F66D56D00BA94C7 /* vagasCandidatoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vagasCandidatoViewController.swift; sourceTree = "<group>"; };
 		F5D7211D1F66F5FC00BA94C7 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,10 +146,10 @@
 			children = (
 				F5D7211B1F66D56D00BA94C7 /* vagasCandidatoViewController.swift */,
 				F5D7211D1F66F5FC00BA94C7 /* PerfilViewController.swift */,
-				F585E8B91F69734900BF9D04 /* NoticiasCandidatoViewController.swift */,
 				F5890F331F5F223F0049C731 /* registerViewController.swift */,
 				F5890F231F5F216D0049C731 /* CandidatoViewController.swift */,
 				226789B91F78AFDC0074BC3A /* VagaCelulaCandidato.swift */,
+				F59293FE1F7D1ED700923D65 /* Noticias */,
 			);
 			name = Candidato;
 			sourceTree = "<group>";
@@ -207,6 +213,17 @@
 				2267899B1F7853370074BC3A /* SupportFiles */,
 			);
 			path = Instajob;
+			sourceTree = "<group>";
+		};
+		F59293FE1F7D1ED700923D65 /* Noticias */ = {
+			isa = PBXGroup;
+			children = (
+				F585E8B91F69734900BF9D04 /* NoticiasCandidatoViewController.swift */,
+				F59293F81F7D1EB300923D65 /* Noticia1ViewController.swift */,
+				F59293FA1F7D1EC300923D65 /* Noticia2ViewController.swift */,
+				F59293FC1F7D1ED200923D65 /* Noticia3ViewController.swift */,
+			);
+			name = Noticias;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,10 +379,13 @@
 				226789B81F78A2980074BC3A /* VagasDetalhesCelulaEmpresaViewController.swift in Sources */,
 				226789B61F78704A0074BC3A /* VagaCelula.swift in Sources */,
 				F5D7211E1F66F5FC00BA94C7 /* PerfilViewController.swift in Sources */,
+				F59293FB1F7D1EC300923D65 /* Noticia2ViewController.swift in Sources */,
+				F59293F91F7D1EB300923D65 /* Noticia1ViewController.swift in Sources */,
 				220F4DCF1F6B53B1006DD1A0 /* PrincipalViewController.swift in Sources */,
 				226789BA1F78AFDC0074BC3A /* VagaCelulaCandidato.swift in Sources */,
 				F585E8BA1F69734900BF9D04 /* NoticiasCandidatoViewController.swift in Sources */,
 				226789B41F785EC50074BC3A /* Vagas.swift in Sources */,
+				F59293FD1F7D1ED200923D65 /* Noticia3ViewController.swift in Sources */,
 				226789A81F7857160074BC3A /* VagasDetalhesEmpresaViewController.swift in Sources */,
 				226789A61F7856FB0074BC3A /* VagasEmpresaViewController.swift in Sources */,
 				226789A41F78568F0074BC3A /* PerfilEmpresaViewController.swift in Sources */,
