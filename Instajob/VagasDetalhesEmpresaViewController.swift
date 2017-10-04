@@ -7,68 +7,75 @@
 //
 
 import UIKit
+import CoreData
 
 
 class VagasDetalhesEmpresaViewController: UITableViewController {
-
+//    so usa com array e informacoes externas
+//    var VagasAdd: [Vagas] = []
     
-    var VagasAdd: [Vagas] = []
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        var vaga: Vagas
-            vaga = Vagas(titulo: "Desenvolvedor Android", descricao: "5000,00", image:#imageLiteral(resourceName: "foto3x4"))
-            VagasAdd.append(vaga)
-        
-            vaga = Vagas(titulo: "Desenvolvedor iOS", descricao: "tenha experiencia de 5 anos", image:#imageLiteral(resourceName: "foto3x4"))
-            VagasAdd.append(vaga)
-        
-        
-        
-        
-    }
+ 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return VagasAdd.count
+        return 2
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let Vagas: Vagas = VagasAdd [ indexPath.row ]
+        //let Vagas: Vagas = VagasAdd [ indexPath.row ]
        
         let celulaReuso = "celulaReuso"
         
         let celula = tableView.dequeueReusableCell(withIdentifier: celulaReuso, for: indexPath) as! VagaCelula
-        celula.tituloLabel.text = Vagas.titulo
-        celula.imageEmpresa.image = Vagas.image
-        celula.descricaoLabel.text = Vagas.descricao
         
+        //usando array
+        //celula.tituloLabel.text = Vagas.titulo
+        //celula.imageEmpresa.image = Vagas.image
+        //celula.descricaoLabel.text = Vagas.descricao
         
         celula.imageEmpresa.layer.cornerRadius = 45
         celula.imageEmpresa.clipsToBounds = true
         //celula.textLabel?.text = Vagas.titulo
         //celula.imageView?.image = Vagas.image
-
-            return celula
+    
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let contexto = appDelegate.persistentContainer.viewContext
         
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Vaga")
         
-        if segue.identifier == "detalhesVagas" {
+        do {
+            let vagas = try contexto.fetch( requisicao )
             
-            if let indexPath = tableView.indexPathForSelectedRow {
+            if vagas.count > 0 {
                 
-                let vagaSelecionada = self.VagasAdd [ indexPath.row ]
-                let VC = segue.destination as! VagasDetalhesCelulaEmpresaViewController
-                VC.Vaga = vagaSelecionada
-                
+                for vaga in vagas {
+                    
+                    let titulo = (vaga as AnyObject).value(forKey: "titulo")
+                    let descricao = (vaga as AnyObject).value(forKey: "descricao")
+                    
+                    celula.tituloLabel.text = (titulo as! String)
+                    celula.descricaoLabel.text = (descricao as! String)
+                    celula.imageEmpresa.image = #imageLiteral(resourceName: "foto3x4")
+                }
             }
+            
+        } catch  {
+            print ("dados nao encontrados")
         }
-    
+            return celula
     }
-    
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        
+//        if segue.identifier == "detalhesVagas" {
+//            
+//            if let indexPath = tableView.indexPathForSelectedRow {
+//                
+//            //    let vagaSelecionada = self.VagasAdd [ indexPath.row ]
+//                let VC = segue.destination as! VagasDetalhesCelulaEmpresaViewController
+//            //   VC.Vaga = vagaSelecionada
+//                
+//            }
+//        }
+//    }
 }

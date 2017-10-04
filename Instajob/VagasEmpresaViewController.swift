@@ -7,29 +7,38 @@
 //
 
 import UIKit
+import CoreData
+
+
 
 class VagasEmpresaViewController: UIViewController {
 
+
+    @IBOutlet weak var textTituloVaga: UITextField!
+    @IBOutlet weak var textDescriptionVaga: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonCadastrarVaga(_ sender: Any) {
+        
+       let appDelegatee = UIApplication.shared.delegate as! AppDelegate
+       let context  = appDelegatee.persistentContainer.viewContext
+        
+       let vaga = NSEntityDescription.insertNewObject(forEntityName: "Vaga", into: context)
+        
+       vaga.setValue(textTituloVaga.text, forKey: "titulo")
+       vaga.setValue(textDescriptionVaga.text, forKey: "descricao")
+        
+        do {
+            try context.save()
+            print("dados salvos com sucesso")
+        } catch {
+            print("algo deu errado")
+        }
     }
-    */
 
 }

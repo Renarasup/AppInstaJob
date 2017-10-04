@@ -15,5 +15,4 @@ class VagaCelula: UITableViewCell {
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var descricaoLabel: UILabel!
     
-    
 }

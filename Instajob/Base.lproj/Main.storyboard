@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rRQ-yR-1Ad">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aI4-Hj-zAb">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -585,18 +585,56 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
         <scene sceneID="b8G-l8-ZZO">
             <objects>
                 <tableViewController id="cSR-aR-T9E" customClass="vagasCandidatoViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XGq-s8-xqP">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="XGq-s8-xqP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qtt-1h-KDQ">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso1" rowHeight="70" id="qtt-1h-KDQ" customClass="VagaCelula" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qtt-1h-KDQ" id="unC-U0-unB">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wio-Of-tmj">
+                                            <rect key="frame" x="8" y="0.0" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="OUb-Nl-KXx"/>
+                                                <constraint firstAttribute="height" constant="60" id="XFb-A0-Udc"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ll4-S7-TB5">
+                                            <rect key="frame" x="76" y="8" width="42" height="37.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVH-Dm-BI6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIx-dc-iJp">
+                                                    <rect key="frame" x="0.0" y="20.5" width="42" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FIx-dc-iJp" firstAttribute="leading" secondItem="Wio-Of-tmj" secondAttribute="trailing" constant="8" id="ScW-pZ-Q7v"/>
+                                        <constraint firstItem="Wio-Of-tmj" firstAttribute="top" secondItem="unC-U0-unB" secondAttribute="top" id="cFs-xG-77X"/>
+                                        <constraint firstItem="ll4-S7-TB5" firstAttribute="leading" secondItem="Wio-Of-tmj" secondAttribute="trailing" constant="8" symbolic="YES" id="cvK-FR-wyk"/>
+                                        <constraint firstItem="Wio-Of-tmj" firstAttribute="leading" secondItem="unC-U0-unB" secondAttribute="leadingMargin" id="pb1-GN-tbg"/>
+                                        <constraint firstItem="ll4-S7-TB5" firstAttribute="top" secondItem="unC-U0-unB" secondAttribute="topMargin" id="tbJ-gr-vZ1"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descricaoLabel" destination="FIx-dc-iJp" id="ShU-mC-tBS"/>
+                                    <outlet property="imageEmpresa" destination="Wio-Of-tmj" id="5dm-IL-PZA"/>
+                                    <outlet property="tituloLabel" destination="HVH-Dm-BI6" id="OL8-Kt-Orj"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -608,7 +646,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="laC-Ee-7eP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4727" y="324"/>
+            <point key="canvasLocation" x="4726.875" y="323.23943661971833"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="S9G-qU-zgL">
@@ -789,7 +827,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Ss-mk-BOR">
-                                <rect key="frame" x="16" y="248" width="288" height="255"/>
+                                <rect key="frame" x="16" y="248" width="288" height="192"/>
                                 <color key="backgroundColor" red="0.92468649150000004" green="0.92538815740000002" blue="0.92479509120000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -806,6 +844,16 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ig-n9-u43">
+                                <rect key="frame" x="16" y="462" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.25928044319999999" green="0.75823050739999998" blue="0.58208823200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Cadastrar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCadastrarVaga:" destination="IMi-uq-taX" eventType="touchUpInside" id="lae-0G-goC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -815,14 +863,17 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <constraint firstItem="ZIs-Bb-flc" firstAttribute="top" secondItem="03E-O5-hJi" secondAttribute="bottom" id="4oy-Lm-NcB"/>
                             <constraint firstItem="5rG-rk-syU" firstAttribute="top" secondItem="gE9-aG-B4R" secondAttribute="bottom" constant="8" id="9RE-ow-7cD"/>
                             <constraint firstItem="gE9-aG-B4R" firstAttribute="trailing" secondItem="z8q-MT-OhD" secondAttribute="trailing" id="B5U-vQ-Dt6"/>
-                            <constraint firstItem="W4V-ix-6m5" firstAttribute="top" secondItem="7Ss-mk-BOR" secondAttribute="bottom" constant="16" id="Fwl-Ag-BpI"/>
                             <constraint firstItem="7Ss-mk-BOR" firstAttribute="trailing" secondItem="BTd-fV-Nfa" secondAttribute="trailing" id="Ghh-IP-qk9"/>
                             <constraint firstAttribute="trailing" secondItem="ZIs-Bb-flc" secondAttribute="trailing" id="L4d-cn-M1t"/>
                             <constraint firstItem="7Ss-mk-BOR" firstAttribute="top" secondItem="BTd-fV-Nfa" secondAttribute="bottom" constant="8" id="Lup-Gd-OeN"/>
+                            <constraint firstItem="4Ig-n9-u43" firstAttribute="top" secondItem="7Ss-mk-BOR" secondAttribute="bottom" constant="22" id="MJA-hD-zlf"/>
                             <constraint firstItem="ZIs-Bb-flc" firstAttribute="leading" secondItem="PT1-sH-9PL" secondAttribute="leading" id="Qd0-FL-Dqt"/>
                             <constraint firstItem="7Ss-mk-BOR" firstAttribute="leading" secondItem="BTd-fV-Nfa" secondAttribute="leading" id="TOP-hR-peW"/>
+                            <constraint firstItem="4Ig-n9-u43" firstAttribute="leading" secondItem="7Ss-mk-BOR" secondAttribute="leading" id="WOZ-3h-TTT"/>
                             <constraint firstItem="gE9-aG-B4R" firstAttribute="top" secondItem="z8q-MT-OhD" secondAttribute="bottom" constant="26" id="Xyt-sY-yCg"/>
                             <constraint firstItem="5rG-rk-syU" firstAttribute="leading" secondItem="gE9-aG-B4R" secondAttribute="leading" id="cuu-cg-1kw"/>
+                            <constraint firstItem="W4V-ix-6m5" firstAttribute="top" secondItem="4Ig-n9-u43" secondAttribute="bottom" constant="27" id="dC9-Fr-7Wl"/>
+                            <constraint firstItem="4Ig-n9-u43" firstAttribute="trailing" secondItem="7Ss-mk-BOR" secondAttribute="trailing" id="eDP-JZ-fhc"/>
                             <constraint firstItem="BTd-fV-Nfa" firstAttribute="top" secondItem="5rG-rk-syU" secondAttribute="bottom" constant="8" id="hif-0F-72U"/>
                             <constraint firstItem="BTd-fV-Nfa" firstAttribute="trailing" secondItem="5rG-rk-syU" secondAttribute="trailing" id="hsX-Ab-X3N"/>
                             <constraint firstItem="5rG-rk-syU" firstAttribute="trailing" secondItem="gE9-aG-B4R" secondAttribute="trailing" id="pJd-Es-PPB"/>
@@ -831,10 +882,14 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Vagas" image="clipboard" id="WXV-lD-0gU"/>
+                    <connections>
+                        <outlet property="textDescriptionVaga" destination="7Ss-mk-BOR" id="ayS-nj-SKk"/>
+                        <outlet property="textTituloVaga" destination="5rG-rk-syU" id="JmD-hR-LFs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6P-HT-A3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4727" y="-1900"/>
+            <point key="canvasLocation" x="4726.875" y="-1900.3521126760563"/>
         </scene>
         <!--Vagas Detalhes Empresa View Controller-->
         <scene sceneID="EcA-Ma-xdd">
