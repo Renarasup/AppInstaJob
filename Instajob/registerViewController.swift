@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import FirebaseDatabase
 import FirebaseAuth
+import Firebase
 
 class registerViewController: UIViewController {
 
@@ -20,6 +20,7 @@ class registerViewController: UIViewController {
     @IBOutlet weak var textRegisterSenha: UITextField!
     @IBOutlet weak var textRegisterSenhaRepeat: UITextField!
     
+    var docRef: DocumentReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,18 +28,7 @@ class registerViewController: UIViewController {
         
         buttonCadastrar.layer.cornerRadius = 5
         
-        //criando referencia para o banco de dados do firebase
-         let database = Database.database().reference()
-        
-        //criando banco de dados
-         let usuario = database.child("usuarios")
-        //setando valor no banco, com chave e valor
-        // usuario.child(valor).setValue("Diego Crozare")
-        
-        //criando um observador para atualizar altomativamente os dados do banco
-        usuario.observe(DataEventType.value, with: { (dados) in
-            print (dados)
-        })
+        self.docRef = Firestore.firestore().document("Usuario/cadastro")
     }
  
     @IBAction func buttonCadastrar(_ sender: Any) {
@@ -56,17 +46,18 @@ class registerViewController: UIViewController {
             }
         }
         
-        let dataBase = Database.database().reference()
+            let dadosUsuario: [String: Any] = ["Nome": nomeTextField.text! ,
+                                           "SobreNome":sobreNomeTextField.text!,
+                                           "Login":textRegisterlogin.text!,
+                                           "Senha" : textRegisterSenha.text!]
         
-        let userData = dataBase.child("usuarios")
-        userData.childByAutoId().setValue(nomeTextField.text)
-        
-
-        nomeTextField.text = ""
-        sobreNomeTextField.text = ""
-        textRegisterlogin.text = ""
-        textRegisterSenha.text = ""
-        
+                docRef.setData(dadosUsuario) { (error) in
+                if error != nil {
+                    print("ocorreu um erro")
+                }else{
+                    print ("seus dados foram salvos com sucesso")
+                }
+        }
         dismiss(animated: true, completion: nil)
         
     }

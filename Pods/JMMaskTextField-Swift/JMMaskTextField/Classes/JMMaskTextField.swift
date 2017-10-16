@@ -27,7 +27,7 @@ public class JMMaskTextField: UITextField {
     
     public var unmaskedText: String? {
         get {
-            return self.stringMask?.mask(string: self.text) ?? self.text
+            return self.stringMask?.unmask(string: self.text) ?? self.text
         }
     }
     
@@ -73,7 +73,7 @@ extension JMMaskTextField: UITextFieldDelegate {
     }
     
     public func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        return self.realDelegate?.textFieldShouldBeginEditing?(textField) ?? true
+        return self.realDelegate?.textFieldShouldEndEditing?(textField) ?? true
     }
     
     public func textFieldDidEndEditing(_ textField: UITextField) {

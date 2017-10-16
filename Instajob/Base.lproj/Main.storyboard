@@ -639,8 +639,8 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="cSR-aR-T9E" id="5JT-7O-2zd"/>
-                            <outlet property="delegate" destination="cSR-aR-T9E" id="U47-9R-2mE"/>
+                            <outlet property="dataSource" destination="cSR-aR-T9E" id="ewX-4s-UKt"/>
+                            <outlet property="delegate" destination="cSR-aR-T9E" id="85t-TC-0B8"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Vagas" image="clipboard" id="LVp-38-2pz"/>
@@ -1539,28 +1539,28 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="handshake-2056023_640" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-RU-yLi">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="519"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SobreNome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3a3-zV-bmi">
-                                <rect key="frame" x="16" y="263" width="288" height="30"/>
+                                <rect key="frame" x="0.0" y="263" width="304" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="opt-ZP-tuz">
-                                <rect key="frame" x="16" y="309" width="288" height="30"/>
+                                <rect key="frame" x="0.0" y="309" width="304" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FBx-p9-39S">
-                                <rect key="frame" x="16" y="355" width="288" height="30"/>
+                                <rect key="frame" x="0.0" y="355" width="304" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm3-W6-PGM">
-                                <rect key="frame" x="16" y="408" width="288" height="30"/>
+                                <rect key="frame" x="0.0" y="408" width="304" height="30"/>
                                 <color key="backgroundColor" red="0.25928044319999999" green="0.75823050739999998" blue="0.58208823200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Salvar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1570,7 +1570,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFR-dq-7z6">
-                                <rect key="frame" x="16" y="458" width="288" height="30"/>
+                                <rect key="frame" x="0.0" y="458" width="304" height="30"/>
                                 <color key="backgroundColor" red="0.25928044319999999" green="0.75823050739999998" blue="0.58208823200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Fechar">
                                     <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -1579,26 +1579,20 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <action selector="buttonDismiss:" destination="lFO-El-WL1" eventType="touchUpInside" id="s1l-fj-MfK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tema dark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc1-Tj-aWU">
-                                <rect key="frame" x="16" y="133" width="231" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xQg-wy-fpe">
-                                <rect key="frame" x="16" y="218" width="288" height="30"/>
+                                <rect key="frame" x="0.0" y="218" width="304" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drf-iw-ZaQ">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drf-iw-ZaQ">
                                 <rect key="frame" x="255" y="123" width="51" height="31"/>
                                 <connections>
                                     <action selector="temaButton:" destination="lFO-El-WL1" eventType="valueChanged" id="o3L-nj-gFT"/>
                                 </connections>
                             </switch>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto3x4" translatesAutoresizingMaskIntoConstraints="NO" id="iIO-Ph-4wu">
-                                <rect key="frame" x="16" y="20" width="80" height="80"/>
+                                <rect key="frame" x="0.0" y="20" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="1ur-LD-Eiq"/>
                                     <constraint firstAttribute="height" constant="80" id="dy2-IC-uHp"/>
@@ -1613,13 +1607,13 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <constraint firstItem="3a3-zV-bmi" firstAttribute="leading" secondItem="xQg-wy-fpe" secondAttribute="leading" id="6KV-a6-mr3"/>
                             <constraint firstItem="iFR-dq-7z6" firstAttribute="top" secondItem="cm3-W6-PGM" secondAttribute="bottom" constant="20" id="6Ky-mD-Epx"/>
                             <constraint firstItem="FBx-p9-39S" firstAttribute="centerX" secondItem="LbB-RU-yLi" secondAttribute="centerX" id="F27-n6-lHp"/>
+                            <constraint firstItem="xQg-wy-fpe" firstAttribute="trailing" secondItem="LbB-RU-yLi" secondAttribute="trailing" id="F7U-7s-RCT"/>
                             <constraint firstItem="LbB-RU-yLi" firstAttribute="top" secondItem="aEZ-B9-xk7" secondAttribute="top" id="FNP-do-x17"/>
                             <constraint firstItem="FBx-p9-39S" firstAttribute="top" secondItem="opt-ZP-tuz" secondAttribute="bottom" constant="16" id="IWo-Tr-kMA"/>
+                            <constraint firstItem="xQg-wy-fpe" firstAttribute="leading" secondItem="iIO-Ph-4wu" secondAttribute="leading" id="JUP-e5-9af"/>
                             <constraint firstItem="3a3-zV-bmi" firstAttribute="top" secondItem="xQg-wy-fpe" secondAttribute="bottom" constant="15" id="KSX-1L-2y9"/>
-                            <constraint firstItem="hc1-Tj-aWU" firstAttribute="leading" secondItem="aEZ-B9-xk7" secondAttribute="leadingMargin" id="NFQ-YW-3rj"/>
                             <constraint firstItem="3a3-zV-bmi" firstAttribute="trailing" secondItem="xQg-wy-fpe" secondAttribute="trailing" id="NwW-Ge-6Sc"/>
                             <constraint firstItem="cm3-W6-PGM" firstAttribute="top" secondItem="FBx-p9-39S" secondAttribute="bottom" constant="23" id="OC4-AU-nSt"/>
-                            <constraint firstItem="xQg-wy-fpe" firstAttribute="top" secondItem="hc1-Tj-aWU" secondAttribute="bottom" constant="64" id="OgM-eU-SKM"/>
                             <constraint firstItem="LbB-RU-yLi" firstAttribute="bottom" secondItem="lwh-oq-rof" secondAttribute="top" id="PAu-ap-1ET"/>
                             <constraint firstItem="iFR-dq-7z6" firstAttribute="centerX" secondItem="LbB-RU-yLi" secondAttribute="centerX" id="PnQ-Ja-N8G"/>
                             <constraint firstItem="FBx-p9-39S" firstAttribute="trailing" secondItem="opt-ZP-tuz" secondAttribute="trailing" id="Ruy-9n-43u"/>
@@ -1630,7 +1624,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <constraint firstItem="FBx-p9-39S" firstAttribute="leading" secondItem="opt-ZP-tuz" secondAttribute="leading" id="XyO-OC-AxL"/>
                             <constraint firstItem="cm3-W6-PGM" firstAttribute="trailing" secondItem="FBx-p9-39S" secondAttribute="trailing" id="YMF-2S-F3c"/>
                             <constraint firstItem="opt-ZP-tuz" firstAttribute="centerX" secondItem="LbB-RU-yLi" secondAttribute="centerX" id="Z9t-uo-TUy"/>
-                            <constraint firstItem="drf-iw-ZaQ" firstAttribute="leading" secondItem="hc1-Tj-aWU" secondAttribute="trailing" constant="8" id="dUb-PO-Ee7"/>
+                            <constraint firstItem="xQg-wy-fpe" firstAttribute="top" secondItem="iIO-Ph-4wu" secondAttribute="bottom" constant="118" id="a3a-t9-mjP"/>
                             <constraint firstItem="3a3-zV-bmi" firstAttribute="centerX" secondItem="LbB-RU-yLi" secondAttribute="centerX" id="dVR-km-MnV"/>
                             <constraint firstItem="iFR-dq-7z6" firstAttribute="leading" secondItem="cm3-W6-PGM" secondAttribute="leading" id="de3-Aj-L8f"/>
                             <constraint firstItem="xQg-wy-fpe" firstAttribute="trailing" secondItem="drf-iw-ZaQ" secondAttribute="trailing" id="dmp-rO-ZsJ"/>
@@ -1638,8 +1632,6 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <constraint firstItem="opt-ZP-tuz" firstAttribute="top" secondItem="3a3-zV-bmi" secondAttribute="bottom" constant="16" id="kEH-zj-qDL"/>
                             <constraint firstItem="lwh-oq-rof" firstAttribute="top" secondItem="iFR-dq-7z6" secondAttribute="bottom" constant="31" id="mJE-od-Pig"/>
                             <constraint firstItem="iIO-Ph-4wu" firstAttribute="leading" secondItem="aEZ-B9-xk7" secondAttribute="leadingMargin" id="nhW-AC-Cy7"/>
-                            <constraint firstItem="xQg-wy-fpe" firstAttribute="leading" secondItem="hc1-Tj-aWU" secondAttribute="leading" id="rQg-7P-Cgm"/>
-                            <constraint firstItem="hc1-Tj-aWU" firstAttribute="bottom" secondItem="drf-iw-ZaQ" secondAttribute="bottom" id="vDc-9e-egu"/>
                             <constraint firstItem="opt-ZP-tuz" firstAttribute="trailing" secondItem="3a3-zV-bmi" secondAttribute="trailing" id="wVm-xR-o08"/>
                         </constraints>
                     </view>
