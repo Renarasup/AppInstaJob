@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Usuario" representedClassName="Usuario" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Usuario_Candidato" representedClassName="Usuario_Candidato" syncable="YES" codeGenerationType="class"/>
+    <entity name="Usuario_Empresa" representedClassName="Usuario_Empresa" syncable="YES" codeGenerationType="class">
         <attribute name="cnpj" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="razao_social" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
@@ -9,7 +10,8 @@
         <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Usuario_Empresa" positionX="-63" positionY="-18" width="128" height="75"/>
         <element name="Vaga" positionX="-63" positionY="0" width="128" height="75"/>
+        <element name="Usuario_Candidato" positionX="-63" positionY="9" width="128" height="45"/>
     </elements>
 </model>

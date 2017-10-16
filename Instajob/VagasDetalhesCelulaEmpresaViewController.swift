@@ -16,15 +16,15 @@ class VagasDetalhesCelulaEmpresaViewController: UIViewController {
     @IBOutlet weak var tituloVaga: UILabel!
     
     
-    var Vaga: Vagas!
+//    var Vaga: Vaga!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageVaga.image = Vaga.image
-        descricaoVaga.text = Vaga.descricao
-        tituloVaga.text = Vaga.titulo
+//        imageVaga.image = Vaga.image
+//        descricaoVaga.text = Vaga.descricao
+//        tituloVaga.text = Vaga.titulo
         
         imageVaga.layer.cornerRadius = 42
         imageVaga.clipsToBounds = true

@@ -42,12 +42,12 @@ class PerfilViewController: UIViewController {
     }
 
     @IBAction func buttonSalvarPerfil(_ sender: Any) {
-        
-      defaults.set(nomeTextField.text, forKey: "nome")
-      defaults.set(sobreNomeTextField.text, forKey: "sobrenome")
-      defaults.set(emailTextField.text, forKey: "email")
-      defaults.set(senhaTextField.text, forKey: "senha")
-      defaults.synchronize()
+//      setando dados com o UserDefaults
+//      defaults.set(nomeTextField.text, forKey: "nome")
+//      defaults.set(sobreNomeTextField.text, forKey: "sobrenome")
+//      defaults.set(emailTextField.text, forKey: "email")
+//      defaults.set(senhaTextField.text, forKey: "senha")
+//      defaults.synchronize()
         
       nomeTextField.text = ""
       sobreNomeTextField.text = ""

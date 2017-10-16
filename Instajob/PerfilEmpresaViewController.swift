@@ -25,7 +25,7 @@ class PerfilEmpresaViewController: UIViewController {
         
         
         
-        let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Usuario")
+        let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Usuario_Empresa")
         
         
         

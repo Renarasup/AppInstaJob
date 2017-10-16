@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Optima.ttc">
+            <string>Optima-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Principal View Controller-->
         <scene sceneID="kob-2w-lZo">
@@ -121,14 +126,11 @@
                             <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="hand-2722104_640" translatesAutoresizingMaskIntoConstraints="NO" id="P7X-pM-xtZ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu Cnpj" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HCv-sB-sob" customClass="JMMaskTextField" customModule="JMMaskTextField_Swift">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HCv-sB-sob">
                                 <rect key="frame" x="16" y="293" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
-                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FWc-FY-TSd">
                                 <rect key="frame" x="16" y="348" width="288" height="30"/>
@@ -241,7 +243,7 @@
                             <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="businessman-2056031_640" translatesAutoresizingMaskIntoConstraints="NO" id="aM8-9x-jCH">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t3F-q4-3nf" customClass="JMMaskTextField" customModule="JMMaskTextField_Swift">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t3F-q4-3nf">
                                 <rect key="frame" x="16" y="295" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -263,7 +265,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonEntrarEmpresa:" destination="dZN-Zx-XiV" eventType="touchUpInside" id="rtt-eH-VIl"/>
                                     <action selector="buttonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLC-pZ-ojC"/>
                                     <segue destination="n2g-h6-alc" kind="showDetail" id="6g5-Mc-81h"/>
                                 </connections>
@@ -1199,7 +1200,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.92468649150000004" green="0.92538815740000002" blue="0.92479509120000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Noticias" image="newspaper" id="F1q-QG-yYI"/>
                 </viewController>
@@ -1386,7 +1387,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Cnpj" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7q0-9N-mRc" customClass="JMMaskTextField" customModule="JMMaskTextField_Swift">
-                                <rect key="frame" x="16" y="300" width="288" height="30"/>
+                                <rect key="frame" x="16" y="236" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1394,8 +1395,8 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repita Cnpj" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uu7-Fr-SJR" customClass="JMMaskTextField" customModule="JMMaskTextField_Swift">
-                                <rect key="frame" x="16" y="344" width="288" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade da Empresa" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uu7-Fr-SJR">
+                                <rect key="frame" x="16" y="274" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1403,14 +1404,33 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Razao Social" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6JL-tK-Kdh">
-                                <rect key="frame" x="16" y="254" width="288" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7f-vR-VSf">
+                                <rect key="frame" x="16" y="350" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1o8-Q2-v8I">
+                                <rect key="frame" x="16" y="312" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Razao Social" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6JL-tK-Kdh">
+                                <rect key="frame" x="16" y="198" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY5-Pg-Tn7">
-                                <rect key="frame" x="16" y="406" width="288" height="30"/>
+                                <rect key="frame" x="16" y="439" width="288" height="30"/>
                                 <color key="backgroundColor" red="0.25928044319999999" green="0.75823050739999998" blue="0.58208823200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Cadastrar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1438,7 +1458,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbu-LU-94H">
-                                <rect key="frame" x="16" y="457" width="288" height="30"/>
+                                <rect key="frame" x="16" y="486" width="288" height="30"/>
                                 <color key="backgroundColor" red="0.25928044319999999" green="0.75823050739999998" blue="0.58208823200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Fechar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1449,39 +1469,57 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <action selector="buttonDismiss:" destination="iDK-pW-gaU" eventType="touchUpInside" id="L7s-D4-Dn9"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repita Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrx-XP-Rsk">
+                                <rect key="frame" x="16" y="388" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Uu7-Fr-SJR" firstAttribute="top" secondItem="7q0-9N-mRc" secondAttribute="bottom" constant="14" id="26R-FG-nnR"/>
+                            <constraint firstItem="Uu7-Fr-SJR" firstAttribute="top" secondItem="7q0-9N-mRc" secondAttribute="bottom" constant="8" id="26R-FG-nnR"/>
+                            <constraint firstItem="N7f-vR-VSf" firstAttribute="trailing" secondItem="yrx-XP-Rsk" secondAttribute="trailing" id="4HJ-iz-bIk"/>
                             <constraint firstItem="uER-o7-113" firstAttribute="leading" secondItem="ZyX-0r-X3G" secondAttribute="trailing" constant="-136" id="4Va-w1-VxN"/>
+                            <constraint firstItem="N7f-vR-VSf" firstAttribute="top" secondItem="Uu7-Fr-SJR" secondAttribute="bottom" constant="46" id="8RQ-hS-pxD"/>
                             <constraint firstAttribute="trailing" secondItem="uER-o7-113" secondAttribute="trailing" id="AYV-q5-jOk"/>
                             <constraint firstItem="zY5-Pg-Tn7" firstAttribute="trailing" secondItem="Uu7-Fr-SJR" secondAttribute="trailing" id="CUl-Uw-8Jf"/>
                             <constraint firstItem="Mbu-LU-94H" firstAttribute="leading" secondItem="zY5-Pg-Tn7" secondAttribute="leading" id="F7L-Dx-qFI"/>
                             <constraint firstItem="Mbu-LU-94H" firstAttribute="trailing" secondItem="zY5-Pg-Tn7" secondAttribute="trailing" id="GUz-Ac-jbu"/>
                             <constraint firstItem="uER-o7-113" firstAttribute="top" secondItem="kVQ-FT-UIr" secondAttribute="bottom" constant="-180" id="GXc-hQ-p79"/>
-                            <constraint firstItem="7q0-9N-mRc" firstAttribute="top" secondItem="6JL-tK-Kdh" secondAttribute="bottom" constant="16" id="Oxm-9S-F1k"/>
-                            <constraint firstItem="Mbu-LU-94H" firstAttribute="top" secondItem="uER-o7-113" secondAttribute="bottom" constant="-111" id="PO8-5W-d91"/>
+                            <constraint firstItem="N7f-vR-VSf" firstAttribute="trailing" secondItem="Uu7-Fr-SJR" secondAttribute="trailing" id="M8z-mM-alg"/>
+                            <constraint firstItem="N7f-vR-VSf" firstAttribute="leading" secondItem="yrx-XP-Rsk" secondAttribute="leading" id="Ou7-PH-RTK"/>
+                            <constraint firstItem="7q0-9N-mRc" firstAttribute="top" secondItem="6JL-tK-Kdh" secondAttribute="bottom" constant="8" id="Oxm-9S-F1k"/>
+                            <constraint firstItem="Mbu-LU-94H" firstAttribute="top" secondItem="uER-o7-113" secondAttribute="bottom" constant="-82" id="PO8-5W-d91"/>
                             <constraint firstItem="Uu7-Fr-SJR" firstAttribute="trailing" secondItem="7q0-9N-mRc" secondAttribute="trailing" id="PRN-op-cTQ"/>
+                            <constraint firstItem="yrx-XP-Rsk" firstAttribute="top" secondItem="N7f-vR-VSf" secondAttribute="bottom" constant="8" symbolic="YES" id="VhK-LA-xmd"/>
                             <constraint firstItem="qpT-UK-ReR" firstAttribute="top" secondItem="uER-o7-113" secondAttribute="bottom" id="W33-lj-zAU"/>
                             <constraint firstItem="uER-o7-113" firstAttribute="top" secondItem="PMD-Eh-JB4" secondAttribute="top" id="XjT-sR-HAH"/>
-                            <constraint firstItem="Mbu-LU-94H" firstAttribute="top" secondItem="zY5-Pg-Tn7" secondAttribute="bottom" constant="21" id="Y8X-i3-SQq"/>
+                            <constraint firstItem="Mbu-LU-94H" firstAttribute="top" secondItem="zY5-Pg-Tn7" secondAttribute="bottom" constant="17" id="Y8X-i3-SQq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6JL-tK-Kdh" secondAttribute="trailing" id="YVu-2l-SOq"/>
                             <constraint firstItem="zY5-Pg-Tn7" firstAttribute="leading" secondItem="Uu7-Fr-SJR" secondAttribute="leading" id="ZvG-gu-FwW"/>
                             <constraint firstItem="uER-o7-113" firstAttribute="leading" secondItem="PMD-Eh-JB4" secondAttribute="leading" id="aOr-y5-3Mh"/>
                             <constraint firstAttribute="leadingMargin" secondItem="6JL-tK-Kdh" secondAttribute="leading" id="aWX-6p-fhv"/>
                             <constraint firstItem="7q0-9N-mRc" firstAttribute="trailing" secondItem="6JL-tK-Kdh" secondAttribute="trailing" id="cx6-s8-Dik"/>
+                            <constraint firstItem="zY5-Pg-Tn7" firstAttribute="top" secondItem="yrx-XP-Rsk" secondAttribute="bottom" constant="21" id="ems-4m-bu3"/>
                             <constraint firstItem="7q0-9N-mRc" firstAttribute="leading" secondItem="6JL-tK-Kdh" secondAttribute="leading" id="gDz-cB-Bg2"/>
                             <constraint firstItem="uER-o7-113" firstAttribute="top" secondItem="ZyX-0r-X3G" secondAttribute="bottom" constant="-182" id="gkP-3E-Jv7"/>
                             <constraint firstItem="kVQ-FT-UIr" firstAttribute="leading" secondItem="ZyX-0r-X3G" secondAttribute="trailing" constant="-12" id="kfQ-uB-5PH"/>
-                            <constraint firstItem="zY5-Pg-Tn7" firstAttribute="top" secondItem="Uu7-Fr-SJR" secondAttribute="bottom" constant="32" id="lSa-HX-j8O"/>
-                            <constraint firstItem="6JL-tK-Kdh" firstAttribute="top" secondItem="ZyX-0r-X3G" secondAttribute="bottom" constant="72" id="nx2-LZ-4Km"/>
+                            <constraint firstItem="6JL-tK-Kdh" firstAttribute="top" secondItem="ZyX-0r-X3G" secondAttribute="bottom" constant="16" id="nx2-LZ-4Km"/>
                             <constraint firstItem="Uu7-Fr-SJR" firstAttribute="leading" secondItem="7q0-9N-mRc" secondAttribute="leading" id="sqi-Wp-oyM"/>
+                            <constraint firstItem="N7f-vR-VSf" firstAttribute="leading" secondItem="Uu7-Fr-SJR" secondAttribute="leading" id="zTO-N4-ruY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cidadeEmpresa" destination="Uu7-Fr-SJR" id="ZbW-ab-6gN"/>
                         <outlet property="textCnpj" destination="7q0-9N-mRc" id="zrM-eU-Ya0"/>
-                        <outlet property="textCnpjRepeat" destination="Uu7-Fr-SJR" id="Fep-N1-tVo"/>
+                        <outlet property="textEmailEmpresa" destination="1o8-Q2-v8I" id="44B-oa-BqW"/>
                         <outlet property="textRazaoSocial" destination="6JL-tK-Kdh" id="53r-5y-LsA"/>
+                        <outlet property="textRepeatSenha" destination="yrx-XP-Rsk" id="8Xz-jp-Aw6"/>
+                        <outlet property="textSenha" destination="N7f-vR-VSf" id="A6g-NA-rTd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqf-pa-lTD" userLabel="First Responder" sceneMemberID="firstResponder"/>

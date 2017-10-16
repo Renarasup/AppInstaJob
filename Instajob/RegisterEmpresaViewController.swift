@@ -8,7 +8,9 @@
 
 import UIKit
 import JMMaskTextField_Swift
-import CoreData
+import FirebaseAuth
+import FirebaseDatabase
+
 
 class RegisterEmpresaViewController: UIViewController {
 
@@ -16,8 +18,10 @@ class RegisterEmpresaViewController: UIViewController {
     
     @IBOutlet weak var textRazaoSocial: UITextField!
     @IBOutlet weak var textCnpj:JMMaskTextField!
-    @IBOutlet weak var textCnpjRepeat: JMMaskTextField!
-    
+    @IBOutlet weak var cidadeEmpresa: UITextField!
+    @IBOutlet weak var textSenha: UITextField!
+    @IBOutlet weak var textRepeatSenha: UITextField!
+    @IBOutlet weak var textEmailEmpresa: UITextField!
     
     
     
@@ -30,23 +34,41 @@ class RegisterEmpresaViewController: UIViewController {
  
     @IBAction func buttonCadastrarEmpresa(_ sender: Any) {
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let contexto = appDelegate.persistentContainer.viewContext
-        
-        let usuario = NSEntityDescription.insertNewObject(forEntityName: "Usuario", into: contexto)
-
-        usuario.setValue(self.textRazaoSocial.text, forKey: "razao_social")
-        usuario.setValue(self.textCnpj.text, forKey: "cnpj")
+        let usuario = Auth.auth()
         
         
-        do {
-            try contexto.save()
-            print("dado salvo com sucesso")
-        } catch {
-            print("algo deu errado")
+        usuario.createUser(withEmail: textEmailEmpresa.text!, password: textSenha.text!) { (Usuario, erro) in
+            
+            if erro == nil {
+                
+                print ("usuario Empresa logado" + String( describing: Usuario?.email ) )
+            }else {
+                
+                print ("usuario nao logado" + String( describing: erro?.localizedDescription ))
+            }
         }
+        
+        let dataBase = Database.database().reference()
+        
+        let userEmpresa = dataBase.child("usuarioEmpresa")
+        
+        userEmpresa.childByAutoId().child("Razao social").setValue(textRazaoSocial.text)
+        //userEmpresa.childByAutoId().
+        
+        textRazaoSocial.text = ""
+        textCnpj.text = ""
+        cidadeEmpresa.text = ""
+        textSenha.text = ""
+        textRepeatSenha.text = ""
+        textEmailEmpresa.text = ""
+        
+        dismiss(animated: true, completion: nil)
     }
 
+    
+    
+        
+    
     @IBAction func buttonDismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
