@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import FirebaseDatabase
 
 class vagasCandidatoViewController: UITableViewController {
 
@@ -21,7 +22,7 @@ class vagasCandidatoViewController: UITableViewController {
         return 1
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -32,30 +33,25 @@ class vagasCandidatoViewController: UITableViewController {
         celula.imageEmpresa.layer.cornerRadius = 45
         celula.imageEmpresa.clipsToBounds = true
 
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let contexto = appDelegate.persistentContainer.viewContext
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
         
-        let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Vaga")
-        
-        do {
-            let vagas = try contexto.fetch( requisicao )
-            
-            if vagas.count > 0 {
+        ref.child("empresa/vaga").observe(DataEventType.value) { (dados, erro) in
+            if  dados == dados {
                 
-                for vaga in vagas {
-                    
-                    let titulo = (vaga as AnyObject).value(forKey: "titulo")
-                    let descricao = (vaga as AnyObject).value(forKey: "descricao")
-                    
-                    celula.tituloLabel.text = (titulo as! String)
-                    celula.descricaoLabel.text = (descricao as! String)
-                    celula.imageEmpresa.image = #imageLiteral(resourceName: "foto3x4")
-                }
-            }
+                let valor = dados.value as? NSDictionary
+                let titulo = valor?["titulo"] as? String
+                let descricao = valor?["descricao"] as? String
+                celula.tituloLabel.text = titulo
+                celula.descricaoLabel.text = descricao
+                celula.imageEmpresa.image = #imageLiteral(resourceName: "foto3x4")
+                
             
-        } catch  {
-            print ("dados nao encontrados")
+            }else{
+               print("ocorreu um erro")
+            }
         }
+        
         return celula
     }
    }

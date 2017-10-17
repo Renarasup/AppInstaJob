@@ -28,6 +28,9 @@
 		F58B48EB1F682D8700F0C36C /* LoginEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B48EA1F682D8700F0C36C /* LoginEmpresaViewController.swift */; };
 		F58B48EE1F68370600F0C36C /* CandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F231F5F216D0049C731 /* CandidatoViewController.swift */; };
 		F58B48F01F6851B100F0C36C /* NoticiasEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B48EF1F6851B100F0C36C /* NoticiasEmpresaViewController.swift */; };
+		F58F8F4B1F966C1C005425AA /* NoticiaCandidato1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58F8F4A1F966C1C005425AA /* NoticiaCandidato1ViewController.swift */; };
+		F58F8F4D1F966C2B005425AA /* NoticiaCandidato2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58F8F4C1F966C2B005425AA /* NoticiaCandidato2ViewController.swift */; };
+		F58F8F4F1F966C3B005425AA /* NoticiaCandidato3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58F8F4E1F966C3B005425AA /* NoticiaCandidato3ViewController.swift */; };
 		F59293F91F7D1EB300923D65 /* Noticia1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59293F81F7D1EB300923D65 /* Noticia1ViewController.swift */; };
 		F59293FB1F7D1EC300923D65 /* Noticia2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59293FA1F7D1EC300923D65 /* Noticia2ViewController.swift */; };
 		F59293FD1F7D1ED200923D65 /* Noticia3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59293FC1F7D1ED200923D65 /* Noticia3ViewController.swift */; };
@@ -63,6 +66,9 @@
 		F5890F331F5F223F0049C731 /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		F58B48EA1F682D8700F0C36C /* LoginEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginEmpresaViewController.swift; sourceTree = "<group>"; };
 		F58B48EF1F6851B100F0C36C /* NoticiasEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasEmpresaViewController.swift; sourceTree = "<group>"; };
+		F58F8F4A1F966C1C005425AA /* NoticiaCandidato1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiaCandidato1ViewController.swift; sourceTree = "<group>"; };
+		F58F8F4C1F966C2B005425AA /* NoticiaCandidato2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiaCandidato2ViewController.swift; sourceTree = "<group>"; };
+		F58F8F4E1F966C3B005425AA /* NoticiaCandidato3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiaCandidato3ViewController.swift; sourceTree = "<group>"; };
 		F59293F81F7D1EB300923D65 /* Noticia1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia1ViewController.swift; sourceTree = "<group>"; };
 		F59293FA1F7D1EC300923D65 /* Noticia2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia2ViewController.swift; sourceTree = "<group>"; };
 		F59293FC1F7D1ED200923D65 /* Noticia3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia3ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 				226789A71F7857160074BC3A /* VagasDetalhesEmpresaViewController.swift */,
 				226789B51F78704A0074BC3A /* VagaCelula.swift */,
 				226789B71F78A2980074BC3A /* VagasDetalhesCelulaEmpresaViewController.swift */,
+				F59293FE1F7D1ED700923D65 /* Noticias */,
 			);
 			name = Empresa;
 			sourceTree = "<group>";
@@ -146,7 +153,7 @@
 				F5890F331F5F223F0049C731 /* registerViewController.swift */,
 				F5890F231F5F216D0049C731 /* CandidatoViewController.swift */,
 				226789B91F78AFDC0074BC3A /* VagaCelulaCandidato.swift */,
-				F59293FE1F7D1ED700923D65 /* Noticias */,
+				F58F8F501F966C47005425AA /* Noticias_Candidato */,
 			);
 			name = Candidato;
 			sourceTree = "<group>";
@@ -212,10 +219,20 @@
 			path = Instajob;
 			sourceTree = "<group>";
 		};
-		F59293FE1F7D1ED700923D65 /* Noticias */ = {
+		F58F8F501F966C47005425AA /* Noticias_Candidato */ = {
 			isa = PBXGroup;
 			children = (
 				F585E8B91F69734900BF9D04 /* NoticiasCandidatoViewController.swift */,
+				F58F8F4A1F966C1C005425AA /* NoticiaCandidato1ViewController.swift */,
+				F58F8F4C1F966C2B005425AA /* NoticiaCandidato2ViewController.swift */,
+				F58F8F4E1F966C3B005425AA /* NoticiaCandidato3ViewController.swift */,
+			);
+			name = Noticias_Candidato;
+			sourceTree = "<group>";
+		};
+		F59293FE1F7D1ED700923D65 /* Noticias */ = {
+			isa = PBXGroup;
+			children = (
 				F59293F81F7D1EB300923D65 /* Noticia1ViewController.swift */,
 				F59293FA1F7D1EC300923D65 /* Noticia2ViewController.swift */,
 				F59293FC1F7D1ED200923D65 /* Noticia3ViewController.swift */,
@@ -380,6 +397,7 @@
 				F5890F341F5F223F0049C731 /* registerViewController.swift in Sources */,
 				F5D7211C1F66D56D00BA94C7 /* vagasCandidatoViewController.swift in Sources */,
 				F5890F221F5F216D0049C731 /* AppDelegate.swift in Sources */,
+				F58F8F4B1F966C1C005425AA /* NoticiaCandidato1ViewController.swift in Sources */,
 				F58B48EB1F682D8700F0C36C /* LoginEmpresaViewController.swift in Sources */,
 				226789A21F7856750074BC3A /* RegisterEmpresaViewController.swift in Sources */,
 				F58B48F01F6851B100F0C36C /* NoticiasEmpresaViewController.swift in Sources */,
@@ -387,9 +405,11 @@
 				226789B61F78704A0074BC3A /* VagaCelula.swift in Sources */,
 				F5D7211E1F66F5FC00BA94C7 /* PerfilViewController.swift in Sources */,
 				F59293FB1F7D1EC300923D65 /* Noticia2ViewController.swift in Sources */,
+				F58F8F4D1F966C2B005425AA /* NoticiaCandidato2ViewController.swift in Sources */,
 				224A07991F83178B005001A7 /* Instajob.xcdatamodeld in Sources */,
 				F59293F91F7D1EB300923D65 /* Noticia1ViewController.swift in Sources */,
 				220F4DCF1F6B53B1006DD1A0 /* PrincipalViewController.swift in Sources */,
+				F58F8F4F1F966C3B005425AA /* NoticiaCandidato3ViewController.swift in Sources */,
 				226789BA1F78AFDC0074BC3A /* VagaCelulaCandidato.swift in Sources */,
 				F585E8BA1F69734900BF9D04 /* NoticiasCandidatoViewController.swift in Sources */,
 				226789B41F785EC50074BC3A /* Vagas.swift in Sources */,
@@ -525,6 +545,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Instajob/Instajob.temp_caseinsensitive_renameinfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CardManager.Instajob;
 				PRODUCT_NAME = Instajob.temp_caseinsensitive_rename;
@@ -541,6 +562,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Instajob/Instajob.temp_caseinsensitive_renameinfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CardManager.Instajob;
 				PRODUCT_NAME = Instajob.temp_caseinsensitive_rename;

@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-import Firebase
+import FirebaseDatabase
 
 
 
@@ -19,29 +19,23 @@ class VagasEmpresaViewController: UIViewController {
     @IBOutlet weak var textTituloVaga: UITextField!
     @IBOutlet weak var textDescriptionVaga: UITextView!
     
-    var docRef: DocumentReference!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        docRef = Firestore.firestore().document("empresa/vaga")
 
     }
 
 
     @IBAction func buttonCadastrarVaga(_ sender: Any) {
         
-                let dadosEmpresa = ["titulo" : textTituloVaga.text, "descricao" : textDescriptionVaga.text ]
+        var docRef: DatabaseReference!
+        docRef = Database.database().reference()
         
-                docRef.setData(dadosEmpresa) { (error) in
-                    if error != nil {
-                        print("ocorreu um erro")
-                    }else {
-                        print("dados salvos com sucesso")
-                    }
-                    
+        let dadosVaga = ["titulo" : textTituloVaga.text, "descricao" : textDescriptionVaga.text]
+        
+        docRef.child("empresa/vaga").setValue(dadosVaga)
+        
         }
-        
-    }
+    
 
 }
