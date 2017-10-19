@@ -20,15 +20,12 @@ class registerViewController: UIViewController {
     @IBOutlet weak var textRegisterSenha: UITextField!
     @IBOutlet weak var textRegisterSenhaRepeat: UITextField!
     
-    var docRef: DocumentReference!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
         buttonCadastrar.layer.cornerRadius = 5
         
-        self.docRef = Firestore.firestore().document("Usuario/cadastro")
     }
  
     @IBAction func buttonCadastrar(_ sender: Any) {
@@ -46,21 +43,24 @@ class registerViewController: UIViewController {
             }
         }
         
-            let dadosUsuario: [String: Any] = ["Nome": nomeTextField.text! ,
-                                           "SobreNome":sobreNomeTextField.text!,
-                                           "Login":textRegisterlogin.text!,
-                                           "Senha" : textRegisterSenha.text!]
+            let dadosUsuario = ["Nome": nomeTextField.text! ,
+                                "SobreNome":sobreNomeTextField.text!,
+                                "Login":textRegisterlogin.text!,
+                                "Senha" : textRegisterSenha.text!]
+        var docRef: DatabaseReference!
+        docRef = Database.database().reference()
+        let timeStamp = Int(NSDate.timeIntervalSinceReferenceDate*1000)
+        let criarVaga = docRef.child("candidato").child(String(timeStamp))
+        criarVaga.setValue(dadosUsuario)
         
-                docRef.setData(dadosUsuario) { (error) in
-                if error != nil {
-                    print("ocorreu um erro")
-                }else{
-                    print ("seus dados foram salvos com sucesso")
-                }
-        }
+        
+        
+        let recuperandoDados = criarVaga.key
+        
+        print(recuperandoDados)
+        
         dismiss(animated: true, completion: nil)
-        
-    }
+        }
     
     @IBAction func buttonCancel(_ sender: Any) {
         

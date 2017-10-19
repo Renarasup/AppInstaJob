@@ -105,6 +105,7 @@
                     <connections>
                         <outlet property="butonCandidato" destination="z55-Sb-Gag" id="waJ-bo-IZl"/>
                         <outlet property="buttonEmpresa" destination="cau-EA-S3y" id="qkS-CO-YTu"/>
+                        <outlet property="subTitle" destination="Pqt-iH-OLG" id="0TF-pz-a0B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5T8-H0-8x7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -590,9 +591,26 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="goZ-av-5f5">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ejS-9K-eSC">
+                                    <rect key="frame" x="1" y="1" width="318" height="42"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="ejS-9K-eSC" secondAttribute="bottom" constant="1" id="9ed-2u-hCa"/>
+                                <constraint firstItem="ejS-9K-eSC" firstAttribute="top" secondItem="goZ-av-5f5" secondAttribute="top" constant="1" id="cfQ-JB-egv"/>
+                                <constraint firstItem="ejS-9K-eSC" firstAttribute="leading" secondItem="goZ-av-5f5" secondAttribute="leading" constant="1" id="egg-6g-dGB"/>
+                                <constraint firstAttribute="trailing" secondItem="ejS-9K-eSC" secondAttribute="trailing" constant="1" id="tqg-N3-diP"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso1" rowHeight="70" id="qtt-1h-KDQ" customClass="VagaCelula" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="72" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qtt-1h-KDQ" id="unC-U0-unB">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
@@ -644,8 +662,19 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Vagas" image="clipboard" id="LVp-38-2pz"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="uVP-3h-nt4" id="W8f-hK-Smx"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="laC-Ee-7eP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="uVP-3h-nt4">
+                    <connections>
+                        <outlet property="delegate" destination="cSR-aR-T9E" id="MNf-ch-ngc"/>
+                        <outlet property="searchContentsController" destination="cSR-aR-T9E" id="OcI-8k-RSc"/>
+                        <outlet property="searchResultsDataSource" destination="cSR-aR-T9E" id="Tk7-54-4Mh"/>
+                        <outlet property="searchResultsDelegate" destination="cSR-aR-T9E" id="tLL-nA-AyP"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="4726.875" y="323.23943661971833"/>
         </scene>
@@ -900,9 +929,26 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Bnz-Ax-1Wh">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ZFc-vh-6M3">
+                                    <rect key="frame" x="1" y="1" width="318" height="42"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ZFc-vh-6M3" secondAttribute="trailing" constant="1" id="4YY-bO-rji"/>
+                                <constraint firstItem="ZFc-vh-6M3" firstAttribute="top" secondItem="Bnz-Ax-1Wh" secondAttribute="top" constant="1" id="7kq-cB-1nZ"/>
+                                <constraint firstItem="ZFc-vh-6M3" firstAttribute="leading" secondItem="Bnz-Ax-1Wh" secondAttribute="leading" constant="1" id="f8C-Sq-RYx"/>
+                                <constraint firstAttribute="bottom" secondItem="ZFc-vh-6M3" secondAttribute="bottom" constant="1" id="kdm-Xk-jop"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" id="Vrm-9M-3RB" customClass="VagaCelula" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="72" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vrm-9M-3RB" id="NfE-Or-4Ok">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
