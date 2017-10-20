@@ -33,7 +33,9 @@ class VagasEmpresaViewController: UIViewController {
         
         let dadosVaga = ["titulo" : textTituloVaga.text, "descricao" : textDescriptionVaga.text]
         
-        docRef.child("empresa/vaga").setValue(dadosVaga)
+        let timeStamp = Int(NSDate.timeIntervalSinceReferenceDate*1000)
+        let result = docRef.child("empresa").child("vaga")
+        result.child(String(timeStamp)).setValue(dadosVaga)
         
         }
     

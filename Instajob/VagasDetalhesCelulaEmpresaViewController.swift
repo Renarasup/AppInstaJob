@@ -16,18 +16,18 @@ class VagasDetalhesCelulaEmpresaViewController: UIViewController {
     @IBOutlet weak var tituloVaga: UILabel!
     
     
-//    var Vaga: Vaga!
+    var Vaga: Vagas!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        imageVaga.image = Vaga.image
-//        descricaoVaga.text = Vaga.descricao
-//        tituloVaga.text = Vaga.titulo
-        
-        imageVaga.layer.cornerRadius = 42
-        imageVaga.clipsToBounds = true
+        imageVaga.image = Vaga.image
+        descricaoVaga.text = Vaga.descricao
+        tituloVaga.text = Vaga.titulo
+  
+//        imageVaga.layer.cornerRadius = 42
+//        imageVaga.clipsToBounds = true
     }
 
     @IBAction func buttonCandidatar(_ sender: Any) {

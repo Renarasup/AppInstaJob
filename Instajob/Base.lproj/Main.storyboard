@@ -591,26 +591,9 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="goZ-av-5f5">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ejS-9K-eSC">
-                                    <rect key="frame" x="1" y="1" width="318" height="42"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="ejS-9K-eSC" secondAttribute="bottom" constant="1" id="9ed-2u-hCa"/>
-                                <constraint firstItem="ejS-9K-eSC" firstAttribute="top" secondItem="goZ-av-5f5" secondAttribute="top" constant="1" id="cfQ-JB-egv"/>
-                                <constraint firstItem="ejS-9K-eSC" firstAttribute="leading" secondItem="goZ-av-5f5" secondAttribute="leading" constant="1" id="egg-6g-dGB"/>
-                                <constraint firstAttribute="trailing" secondItem="ejS-9K-eSC" secondAttribute="trailing" constant="1" id="tqg-N3-diP"/>
-                            </constraints>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso1" rowHeight="70" id="qtt-1h-KDQ" customClass="VagaCelula" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qtt-1h-KDQ" id="unC-U0-unB">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
@@ -676,7 +659,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="4726.875" y="323.23943661971833"/>
+            <point key="canvasLocation" x="4556" y="300"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="S9G-qU-zgL">
@@ -838,7 +821,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <navigationItem id="J8g-B5-YmV">
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gPt-M4-3aA">
                                             <connections>
-                                                <segue destination="qjr-9g-Rck" kind="showDetail" id="uaZ-SZ-P8x"/>
+                                                <segue destination="qjr-9g-Rck" kind="showDetail" id="Yi8-wZ-uT2"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -921,7 +904,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
             </objects>
             <point key="canvasLocation" x="4726.875" y="-1900.3521126760563"/>
         </scene>
-        <!--Vagas Detalhes Empresa View Controller-->
+        <!--Master-->
         <scene sceneID="EcA-Ma-xdd">
             <objects>
                 <tableViewController id="qjr-9g-Rck" customClass="VagasDetalhesEmpresaViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
@@ -929,26 +912,9 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="Bnz-Ax-1Wh">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ZFc-vh-6M3">
-                                    <rect key="frame" x="1" y="1" width="318" height="42"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="trailing" secondItem="ZFc-vh-6M3" secondAttribute="trailing" constant="1" id="4YY-bO-rji"/>
-                                <constraint firstItem="ZFc-vh-6M3" firstAttribute="top" secondItem="Bnz-Ax-1Wh" secondAttribute="top" constant="1" id="7kq-cB-1nZ"/>
-                                <constraint firstItem="ZFc-vh-6M3" firstAttribute="leading" secondItem="Bnz-Ax-1Wh" secondAttribute="leading" constant="1" id="f8C-Sq-RYx"/>
-                                <constraint firstAttribute="bottom" secondItem="ZFc-vh-6M3" secondAttribute="bottom" constant="1" id="kdm-Xk-jop"/>
-                            </constraints>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" id="Vrm-9M-3RB" customClass="VagaCelula" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vrm-9M-3RB" id="NfE-Or-4Ok">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
@@ -994,15 +960,23 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="qjr-9g-Rck" id="19E-C8-NlQ"/>
-                            <outlet property="delegate" destination="qjr-9g-Rck" id="Zfo-P4-E5z"/>
-                        </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Master" id="w3h-zc-wKq"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="3yo-mR-pr5" id="yif-hH-Yit"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAf-Kr-hLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="3yo-mR-pr5">
+                    <connections>
+                        <outlet property="delegate" destination="qjr-9g-Rck" id="3F8-NZ-snl"/>
+                        <outlet property="searchContentsController" destination="qjr-9g-Rck" id="C4c-Wk-WEw"/>
+                        <outlet property="searchResultsDataSource" destination="qjr-9g-Rck" id="ckc-xQ-55P"/>
+                        <outlet property="searchResultsDelegate" destination="qjr-9g-Rck" id="W4W-fS-7ZG"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="5566.875" y="-1900.3521126760563"/>
+            <point key="canvasLocation" x="5835" y="-1900"/>
         </scene>
         <!--Vagas Detalhes Celula Empresa View Controller-->
         <scene sceneID="V9Y-Uw-pyU">
@@ -1017,14 +991,14 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Nn-Tc-4YK">
-                                <rect key="frame" x="90" y="28" width="140" height="140"/>
+                                <rect key="frame" x="16" y="28" width="288" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="QXF-gT-gHO"/>
+                                    <constraint firstAttribute="width" constant="288" id="QXF-gT-gHO"/>
                                     <constraint firstAttribute="height" constant="140" id="xUq-RH-Bp0"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eph-sB-pGA">
-                                <rect key="frame" x="16" y="205" width="288" height="20.5"/>
+                                <rect key="frame" x="16" y="205" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1039,8 +1013,11 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <action selector="buttonCandidatar:" destination="IkX-nD-wEp" eventType="touchUpInside" id="HEu-Xk-gn9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-UU-1vB">
-                                <rect key="frame" x="16" y="255" width="288" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-UU-1vB">
+                                <rect key="frame" x="16" y="255" width="288" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="DgC-fm-78f"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1048,15 +1025,16 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aqO-PW-KZf" firstAttribute="top" secondItem="d1t-UU-1vB" secondAttribute="bottom" constant="26" id="4nK-7r-Tmn"/>
                             <constraint firstItem="Eph-sB-pGA" firstAttribute="top" secondItem="6Nn-Tc-4YK" secondAttribute="bottom" constant="37" id="4oa-zM-f78"/>
                             <constraint firstItem="6Nn-Tc-4YK" firstAttribute="top" secondItem="6VN-Qj-7Ne" secondAttribute="bottom" constant="8" id="60x-pK-1hW"/>
-                            <constraint firstItem="d1t-UU-1vB" firstAttribute="top" secondItem="Eph-sB-pGA" secondAttribute="bottom" constant="29.5" id="AxC-o2-f4b"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Eph-sB-pGA" secondAttribute="trailing" id="DwK-XC-tyZ"/>
                             <constraint firstItem="d1t-UU-1vB" firstAttribute="leading" secondItem="Eph-sB-pGA" secondAttribute="leading" id="Jvz-MS-DNL"/>
                             <constraint firstItem="d1t-UU-1vB" firstAttribute="trailing" secondItem="Eph-sB-pGA" secondAttribute="trailing" id="Rz3-kb-MZn"/>
-                            <constraint firstItem="aqO-PW-KZf" firstAttribute="top" secondItem="d1t-UU-1vB" secondAttribute="bottom" constant="154" id="aC5-y9-YtS"/>
+                            <constraint firstItem="d1t-UU-1vB" firstAttribute="top" secondItem="Eph-sB-pGA" secondAttribute="bottom" constant="29" id="eTI-Fl-dTm"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Eph-sB-pGA" secondAttribute="leading" id="fm5-pf-EIo"/>
                             <constraint firstItem="aqO-PW-KZf" firstAttribute="trailing" secondItem="d1t-UU-1vB" secondAttribute="trailing" id="ib5-ow-dWt"/>
+                            <constraint firstItem="vSe-8c-JBQ" firstAttribute="top" secondItem="aqO-PW-KZf" secondAttribute="bottom" constant="108" id="m8m-YK-Ht2"/>
                             <constraint firstItem="6Nn-Tc-4YK" firstAttribute="centerX" secondItem="InN-1r-Lmy" secondAttribute="centerX" id="mvK-Ex-4m0"/>
                             <constraint firstItem="aqO-PW-KZf" firstAttribute="leading" secondItem="d1t-UU-1vB" secondAttribute="leading" id="uWH-Mf-QUK"/>
                         </constraints>
@@ -1069,7 +1047,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jw-Eg-nBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6448.125" y="-1900.3521126760563"/>
+            <point key="canvasLocation" x="8405.625" y="-1900.3521126760563"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="Dfo-8Q-6PR">
