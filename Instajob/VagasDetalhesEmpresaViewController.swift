@@ -14,19 +14,32 @@ import FirebaseDatabase
 class VagasDetalhesEmpresaViewController: UITableViewController {
     
     var array:[Vagas] = []
-
+    let searchController = UISearchController(searchResultsController: nil)
+    var filtroVagas = [Vagas]()
+    
+    func filterContentForSearchText(searchText:String, scope: String = "All"){
+        
+        filtroVagas = array.filter({ (resultVaga) in
+            return resultVaga.titulo.lowercased().contains(searchText.lowercased())
+        })
+        tableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         carregarDados()
-       
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
 
     }
     func carregarDados () {
         var ref: DatabaseReference!
         ref = Database.database().reference()
         
-        ref.child("empresa/vaga").observe(DataEventType.value) { (dados, erro) in
+        ref.child("vaga").observe(DataEventType.value) { (dados, erro) in
             if let valor = dados.value as? NSDictionary{
                 for vagaAdd in valor.allKeys{
                     if let newValue = valor[vagaAdd] as? NSDictionary {
@@ -51,9 +64,16 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if searchController.isActive && searchController.searchBar.text != ""{
+        
+            return filtroVagas.count
+        }
         return array.count
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let celulaReuso = "celulaReuso"
@@ -63,12 +83,18 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
         celula.imageEmpresa.layer.cornerRadius = 45
         celula.imageEmpresa.clipsToBounds = true
         
+        var vagaResult: Vagas
         
-            let umaVaga = array[indexPath.row]
+        if searchController.isActive && searchController.searchBar.text != ""{
             
-            celula.tituloLabel.text = umaVaga.titulo
-            celula.descricaoLabel.text = umaVaga.descricao
-            celula.imageEmpresa.image = umaVaga.image
+             vagaResult = filtroVagas[indexPath.row]
+        }else{
+             vagaResult = array[indexPath.row]
+        }
+            
+            celula.tituloLabel.text = vagaResult.titulo
+            celula.descricaoLabel.text = vagaResult.descricao
+            celula.imageEmpresa.image = vagaResult.image
         
             return celula
     }
@@ -79,11 +105,25 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
 
                 if let indexPath = tableView.indexPathForSelectedRow {
 
-                    let vagaSelecionada = self.array [ indexPath.row ]
+                    let vagaSelecionada: Vagas
+                    
+                    if searchController.isActive && searchController.searchBar.text != ""{
+                        
+                        vagaSelecionada = filtroVagas[indexPath.row]
+                    }else{
+                        vagaSelecionada = array[indexPath.row]
+                    }
+
                     let VC = segue.destination as! VagasDetalhesCelulaEmpresaViewController
                     VC.Vaga = vagaSelecionada
 
                 }
             }
         }
+}
+extension VagasDetalhesEmpresaViewController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchText: searchController.searchBar.text!)
+    }
 }

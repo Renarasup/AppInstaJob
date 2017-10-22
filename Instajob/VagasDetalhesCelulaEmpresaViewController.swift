@@ -26,12 +26,13 @@ class VagasDetalhesCelulaEmpresaViewController: UIViewController {
         descricaoVaga.text = Vaga.descricao
         tituloVaga.text = Vaga.titulo
   
-//        imageVaga.layer.cornerRadius = 42
-//        imageVaga.clipsToBounds = true
     }
 
-    @IBAction func buttonCandidatar(_ sender: Any) {
-        
+    @IBAction func buttonFinalizarVaga(_ sender: Any) {
     }
+   
     
+    @IBAction func buttonDismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

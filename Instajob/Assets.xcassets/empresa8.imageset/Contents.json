@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "empresa8.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "arrow-left1.png",
       "scale" : "2x"
     },
     {

@@ -49,19 +49,17 @@ class RegisterEmpresaViewController: UIViewController {
         }
         
         let dataBase = Database.database().reference()
+        let timeStamp = Int(NSDate.timeIntervalSinceReferenceDate*1000)
         
-        let userEmpresa = dataBase.child("usuarioEmpresa")
+        let dadosEmpresa = ["Razao Social" : textRazaoSocial.text,
+                            "CNPJ" : textCnpj.text,
+                            "Cidade" : cidadeEmpresa.text,
+                            "Email" : textEmailEmpresa.text,
+                            "Senha" : textSenha.text]
         
-        userEmpresa.childByAutoId().child("Razao social").setValue(textRazaoSocial.text)
-        //userEmpresa.childByAutoId().
-        
-        textRazaoSocial.text = ""
-        textCnpj.text = ""
-        cidadeEmpresa.text = ""
-        textSenha.text = ""
-        textRepeatSenha.text = ""
-        textEmailEmpresa.text = ""
-        
+        let userEmpresa = dataBase.child("empresa")
+        userEmpresa.child(String(timeStamp)).setValue(dadosEmpresa)
+               
         dismiss(animated: true, completion: nil)
     }
 

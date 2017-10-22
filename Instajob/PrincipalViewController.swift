@@ -31,11 +31,11 @@ class PrincipalViewController: UIViewController {
 
     func animation()
     {
-        UIView.animate(withDuration: 3) {
+        UIView.animate(withDuration: 1) {
             self.butonCandidato.frame.origin = CGPoint(x: -250, y: self.butonCandidato.frame.origin.y)
             self.buttonEmpresa.frame.origin = CGPoint(x: 350, y: self.buttonEmpresa.frame.origin.y)
         }
-        UIView.animate(withDuration: 7) {
+        UIView.animate(withDuration: 3) {
             self.subTitle.alpha = 1
         }
     }

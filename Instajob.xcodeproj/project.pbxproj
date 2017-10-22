@@ -10,6 +10,7 @@
 		220F4DCF1F6B53B1006DD1A0 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F4DCE1F6B53B1006DD1A0 /* PrincipalViewController.swift */; };
 		220F4DD51F6B635A006DD1A0 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 220F4DD41F6B635A006DD1A0 /* fonts */; };
 		224A07991F83178B005001A7 /* Instajob.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 224A07971F83178B005001A7 /* Instajob.xcdatamodeld */; };
+		226339A81F9BDC5F00A203BF /* vagasDetalhesCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226339A71F9BDC5F00A203BF /* vagasDetalhesCandidatoViewController.swift */; };
 		226789A21F7856750074BC3A /* RegisterEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226789A11F7856750074BC3A /* RegisterEmpresaViewController.swift */; };
 		226789A41F78568F0074BC3A /* PerfilEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226789A31F78568F0074BC3A /* PerfilEmpresaViewController.swift */; };
 		226789A61F7856FB0074BC3A /* VagasEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226789A51F7856FB0074BC3A /* VagasEmpresaViewController.swift */; };
@@ -43,6 +44,7 @@
 		220F4DCE1F6B53B1006DD1A0 /* PrincipalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		220F4DD41F6B635A006DD1A0 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		224A07981F83178B005001A7 /* Instajob.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instajob.xcdatamodel; sourceTree = "<group>"; };
+		226339A71F9BDC5F00A203BF /* vagasDetalhesCandidatoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vagasDetalhesCandidatoViewController.swift; sourceTree = "<group>"; };
 		226789A11F7856750074BC3A /* RegisterEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterEmpresaViewController.swift; sourceTree = "<group>"; };
 		226789A31F78568F0074BC3A /* PerfilEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilEmpresaViewController.swift; sourceTree = "<group>"; };
 		226789A51F7856FB0074BC3A /* VagasEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VagasEmpresaViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				F5890F331F5F223F0049C731 /* registerViewController.swift */,
 				F5890F231F5F216D0049C731 /* CandidatoViewController.swift */,
 				226789B91F78AFDC0074BC3A /* VagaCelulaCandidato.swift */,
+				226339A71F9BDC5F00A203BF /* vagasDetalhesCandidatoViewController.swift */,
 				F58F8F501F966C47005425AA /* Noticias_Candidato */,
 			);
 			name = Candidato;
@@ -415,6 +418,7 @@
 				226789B41F785EC50074BC3A /* Vagas.swift in Sources */,
 				F59293FD1F7D1ED200923D65 /* Noticia3ViewController.swift in Sources */,
 				226789A81F7857160074BC3A /* VagasDetalhesEmpresaViewController.swift in Sources */,
+				226339A81F9BDC5F00A203BF /* vagasDetalhesCandidatoViewController.swift in Sources */,
 				226789A61F7856FB0074BC3A /* VagasEmpresaViewController.swift in Sources */,
 				226789A41F78568F0074BC3A /* PerfilEmpresaViewController.swift in Sources */,
 			);
@@ -545,7 +549,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Instajob/Instajob.temp_caseinsensitive_renameinfo.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CardManager.Instajob;
 				PRODUCT_NAME = Instajob.temp_caseinsensitive_rename;
@@ -562,7 +566,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Instajob/Instajob.temp_caseinsensitive_renameinfo.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CardManager.Instajob;
 				PRODUCT_NAME = Instajob.temp_caseinsensitive_rename;

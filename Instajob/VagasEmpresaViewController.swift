@@ -22,7 +22,7 @@ class VagasEmpresaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        textDescriptionVaga.alpha = 0.7
     }
 
 
@@ -34,10 +34,13 @@ class VagasEmpresaViewController: UIViewController {
         let dadosVaga = ["titulo" : textTituloVaga.text, "descricao" : textDescriptionVaga.text]
         
         let timeStamp = Int(NSDate.timeIntervalSinceReferenceDate*1000)
-        let result = docRef.child("empresa").child("vaga")
+        let result = docRef.child("vaga")
         result.child(String(timeStamp)).setValue(dadosVaga)
         
         }
     
-
+    @IBAction func buttonDismiss(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

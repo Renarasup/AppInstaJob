@@ -1,0 +1,243 @@
+
+/* Class = "UIButton"; normalTitle = "Entrar"; ObjectID = "0Yz-8S-2GC"; */
+"0Yz-8S-2GC.normalTitle" = "Entrar";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend "; ObjectID = "1lQ-GQ-QJx"; */
+"1lQ-GQ-QJx.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend ";
+
+/* Class = "UITextField"; placeholder = "Digite Email"; ObjectID = "1o8-Q2-v8I"; */
+"1o8-Q2-v8I.placeholder" = "Digite Email";
+
+/* Class = "UITextField"; placeholder = "SobreNome"; ObjectID = "3a3-zV-bmi"; */
+"3a3-zV-bmi.placeholder" = "SobreNome";
+
+/* Class = "UIButton"; normalTitle = "Cadastrar"; ObjectID = "4Ig-n9-u43"; */
+"4Ig-n9-u43.normalTitle" = "Cadastrar";
+
+/* Class = "UIButton"; normalTitle = "Candidatar Vaga"; ObjectID = "4hk-7z-hUu"; */
+"4hk-7z-hUu.normalTitle" = "Candidatar Vaga";
+
+/* Class = "UILabel"; text = "22 Outubro"; ObjectID = "5fe-O7-fhR"; */
+"5fe-O7-fhR.text" = "22 Outubro";
+
+/* Class = "UITextField"; placeholder = "Digite Razao Social"; ObjectID = "6JL-tK-Kdh"; */
+"6JL-tK-Kdh.placeholder" = "Digite Razao Social";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6mJ-9E-h3C"; */
+"6mJ-9E-h3C.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6wl-88-sOp"; */
+"6wl-88-sOp.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Digite Cnpj"; ObjectID = "7q0-9N-mRc"; */
+"7q0-9N-mRc.placeholder" = "Digite Cnpj";
+
+/* Class = "UILabel"; text = "staJob"; ObjectID = "8aI-cO-dy5"; */
+"8aI-cO-dy5.text" = "staJob";
+
+/* Class = "UIButton"; normalTitle = "Visualizar Vaga"; ObjectID = "9iL-eo-7dE"; */
+"9iL-eo-7dE.normalTitle" = "Visualizar Vaga";
+
+/* Class = "UITabBarItem"; title = "Perfil"; ObjectID = "APX-Rx-Nss"; */
+"APX-Rx-Nss.title" = "Perfil";
+
+/* Class = "UITabBarItem"; title = "Perfil"; ObjectID = "Ach-Jk-kzm"; */
+"Ach-Jk-kzm.title" = "Perfil";
+
+/* Class = "UILabel"; text = "Descricao"; ObjectID = "BTd-fV-Nfa"; */
+"BTd-fV-Nfa.text" = "Descricao";
+
+/* Class = "UIButton"; normalTitle = "Entrar"; ObjectID = "C64-oU-3Qx"; */
+"C64-oU-3Qx.normalTitle" = "Entrar";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend "; ObjectID = "D2N-u5-Foy"; */
+"D2N-u5-Foy.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend ";
+
+/* Class = "UILabel"; text = "Tecnologia"; ObjectID = "DRd-7G-3r1"; */
+"DRd-7G-3r1.text" = "Tecnologia";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Eph-sB-pGA"; */
+"Eph-sB-pGA.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Digite sua senha"; ObjectID = "ErA-CX-0nw"; */
+"ErA-CX-0nw.placeholder" = "Digite sua senha";
+
+/* Class = "UITabBarItem"; title = "Noticias"; ObjectID = "F1q-QG-yYI"; */
+"F1q-QG-yYI.title" = "Noticias";
+
+/* Class = "UILabel"; text = "baunaojnfioasiofaiofnasijofnajonosunfonfoasnoifasonfaiosnfasnfs"; ObjectID = "F2h-52-3HY"; */
+"F2h-52-3HY.text" = "baunaojnfioasiofaiofnasijofnajonosunfonfoasnoifasonfaiosnfasnfs";
+
+/* Class = "UITextField"; placeholder = "Senha"; ObjectID = "FBx-p9-39S"; */
+"FBx-p9-39S.placeholder" = "Senha";
+
+/* Class = "UITextField"; placeholder = "senha"; ObjectID = "FEB-9z-lON"; */
+"FEB-9z-lON.placeholder" = "senha";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FIx-dc-iJp"; */
+"FIx-dc-iJp.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Digite sua senha"; ObjectID = "FWc-FY-TSd"; */
+"FWc-FY-TSd.placeholder" = "Digite sua senha";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "Fx3-Zp-Iq7"; */
+"Fx3-Zp-Iq7.title" = "Item";
+
+/* Class = "UILabel"; text = "ihushuashduudhudhasudh"; ObjectID = "H0L-Qc-WAG"; */
+"H0L-Qc-WAG.text" = "ihushuashduudhudhasudh";
+
+/* Class = "UITextField"; placeholder = "Digite seu Email"; ObjectID = "HCv-sB-sob"; */
+"HCv-sB-sob.placeholder" = "Digite seu Email";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HVH-Dm-BI6"; */
+"HVH-Dm-BI6.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Fechar"; ObjectID = "IgC-He-jph"; */
+"IgC-He-jph.normalTitle" = "Fechar";
+
+/* Class = "UIButton"; normalTitle = "Cadastrar"; ObjectID = "JqS-qw-Tyg"; */
+"JqS-qw-Tyg.normalTitle" = "Cadastrar";
+
+/* Class = "UITabBarItem"; title = "Vagas"; ObjectID = "LVp-38-2pz"; */
+"LVp-38-2pz.title" = "Vagas";
+
+/* Class = "UITextField"; placeholder = "Repita sua senha "; ObjectID = "MLr-Tx-HUr"; */
+"MLr-Tx-HUr.placeholder" = "Repita sua senha ";
+
+/* Class = "UIButton"; normalTitle = "Fechar"; ObjectID = "Mbu-LU-94H"; */
+"Mbu-LU-94H.normalTitle" = "Fechar";
+
+/* Class = "UITextField"; placeholder = "Digite Senha"; ObjectID = "N7f-vR-VSf"; */
+"N7f-vR-VSf.placeholder" = "Digite Senha";
+
+/* Class = "UITextField"; placeholder = "Razao Social"; ObjectID = "Nqz-Ld-eg4"; */
+"Nqz-Ld-eg4.placeholder" = "Razao Social";
+
+/* Class = "UILabel"; text = "Esteja entre os Melhores"; ObjectID = "Pqt-iH-OLG"; */
+"Pqt-iH-OLG.text" = "Esteja entre os Melhores";
+
+/* Class = "UITextField"; placeholder = "Cnpj"; ObjectID = "PuN-Kw-HFk"; */
+"PuN-Kw-HFk.placeholder" = "Cnpj";
+
+/* Class = "UIButton"; normalTitle = "Cadastrar Vaga"; ObjectID = "Qdy-8S-9AX"; */
+"Qdy-8S-9AX.normalTitle" = "Cadastrar Vaga";
+
+/* Class = "UITextField"; placeholder = "Cidade da Empresa"; ObjectID = "Uu7-Fr-SJR"; */
+"Uu7-Fr-SJR.placeholder" = "Cidade da Empresa";
+
+/* Class = "UITabBarItem"; title = "Vagas"; ObjectID = "WXV-lD-0gU"; */
+"WXV-lD-0gU.title" = "Vagas";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend "; ObjectID = "WeV-fI-PnZ"; */
+"WeV-fI-PnZ.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend ";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend "; ObjectID = "XjT-Th-60z"; */
+"XjT-Th-60z.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend ";
+
+/* Class = "UILabel"; text = "Tecnologia"; ObjectID = "aeJ-LT-hCP"; */
+"aeJ-LT-hCP.text" = "Tecnologia";
+
+/* Class = "UIButton"; normalTitle = "Finalizar Vaga"; ObjectID = "aqO-PW-KZf"; */
+"aqO-PW-KZf.normalTitle" = "Finalizar Vaga";
+
+/* Class = "UILabel"; text = "ihushuashduudhudhasudh"; ObjectID = "bHN-ao-4lo"; */
+"bHN-ao-4lo.text" = "ihushuashduudhudhasudh";
+
+/* Class = "UITextField"; placeholder = "Nome "; ObjectID = "bNu-0R-Okq"; */
+"bNu-0R-Okq.placeholder" = "Nome ";
+
+/* Class = "UITextField"; placeholder = "Digite seu email"; ObjectID = "brD-vl-wDv"; */
+"brD-vl-wDv.placeholder" = "Digite seu email";
+
+/* Class = "UILabel"; text = "staJob"; ObjectID = "c6V-Af-SkY"; */
+"c6V-Af-SkY.text" = "staJob";
+
+/* Class = "UIButton"; normalTitle = "Empresa"; ObjectID = "cau-EA-S3y"; */
+"cau-EA-S3y.normalTitle" = "Empresa";
+
+/* Class = "UITextField"; placeholder = "Repita seu email "; ObjectID = "ccj-0K-4cu"; */
+"ccj-0K-4cu.placeholder" = "Repita seu email ";
+
+/* Class = "UIButton"; normalTitle = "Salvar"; ObjectID = "cm3-W6-PGM"; */
+"cm3-W6-PGM.normalTitle" = "Salvar";
+
+/* Class = "UILabel"; text = "baunaojnfioasiofaiofnasijofnajonosunfonfoasnoifasonfaiosnfasnfs"; ObjectID = "cqa-5v-8Xl"; */
+"cqa-5v-8Xl.text" = "baunaojnfioasiofaiofnasijofnajonosunfonfoasnoifasonfaiosnfasnfs";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "d1t-UU-1vB"; */
+"d1t-UU-1vB.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Cadastrar"; ObjectID = "dLH-bY-ADW"; */
+"dLH-bY-ADW.normalTitle" = "Cadastrar";
+
+/* Class = "UITextField"; placeholder = "Sobrenome"; ObjectID = "dWM-5b-fSu"; */
+"dWM-5b-fSu.placeholder" = "Sobrenome";
+
+/* Class = "UILabel"; text = "Vaga"; ObjectID = "gE9-aG-B4R"; */
+"gE9-aG-B4R.text" = "Vaga";
+
+/* Class = "UIButton"; normalTitle = "Fechar"; ObjectID = "iFR-dq-7z6"; */
+"iFR-dq-7z6.normalTitle" = "Fechar";
+
+/* Class = "UIButton"; normalTitle = "cadastrar"; ObjectID = "k9O-Is-gRr"; */
+"k9O-Is-gRr.normalTitle" = "cadastrar";
+
+/* Class = "UILabel"; text = "staJob"; ObjectID = "kVQ-FT-UIr"; */
+"kVQ-FT-UIr.text" = "staJob";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "miZ-Og-4JT"; */
+"miZ-Og-4JT.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Salvar"; ObjectID = "nez-u0-sqa"; */
+"nez-u0-sqa.normalTitle" = "Salvar";
+
+/* Class = "UILabel"; text = "ihushuashduudhudhasudh"; ObjectID = "oDY-Z8-OzM"; */
+"oDY-Z8-OzM.text" = "ihushuashduudhudhasudh";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "opt-ZP-tuz"; */
+"opt-ZP-tuz.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "22 Outubro"; ObjectID = "qDz-2Q-cJY"; */
+"qDz-2Q-cJY.text" = "22 Outubro";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend "; ObjectID = "rUe-CH-ElW"; */
+"rUe-CH-ElW.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend ";
+
+/* Class = "UITextField"; placeholder = "Digite seu Login"; ObjectID = "t3F-q4-3nf"; */
+"t3F-q4-3nf.placeholder" = "Digite seu Login";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tQn-zq-EYD"; */
+"tQn-zq-EYD.text" = "Label";
+
+/* Class = "UILabel"; text = "ihushuashduudhudhasudh"; ObjectID = "u7L-Jm-fSY"; */
+"u7L-Jm-fSY.text" = "ihushuashduudhudhasudh";
+
+/* Class = "UITabBarItem"; title = "news"; ObjectID = "vA6-to-OKV"; */
+"vA6-to-OKV.title" = "news";
+
+/* Class = "UINavigationItem"; title = "Master"; ObjectID = "w3h-zc-wKq"; */
+"w3h-zc-wKq.title" = "Master";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend "; ObjectID = "wOY-q1-51N"; */
+"wOY-q1-51N.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget \n\nDuis tempor erat orci, sed scelerisque turpis eleifend ";
+
+/* Class = "UITextField"; placeholder = "Nome"; ObjectID = "xQg-wy-fpe"; */
+"xQg-wy-fpe.placeholder" = "Nome";
+
+/* Class = "UILabel"; text = "staJob"; ObjectID = "yF1-Oy-jXI"; */
+"yF1-Oy-jXI.text" = "staJob";
+
+/* Class = "UITextField"; placeholder = "Repita Senha"; ObjectID = "yrx-XP-Rsk"; */
+"yrx-XP-Rsk.placeholder" = "Repita Senha";
+
+/* Class = "UIButton"; normalTitle = "Candidato"; ObjectID = "z55-Sb-Gag"; */
+"z55-Sb-Gag.normalTitle" = "Candidato";
+
+/* Class = "UILabel"; text = "Insira suas vagas e tenha acesso aos melhores profissionais do mercado"; ObjectID = "z8q-MT-OhD"; */
+"z8q-MT-OhD.text" = "Insira suas vagas e tenha acesso aos melhores profissionais do mercado";
+
+/* Class = "UIButton"; normalTitle = "Cadastrar"; ObjectID = "zY5-Pg-Tn7"; */
+"zY5-Pg-Tn7.normalTitle" = "Cadastrar";
+
+/* Class = "UILabel"; text = "staJob"; ObjectID = "zz8-GZ-D2w"; */
+"zz8-GZ-D2w.text" = "staJob";
