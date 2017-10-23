@@ -32,7 +32,7 @@ class vagasCandidatoViewController: UITableViewController {
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
-        
+                
     }
     func carregarDados () {
         var ref: DatabaseReference!

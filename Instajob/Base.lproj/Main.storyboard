@@ -732,7 +732,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeS-bs-dfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5499" y="750"/>
+            <point key="canvasLocation" x="5497.5" y="750"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="S9G-qU-zgL">
@@ -924,7 +924,6 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
         <!--Vagas-->
         <scene sceneID="ggI-ef-wTc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h6P-HT-A3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="IMi-uq-taX" customClass="VagasEmpresaViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="03E-O5-hJi"/>
@@ -1022,6 +1021,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         <outlet property="textTituloVaga" destination="Jbx-Jr-N0J" id="Q9d-97-zcJ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6P-HT-A3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6172.5" y="-2197.1830985915494"/>
         </scene>
@@ -1278,7 +1278,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <constraint firstItem="AXp-fG-3VS" firstAttribute="top" secondItem="IgC-He-jph" secondAttribute="bottom" constant="101" id="wu3-cz-nha"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Perfil" image="user2" id="Ach-Jk-kzm"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="userLogo" id="Ach-Jk-kzm"/>
                     <connections>
                         <outlet property="textCnpj" destination="PuN-Kw-HFk" id="PXP-IW-Exk"/>
                         <outlet property="textRazaoSocial" destination="Nqz-Ld-eg4" id="jDD-h9-Yfb"/>
@@ -1788,7 +1788,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <constraint firstItem="opt-ZP-tuz" firstAttribute="trailing" secondItem="3a3-zV-bmi" secondAttribute="trailing" id="wVm-xR-o08"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Perfil" image="user2" id="APX-Rx-Nss"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="userLogo" id="APX-Rx-Nss"/>
                     <connections>
                         <outlet property="buttonFecharPerfil" destination="iFR-dq-7z6" id="Tr0-Im-lnX"/>
                         <outlet property="buttonSalvarPerfil" destination="cm3-W6-PGM" id="Tim-4d-5yh"/>
@@ -1825,7 +1825,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
         <image name="newspaper" width="32" height="32"/>
         <image name="principal2" width="271" height="186"/>
         <image name="tec2" width="1144" height="800"/>
-        <image name="user2" width="32" height="32"/>
+        <image name="userLogo" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Wzh-kU-W8e"/>
