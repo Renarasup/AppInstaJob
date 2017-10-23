@@ -10,16 +10,26 @@ import UIKit
 
 class vagasDetalhesCandidatoViewController: UIViewController {
     
+    @IBOutlet weak var vagaCandidatoImage: UIImageView!
+    @IBOutlet weak var vagaCandidatoTitulo: UILabel!
+    @IBOutlet weak var vagaCandadidatoDescricao: UILabel!
+    
+    
     var Vaga: Vagas!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        vagaImage.image = Vaga.image
-//        vagaDescricao.text = Vaga.descricao
-//        vagaTitulo.text = Vaga.titulo
+        vagaCandidatoImage.image = Vaga.image
+        vagaCandidatoTitulo.text = Vaga.titulo
+        vagaCandadidatoDescricao.text = Vaga.descricao
       
     }
 
+    @IBAction func buttonCancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
 }

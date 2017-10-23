@@ -113,7 +113,7 @@ class vagasCandidatoViewController: UITableViewController {
                     vagaSelecionada = array[indexPath.row]
                 }
                 
-                let VC = segue.destination as! VagasDetalhesCelulaEmpresaViewController
+                let VC = segue.destination as! vagasDetalhesCandidatoViewController
                 VC.Vaga = vagaSelecionada
                 
             }
