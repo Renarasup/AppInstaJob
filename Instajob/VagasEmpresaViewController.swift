@@ -18,11 +18,14 @@ class VagasEmpresaViewController: UIViewController {
     
     @IBOutlet weak var textTituloVaga: UITextField!
     @IBOutlet weak var textDescriptionVaga: UITextView!
+    @IBOutlet weak var buttonCadastrar: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textDescriptionVaga.alpha = 0.7
+        self.buttonCadastrar.layer.cornerRadius = 10
     }
 
 

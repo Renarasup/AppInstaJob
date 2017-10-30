@@ -18,6 +18,7 @@ class CandidatoViewController: UIViewController {
     @IBOutlet weak var textSenha: UITextField!
     @IBOutlet weak var buttonEntrar: UIButton!
     @IBOutlet weak var buttonCadastrar: UIButton!
+    @IBOutlet weak var resetSenha: UIButton!
     
     
     override func viewDidLoad() {
@@ -25,6 +26,7 @@ class CandidatoViewController: UIViewController {
        
         buttonEntrar.layer.cornerRadius = 10
         buttonCadastrar.layer.cornerRadius = 10
+        self.resetSenha.layer.cornerRadius = 10
         
     }
 
@@ -35,25 +37,44 @@ class CandidatoViewController: UIViewController {
         
         usuario.signIn(withEmail: textLogin.text!, password: textSenha.text!) { (usuario, erro) in
             
-            if usuario != nil {
+            if erro == nil {
                 
                 print ("acesso autorizado")
-            
+                
             }else {
                 
-                
-                let alertController = UIAlertController(title: "Acesso negado", message: "Email ou Senha incorretos", preferredStyle: .alert)
-                
-                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                
-                self.present(alertController, animated: true, completion: nil)
+                let alertaController = UIAlertController(title: "Sucesso", message: "seus dados foram salvos", preferredStyle: .alert)
+                let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alertaController.addAction(alertaConfirmar)
+                self.present(alertaController, animated: true, completion: nil)
+                print("chegou aki")
+            }
+            
+            func alert() {
                 
             }
-
         }
-        
-        
     }
+  
+    
+    @IBAction func resetSenha(_ sender: Any) {
+        let email = textLogin.text
+        Auth.auth().sendPasswordReset(withEmail: email!) { (error) in
+            if error == nil {
+                 print("o email foi enviado")
+            }else{
+               print("ocorreu algum erro")
+            }
+        }
+    
+    
+    }
+    
+    @IBAction func buttonDismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
 
 }
 

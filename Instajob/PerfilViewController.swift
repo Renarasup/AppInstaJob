@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class PerfilViewController: UIViewController {
 
@@ -22,9 +24,6 @@ class PerfilViewController: UIViewController {
     @IBOutlet var labelDark: UIView!
     
     
-    
-    let defaults = UserDefaults.standard
-    
     override func viewDidLoad() {
         super.viewDidLoad()
      //formatando botao
@@ -32,51 +31,22 @@ class PerfilViewController: UIViewController {
      buttonFecharPerfil.layer.cornerRadius = 10
      fotoPerfil.layer.cornerRadius = 42
      fotoPerfil.clipsToBounds = true
-     
-    //recebendo dados
-//     nomeTextField.text = defaults.string(forKey: "nome")
-//     sobreNomeTextField.text = defaults.string(forKey: "sobrenome")
-//     emailTextField.text = defaults.string(forKey: "email")
-//     senhaTextField.text = defaults.string(forKey: "senha")
-    
+        
     }
 
     @IBAction func buttonSalvarPerfil(_ sender: Any) {
-//      setando dados com o UserDefaults
-//      defaults.set(nomeTextField.text, forKey: "nome")
-//      defaults.set(sobreNomeTextField.text, forKey: "sobrenome")
-//      defaults.set(emailTextField.text, forKey: "email")
-//      defaults.set(senhaTextField.text, forKey: "senha")
-//      defaults.synchronize()
-        
+
       nomeTextField.text = ""
       sobreNomeTextField.text = ""
       emailTextField.text = ""
       senhaTextField.text = ""
         
-      let alertaController = UIAlertController(title: "Sucesso", message: "seus dados foram salvos", preferredStyle: .alert)
-        let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertaController.addAction(alertaConfirmar)
-        present(alertaController, animated: true, completion: nil)
-    }
+         }
    
     @IBAction func buttonDismiss(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func temaButton(_ sender: Any) {
-        
-        UIView.animate(withDuration:TimeInterval(2), animations: {
-            self.view.backgroundColor = UIColor.darkGray
-            
-        })
-    }
-    
-    
-    
-    
-    
    
     
 }

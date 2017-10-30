@@ -22,13 +22,16 @@ class RegisterEmpresaViewController: UIViewController {
     @IBOutlet weak var textSenha: UITextField!
     @IBOutlet weak var textRepeatSenha: UITextField!
     @IBOutlet weak var textEmailEmpresa: UITextField!
+    @IBOutlet weak var buttonCadastrar: UIButton!
+    @IBOutlet weak var buttonFechar: UIButton!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      
+      self.buttonCadastrar.layer.cornerRadius = 10
+      self.buttonFechar.layer.cornerRadius = 10
     }
 
  

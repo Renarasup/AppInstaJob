@@ -10,24 +10,20 @@ import UIKit
 
 class NoticiasCandidatoViewController: UIViewController {
 
+    @IBOutlet weak var img1: UIButton!
+    @IBOutlet weak var img2: UIButton!
+    @IBOutlet weak var img3: UIButton!
+    
+    
     
  
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        imgPerfil.layer.cornerRadius = 42
-//        imgPerfil.clipsToBounds = true
-//        noticia1.layer.cornerRadius = 8
-//        noticia2.layer.cornerRadius = 8
-//        noticia3.layer.cornerRadius = 8
+        self.img1.layer.cornerRadius = 20
+        self.img2.layer.cornerRadius = 20
+        self.img3.layer.cornerRadius = 20
         
         
     }
-//
-//    @IBAction func buttonCancel(_ sender: Any) {
-//        
-//        dismiss(animated: true, completion: nil)
-//    }
-    
-
 }

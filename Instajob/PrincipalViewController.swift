@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class PrincipalViewController: UIViewController {
 
@@ -24,10 +25,10 @@ class PrincipalViewController: UIViewController {
         buttonEmpresa.layer.cornerRadius = 15
         butonCandidato.layer.cornerRadius = 15
         self.subTitle.alpha = 0
-
         animation()
-    
+        
     }
+    
 
     func animation()
     {
@@ -38,6 +39,18 @@ class PrincipalViewController: UIViewController {
         UIView.animate(withDuration: 3) {
             self.subTitle.alpha = 1
         }
+        
+        
     }
 
+    @IBAction func buttonCandidato(_ sender: UIButton) {
+        sender.pulse()
+        
+    }
+    
+    @IBAction func buttonEmpresa(_ sender: UIButton) {
+        sender.pulse()
+    }
+    
+    
 }

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		220F4DCF1F6B53B1006DD1A0 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F4DCE1F6B53B1006DD1A0 /* PrincipalViewController.swift */; };
 		220F4DD51F6B635A006DD1A0 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 220F4DD41F6B635A006DD1A0 /* fonts */; };
+		224900C11FA63AC30094F0D0 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224900C01FA63AC30094F0D0 /* LaunchScreen.swift */; };
+		224900C31FA679380094F0D0 /* OptionVagasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224900C21FA679380094F0D0 /* OptionVagasViewController.swift */; };
+		224900C51FA693AA0094F0D0 /* animationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224900C41FA693AA0094F0D0 /* animationViewController.swift */; };
 		224A07991F83178B005001A7 /* Instajob.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 224A07971F83178B005001A7 /* Instajob.xcdatamodeld */; };
 		226339A81F9BDC5F00A203BF /* vagasDetalhesCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226339A71F9BDC5F00A203BF /* vagasDetalhesCandidatoViewController.swift */; };
 		226789A21F7856750074BC3A /* RegisterEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226789A11F7856750074BC3A /* RegisterEmpresaViewController.swift */; };
@@ -19,6 +22,7 @@
 		226789B61F78704A0074BC3A /* VagaCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226789B51F78704A0074BC3A /* VagaCelula.swift */; };
 		226789B81F78A2980074BC3A /* VagasDetalhesCelulaEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226789B71F78A2980074BC3A /* VagasDetalhesCelulaEmpresaViewController.swift */; };
 		226789BA1F78AFDC0074BC3A /* VagaCelulaCandidato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226789B91F78AFDC0074BC3A /* VagaCelulaCandidato.swift */; };
+		22A00D141FA558A5002F221F /* CandidatoVagaCelulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A00D131FA558A5002F221F /* CandidatoVagaCelulaViewController.swift */; };
 		F585E8BA1F69734900BF9D04 /* NoticiasCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585E8B91F69734900BF9D04 /* NoticiasCandidatoViewController.swift */; };
 		F585E8BC1F699BEA00BF9D04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F585E8BB1F699BEA00BF9D04 /* GoogleService-Info.plist */; };
 		F5890F221F5F216D0049C731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F211F5F216D0049C731 /* AppDelegate.swift */; };
@@ -43,6 +47,9 @@
 /* Begin PBXFileReference section */
 		220F4DCE1F6B53B1006DD1A0 /* PrincipalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		220F4DD41F6B635A006DD1A0 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		224900C01FA63AC30094F0D0 /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		224900C21FA679380094F0D0 /* OptionVagasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionVagasViewController.swift; sourceTree = "<group>"; };
+		224900C41FA693AA0094F0D0 /* animationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animationViewController.swift; sourceTree = "<group>"; };
 		224A07981F83178B005001A7 /* Instajob.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instajob.xcdatamodel; sourceTree = "<group>"; };
 		226339A71F9BDC5F00A203BF /* vagasDetalhesCandidatoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vagasDetalhesCandidatoViewController.swift; sourceTree = "<group>"; };
 		226789A11F7856750074BC3A /* RegisterEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterEmpresaViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +60,7 @@
 		226789B51F78704A0074BC3A /* VagaCelula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VagaCelula.swift; sourceTree = "<group>"; };
 		226789B71F78A2980074BC3A /* VagasDetalhesCelulaEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VagasDetalhesCelulaEmpresaViewController.swift; sourceTree = "<group>"; };
 		226789B91F78AFDC0074BC3A /* VagaCelulaCandidato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VagaCelulaCandidato.swift; sourceTree = "<group>"; };
+		22A00D131FA558A5002F221F /* CandidatoVagaCelulaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatoVagaCelulaViewController.swift; sourceTree = "<group>"; };
 		6783B62CDF09D62F8548C27B /* Pods_testPersistencia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testPersistencia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8198776B593C138EA9B1B9FF /* Pods-testPersistencia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPersistencia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia.debug.xcconfig"; sourceTree = "<group>"; };
 		917A6FB032FB5BD24C22D1F5 /* Pods-testPersistencia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPersistencia.release.xcconfig"; path = "Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,9 +123,12 @@
 		2267899D1F7853830074BC3A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				22A00D121FA5583C002F221F /* CandidatoVaga */,
 				226789A01F7854610074BC3A /* Candidato */,
 				2267899F1F7854570074BC3A /* Empresa */,
 				220F4DCE1F6B53B1006DD1A0 /* PrincipalViewController.swift */,
+				224900C41FA693AA0094F0D0 /* animationViewController.swift */,
+				224900C01FA63AC30094F0D0 /* LaunchScreen.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -142,6 +153,7 @@
 				226789A71F7857160074BC3A /* VagasDetalhesEmpresaViewController.swift */,
 				226789B51F78704A0074BC3A /* VagaCelula.swift */,
 				226789B71F78A2980074BC3A /* VagasDetalhesCelulaEmpresaViewController.swift */,
+				224900C21FA679380094F0D0 /* OptionVagasViewController.swift */,
 				F59293FE1F7D1ED700923D65 /* Noticias */,
 			);
 			name = Empresa;
@@ -174,6 +186,14 @@
 			children = (
 			);
 			name = Candidato;
+			sourceTree = "<group>";
+		};
+		22A00D121FA5583C002F221F /* CandidatoVaga */ = {
+			isa = PBXGroup;
+			children = (
+				22A00D131FA558A5002F221F /* CandidatoVagaCelulaViewController.swift */,
+			);
+			name = CandidatoVaga;
 			sourceTree = "<group>";
 		};
 		6BFC3A04AD51C4AD1C088450 /* Pods */ = {
@@ -400,6 +420,7 @@
 				F5890F341F5F223F0049C731 /* registerViewController.swift in Sources */,
 				F5D7211C1F66D56D00BA94C7 /* vagasCandidatoViewController.swift in Sources */,
 				F5890F221F5F216D0049C731 /* AppDelegate.swift in Sources */,
+				224900C31FA679380094F0D0 /* OptionVagasViewController.swift in Sources */,
 				F58F8F4B1F966C1C005425AA /* NoticiaCandidato1ViewController.swift in Sources */,
 				F58B48EB1F682D8700F0C36C /* LoginEmpresaViewController.swift in Sources */,
 				226789A21F7856750074BC3A /* RegisterEmpresaViewController.swift in Sources */,
@@ -412,7 +433,9 @@
 				224A07991F83178B005001A7 /* Instajob.xcdatamodeld in Sources */,
 				F59293F91F7D1EB300923D65 /* Noticia1ViewController.swift in Sources */,
 				220F4DCF1F6B53B1006DD1A0 /* PrincipalViewController.swift in Sources */,
+				224900C51FA693AA0094F0D0 /* animationViewController.swift in Sources */,
 				F58F8F4F1F966C3B005425AA /* NoticiaCandidato3ViewController.swift in Sources */,
+				22A00D141FA558A5002F221F /* CandidatoVagaCelulaViewController.swift in Sources */,
 				226789BA1F78AFDC0074BC3A /* VagaCelulaCandidato.swift in Sources */,
 				F585E8BA1F69734900BF9D04 /* NoticiasCandidatoViewController.swift in Sources */,
 				226789B41F785EC50074BC3A /* Vagas.swift in Sources */,
@@ -420,6 +443,7 @@
 				226789A81F7857160074BC3A /* VagasDetalhesEmpresaViewController.swift in Sources */,
 				226339A81F9BDC5F00A203BF /* vagasDetalhesCandidatoViewController.swift in Sources */,
 				226789A61F7856FB0074BC3A /* VagasEmpresaViewController.swift in Sources */,
+				224900C11FA63AC30094F0D0 /* LaunchScreen.swift in Sources */,
 				226789A41F78568F0074BC3A /* PerfilEmpresaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
