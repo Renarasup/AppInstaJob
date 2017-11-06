@@ -11,9 +11,6 @@ import Foundation
 
 class PrincipalViewController: UIViewController {
 
-   
-    
-    
     @IBOutlet weak var butonCandidato: UIButton!
     @IBOutlet weak var buttonEmpresa: UIButton!
     @IBOutlet weak var subTitle: UILabel!

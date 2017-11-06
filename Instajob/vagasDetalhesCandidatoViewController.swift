@@ -30,7 +30,7 @@ class vagasDetalhesCandidatoViewController: UIViewController {
         
         let dataBase = Database.database().reference()
         let dadosVagaCandidato = ["nome" : nome,
-                            "email" : email ]
+                                  "email" : email ]
         
         let userEmpresa = dataBase.child("vaga").child("530830683750")
         userEmpresa.child("candidatos").child("001").setValue(dadosVagaCandidato)

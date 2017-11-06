@@ -20,38 +20,39 @@ class CandidatoViewController: UIViewController {
     @IBOutlet weak var buttonCadastrar: UIButton!
     @IBOutlet weak var resetSenha: UIButton!
     
+    var usuario = Auth.auth()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        buttonEntrar.layer.cornerRadius = 10
+              buttonEntrar.layer.cornerRadius = 10
         buttonCadastrar.layer.cornerRadius = 10
         self.resetSenha.layer.cornerRadius = 10
         
-    }
-
+        }
+    
+    
     @IBAction func buttonHome(_ sender: Any) {
         
-       
-        let usuario = Auth.auth()
-        
-        usuario.signIn(withEmail: textLogin.text!, password: textSenha.text!) { (usuario, erro) in
+        self.usuario.signIn(withEmail: textLogin.text!, password: textSenha.text!) { (usuario, erro) in
             
             if erro == nil {
                 
                 print ("acesso autorizado")
+                self.textLogin.text = ""
+                self.textSenha.text = ""
                 
             }else {
                 
-                let alertaController = UIAlertController(title: "Sucesso", message: "seus dados foram salvos", preferredStyle: .alert)
-                let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: nil)
-                alertaController.addAction(alertaConfirmar)
-                self.present(alertaController, animated: true, completion: nil)
-                print("chegou aki")
-            }
-            
-            func alert() {
+                DispatchQueue.main.async {
+                    print ("erro ao logar no app")
+                    let alertaController = UIAlertController(title: "Sucesso", message: "seus dados foram salvos", preferredStyle: .alert)
+                    let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alertaController.addAction(alertaConfirmar)
+                    self.present(alertaController, animated: true, completion: nil)
+                }
+         
                 
+                print("chegou aki")
             }
         }
     }

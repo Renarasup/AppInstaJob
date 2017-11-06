@@ -66,7 +66,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonCandidato:" destination="aI4-Hj-zAb" eventType="touchUpInside" id="POH-Uz-ZXJ"/>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="bcC-T3-ZPR"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="M8f-Mj-sMH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cau-EA-S3y">
@@ -280,7 +280,7 @@
                                 <rect key="frame" x="16" y="295" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
                                 </userDefinedRuntimeAttributes>
@@ -289,7 +289,7 @@
                                 <rect key="frame" x="16" y="350" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C64-oU-3Qx">
                                 <rect key="frame" x="16" y="399" width="288" height="30"/>
@@ -1302,16 +1302,16 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
             </objects>
             <point key="canvasLocation" x="7612.5" y="-1714.4366197183099"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Selection Candidato View Controller-->
         <scene sceneID="FgS-zt-KUj">
             <objects>
-                <tableViewController id="0IC-cd-KLJ" sceneMemberID="viewController">
+                <tableViewController id="0IC-cd-KLJ" customClass="SelectionCandidatoViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="jYl-4u-GeT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="WBX-Tt-hcy" customClass="CandidatoVagaCelulaViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="WBX-Tt-hcy" customClass="VagaCandidato" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WBX-Tt-hcy" id="XIp-2y-wwI">
@@ -1345,6 +1345,11 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                         <constraint firstItem="aaZ-wJ-zS5" firstAttribute="centerY" secondItem="XIp-2y-wwI" secondAttribute="centerY" id="mBs-eS-OWo"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="emailCandidatoLabel" destination="KcP-BK-Q6e" id="66O-Lt-G9s"/>
+                                    <outlet property="fotoCandidato" destination="aaZ-wJ-zS5" id="pfE-es-3cS"/>
+                                    <outlet property="nameCandidataoLabel" destination="Uc0-Ll-Qgp" id="Qhu-i2-pfZ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

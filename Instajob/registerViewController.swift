@@ -31,34 +31,28 @@ class registerViewController: UIViewController {
     @IBAction func buttonCadastrar(_ sender: Any) {
 
         let usuario = Auth.auth()
+         var docRef: DatabaseReference!
         
-        usuario.createUser(withEmail: textRegisterlogin.text!, password: textRegisterSenha.text!) { (Usuario, erro) in
+        let dadosUsuario = ["Nome": nomeTextField.text! ,
+                            "SobreNome":sobreNomeTextField.text!,
+                            "Login":textRegisterlogin.text!,
+                            "Senha" : textRegisterSenha.text!]
+        
+        
+        usuario.createUser(withEmail: textRegisterlogin.text!, password: textRegisterSenha.text!) { (usuario, erro) in
             
             if erro == nil {
                 
-                print ("usuario logado" + String( describing: Usuario?.email ) )
+                docRef = Database.database().reference()
+                let id = usuario?.uid
+                let criarVaga = docRef.child("candidato").child(id!)
+                criarVaga.setValue(dadosUsuario)
             }else {
                 
                 print ("usuario nao logado" + String( describing: erro?.localizedDescription ))
             }
         }
-        
-            let dadosUsuario = ["Nome": nomeTextField.text! ,
-                                "SobreNome":sobreNomeTextField.text!,
-                                "Login":textRegisterlogin.text!,
-                                "Senha" : textRegisterSenha.text!]
-        var docRef: DatabaseReference!
-        docRef = Database.database().reference()
-        let timeStamp = Int(NSDate.timeIntervalSinceReferenceDate*1000)
-        let criarVaga = docRef.child("candidato").child(String(timeStamp))
-        criarVaga.setValue(dadosUsuario)
-        
-        
-        
-        let recuperandoDados = criarVaga.key
-        
-        print(recuperandoDados)
-        
+    
         dismiss(animated: true, completion: nil)
         }
     
