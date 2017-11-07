@@ -14,9 +14,11 @@ class vagasDetalhesCandidatoViewController: UIViewController {
     @IBOutlet weak var vagaCandidatoImage: UIImageView!
     @IBOutlet weak var vagaCandidatoTitulo: UILabel!
     @IBOutlet weak var vagaCandadidatoDescricao: UILabel!
+    @IBOutlet weak var vagaCandidatoEmpresa: UILabel!
     
     let nome = "Diego William Crozare"
     let email = "crozare.crozare@hotmail.com"
+    var nomeVagaEmpresa = ""
     
     var Vaga: Vagas!
 
@@ -49,7 +51,7 @@ class vagasDetalhesCandidatoViewController: UIViewController {
         self.vagaCandidatoImage.image = Vaga.image
         self.vagaCandidatoTitulo.text = Vaga.titulo
         self.vagaCandadidatoDescricao.text = Vaga.descricao
-
+        self.vagaCandidatoEmpresa.text = Vaga.empresa
     }
     
 }

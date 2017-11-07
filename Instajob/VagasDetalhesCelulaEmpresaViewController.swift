@@ -10,22 +10,20 @@ import UIKit
 
 class VagasDetalhesCelulaEmpresaViewController: UIViewController {
 
-    
     @IBOutlet weak var imageVaga: UIImageView!
     @IBOutlet weak var descricaoVaga: UILabel!
     @IBOutlet weak var tituloVaga: UILabel!
-    
+    @IBOutlet weak var empresaVaga: UILabel!
     
     var Vaga: Vagas!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        imageVaga.image = Vaga.image
-        descricaoVaga.text = Vaga.descricao
-        tituloVaga.text = Vaga.titulo
-  
+        
+        self.imageVaga.image = Vaga.image
+        self.descricaoVaga.text = Vaga.descricao
+        self.tituloVaga.text = Vaga.titulo
+        self.empresaVaga.text = Vaga.empresa
     }
 
     @IBAction func buttonFinalizarVaga(_ sender: Any) {

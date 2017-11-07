@@ -9,37 +9,46 @@
 import UIKit
 import CoreData
 import FirebaseDatabase
+import FirebaseAuth
 
-
+  var usuario = Auth.auth()
+  var docRef: DatabaseReference!
 
 class VagasEmpresaViewController: UIViewController {
-
-    
     
     @IBOutlet weak var textTituloVaga: UITextField!
     @IBOutlet weak var textDescriptionVaga: UITextView!
     @IBOutlet weak var buttonCadastrar: UIButton!
+    @IBOutlet weak var textNameEmpresa: UITextField!
     
+    var razaoSocial:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textDescriptionVaga.alpha = 0.7
         self.buttonCadastrar.layer.cornerRadius = 10
+        docRef = Database.database().reference()
+        usuario.addStateDidChangeListener { (Auth, usuario) in
+            if let usuarioLogado = usuario {
+               docRef.child("empresa").child(usuarioLogado.uid).observe(DataEventType.value, with: { (dados) in
+                    
+                    if let valor = dados.value as? NSDictionary{
+                        self.textNameEmpresa.text = (valor["Razao Social"] as? String)!
+                    }
+                })
+            }else {
+                print("usuario nao logado")
+            }
+        }
     }
-
-
     @IBAction func buttonCadastrarVaga(_ sender: Any) {
-        
         var docRef: DatabaseReference!
         docRef = Database.database().reference()
         
-        let dadosVaga = ["titulo" : textTituloVaga.text, "descricao" : textDescriptionVaga.text]
-        
-        let timeStamp = Int(NSDate.timeIntervalSinceReferenceDate*1000)
+        let dadosVaga = ["titulo" : textTituloVaga.text, "descricao" : textDescriptionVaga.text, "empresa" : textNameEmpresa.text]
         let result = docRef.child("vaga")
-        result.child(String(timeStamp)).setValue(dadosVaga)
-        
+        result.child("\(String(describing: textTituloVaga.text!))+\(textNameEmpresa.text!)").setValue(dadosVaga)
         }
     
     @IBAction func buttonDismiss(_ sender: UIBarButtonItem) {

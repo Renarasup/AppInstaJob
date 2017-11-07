@@ -33,7 +33,6 @@ class PerfilViewController: UIViewController {
         fotoPerfil.clipsToBounds = true
         
         docRef = Database.database().reference()
-        
         veja.usuario.addStateDidChangeListener { (Auth, usuario) in
             if let usuarioLogado = usuario {
                 self.docRef.child("candidato").child(usuarioLogado.uid).observe(DataEventType.value, with: { (dados) in

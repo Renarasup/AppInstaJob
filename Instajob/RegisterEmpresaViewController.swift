@@ -14,8 +14,6 @@ import FirebaseDatabase
 
 class RegisterEmpresaViewController: UIViewController {
 
- 
-    
     @IBOutlet weak var textRazaoSocial: UITextField!
     @IBOutlet weak var textCnpj:JMMaskTextField!
     @IBOutlet weak var cidadeEmpresa: UITextField!
@@ -24,35 +22,17 @@ class RegisterEmpresaViewController: UIViewController {
     @IBOutlet weak var textEmailEmpresa: UITextField!
     @IBOutlet weak var buttonCadastrar: UIButton!
     @IBOutlet weak var buttonFechar: UIButton!
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
       self.buttonCadastrar.layer.cornerRadius = 10
       self.buttonFechar.layer.cornerRadius = 10
     }
-
- 
+    
     @IBAction func buttonCadastrarEmpresa(_ sender: Any) {
         
-        let usuario = Auth.auth()
-        
-        
-        usuario.createUser(withEmail: textEmailEmpresa.text!, password: textSenha.text!) { (Usuario, erro) in
-            
-            if erro == nil {
-                
-                print ("usuario Empresa logado" + String( describing: Usuario?.email ) )
-            }else {
-                
-                print ("usuario nao logado" + String( describing: erro?.localizedDescription ))
-            }
-        }
-        
-        let dataBase = Database.database().reference()
-        let timeStamp = Int(NSDate.timeIntervalSinceReferenceDate*1000)
+        let user = Auth.auth()
         
         let dadosEmpresa = ["Razao Social" : textRazaoSocial.text,
                             "CNPJ" : textCnpj.text,
@@ -60,9 +40,16 @@ class RegisterEmpresaViewController: UIViewController {
                             "Email" : textEmailEmpresa.text,
                             "Senha" : textSenha.text]
         
-        let userEmpresa = dataBase.child("empresa")
-        userEmpresa.child(String(timeStamp)).setValue(dadosEmpresa)
-               
+        user.createUser(withEmail: textEmailEmpresa.text!, password: textSenha.text!) { (usuario, erro) in
+            if erro == nil {
+                docRef = Database.database().reference()
+                let id = usuario?.uid
+                let criarVaga = docRef.child("empresa").child(id!)
+                criarVaga.setValue(dadosEmpresa)
+            }else {
+                print ("usuario nao logado" + String( describing: erro?.localizedDescription ))
+            }
+        }
         dismiss(animated: true, completion: nil)
     }
 

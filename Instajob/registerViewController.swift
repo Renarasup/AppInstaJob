@@ -22,42 +22,31 @@ class registerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         buttonCadastrar.layer.cornerRadius = 5
-        
     }
- 
     @IBAction func buttonCadastrar(_ sender: Any) {
 
         let usuario = Auth.auth()
-         var docRef: DatabaseReference!
         
         let dadosUsuario = ["Nome": nomeTextField.text! ,
                             "SobreNome":sobreNomeTextField.text!,
                             "Login":textRegisterlogin.text!,
                             "Senha" : textRegisterSenha.text!]
         
-        
         usuario.createUser(withEmail: textRegisterlogin.text!, password: textRegisterSenha.text!) { (usuario, erro) in
-            
             if erro == nil {
-                
                 docRef = Database.database().reference()
                 let id = usuario?.uid
                 let criarVaga = docRef.child("candidato").child(id!)
                 criarVaga.setValue(dadosUsuario)
             }else {
-                
                 print ("usuario nao logado" + String( describing: erro?.localizedDescription ))
             }
         }
-    
         dismiss(animated: true, completion: nil)
         }
     
     @IBAction func buttonCancel(_ sender: Any) {
-        
         dismiss(animated: true, completion: nil)
     }
 }

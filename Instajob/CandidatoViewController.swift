@@ -24,25 +24,19 @@ class CandidatoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-              buttonEntrar.layer.cornerRadius = 10
+        buttonEntrar.layer.cornerRadius = 10
         buttonCadastrar.layer.cornerRadius = 10
         self.resetSenha.layer.cornerRadius = 10
-        
         }
-    
-    
+
     @IBAction func buttonHome(_ sender: Any) {
         
         self.usuario.signIn(withEmail: textLogin.text!, password: textSenha.text!) { (usuario, erro) in
-            
             if erro == nil {
-                
                 print ("acesso autorizado")
                 self.textLogin.text = ""
                 self.textSenha.text = ""
-                
             }else {
-                
                 DispatchQueue.main.async {
                     print ("erro ao logar no app")
                     let alertaController = UIAlertController(title: "Sucesso", message: "seus dados foram salvos", preferredStyle: .alert)
@@ -50,14 +44,11 @@ class CandidatoViewController: UIViewController {
                     alertaController.addAction(alertaConfirmar)
                     self.present(alertaController, animated: true, completion: nil)
                 }
-         
-                
                 print("chegou aki")
             }
         }
     }
-  
-    
+
     @IBAction func resetSenha(_ sender: Any) {
         let email = textLogin.text
         Auth.auth().sendPasswordReset(withEmail: email!) { (error) in
@@ -67,15 +58,10 @@ class CandidatoViewController: UIViewController {
                print("ocorreu algum erro")
             }
         }
-    
-    
     }
     
     @IBAction func buttonDismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-
 }
 

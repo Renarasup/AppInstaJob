@@ -44,8 +44,9 @@ class vagasCandidatoViewController: UITableViewController {
                     if let newValue = valor[vagaAdd] as? NSDictionary {
                         let titulo = newValue["titulo"] as? String
                         let descricao = newValue["descricao"] as? String
+                        let empresa = newValue["empresa"] as? String
                         
-                        let vagaNew = Vagas(titulo: titulo!, descricao: descricao!, image: #imageLiteral(resourceName: "foto3x4"))
+                        let vagaNew = Vagas(titulo: titulo!, descricao: descricao!, image: #imageLiteral(resourceName: "foto3x4"), empresa: empresa!)
                         self.array.append(vagaNew)
                     }
                 }
@@ -55,10 +56,6 @@ class vagasCandidatoViewController: UITableViewController {
             }
         }
     }
-    
-    
-    
-    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
