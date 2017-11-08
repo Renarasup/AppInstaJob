@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
 class vagasDetalhesCandidatoViewController: UIViewController {
     
@@ -16,28 +17,46 @@ class vagasDetalhesCandidatoViewController: UIViewController {
     @IBOutlet weak var vagaCandadidatoDescricao: UILabel!
     @IBOutlet weak var vagaCandidatoEmpresa: UILabel!
     
-    let nome = "Diego William Crozare"
-    let email = "crozare.crozare@hotmail.com"
     var nomeVagaEmpresa = ""
     
     var Vaga: Vagas!
+    let usuario = Auth.auth()
+    var id = ""
+    var login:String = ""
+    var name:String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        docRef = Database.database().reference()
+        usuario.addStateDidChangeListener { (Auth, usuario) in
+            if let usuarioLogado = usuario {
+               self.id = usuarioLogado.uid
+               docRef.child("candidato").child(usuarioLogado.uid).observe(DataEventType.value, with: { (dados) in
+                    if let valor = dados.value as? NSDictionary{
+                         self.login = valor["Login"] as! String
+                         self.name = valor["Nome"] as! String
+                    }
+                })
+                
+            }else {
+                print("usuario nao logado")
+            }
+        }
         infVaga()
+        
     }
 
     @IBAction func buttonCandidatar(_ sender: Any) {
-        
+    
         let dataBase = Database.database().reference()
-        let dadosVagaCandidato = ["nome" : nome,
-                                  "email" : email ]
+        let dadosVagaCandidato = ["nome" : self.name,
+                                  "email" : self.login ]
         
         let vagaSelecionada: String = "\(Vaga.titulo!)+\(Vaga.empresa!)"
         
         let userEmpresa = dataBase.child("vaga").child(vagaSelecionada)
-        userEmpresa.child("candidatos").child("001").setValue(dadosVagaCandidato)
+        userEmpresa.child("candidatos").child(self.id).setValue(dadosVagaCandidato)
         
         let alertaController = UIAlertController(title: "Sucesso", message: "seus dados foram salvos", preferredStyle: .alert)
         let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: nil)
