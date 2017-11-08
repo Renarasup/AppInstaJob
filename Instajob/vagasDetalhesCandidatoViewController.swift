@@ -34,7 +34,9 @@ class vagasDetalhesCandidatoViewController: UIViewController {
         let dadosVagaCandidato = ["nome" : nome,
                                   "email" : email ]
         
-        let userEmpresa = dataBase.child("vaga").child("530830683750")
+        let vagaSelecionada: String = "\(Vaga.titulo!)+\(Vaga.empresa!)"
+        
+        let userEmpresa = dataBase.child("vaga").child(vagaSelecionada)
         userEmpresa.child("candidatos").child("001").setValue(dadosVagaCandidato)
         
         let alertaController = UIAlertController(title: "Sucesso", message: "seus dados foram salvos", preferredStyle: .alert)
