@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aI4-Hj-zAb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aI4-Hj-zAb">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -763,7 +763,6 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                 </state>
                                 <connections>
                                     <action selector="buttonCandidatar:" destination="O5a-LL-nTA" eventType="touchUpInside" id="Hvd-v3-lpb"/>
-                                    <action selector="buttonCandidatar:" destination="IkX-nD-wEp" eventType="touchUpInside" id="Jvy-Hb-xJ7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mJ-9E-h3C">
@@ -1248,7 +1247,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eph-sB-pGA">
-                                <rect key="frame" x="16" y="256" width="288" height="21"/>
+                                <rect key="frame" x="16" y="206" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1260,8 +1259,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonCandidatar:" destination="IkX-nD-wEp" eventType="touchUpInside" id="HEu-Xk-gn9"/>
-                                    <action selector="buttonFinalizarVaga:" destination="IkX-nD-wEp" eventType="touchUpInside" id="FLA-wG-cg1"/>
+                                    <action selector="buttonFinalizarVaga:" destination="IkX-nD-wEp" eventType="touchUpInside" id="kht-4y-7sB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dx3-rh-A8F">
@@ -1271,22 +1269,12 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonCandidatar:" destination="IkX-nD-wEp" eventType="touchUpInside" id="ybh-ry-YLR"/>
-                                    <action selector="buttonFinalizarVaga:" destination="IkX-nD-wEp" eventType="touchUpInside" id="Avt-sB-VVH"/>
-                                    <segue destination="0IC-cd-KLJ" kind="showDetail" id="SDQ-g6-zP0"/>
+                                    <action selector="buttonCandidatos:" destination="IkX-nD-wEp" eventType="touchUpInside" id="rQt-nR-ac1"/>
+                                    <segue destination="0IC-cd-KLJ" kind="showDetail" identifier="detalhesCandidatos" id="L3l-pC-eJ0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-UU-1vB">
-                                <rect key="frame" x="16" y="324" width="288" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="DgC-fm-78f"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Nn-Tc-4YK">
-                                <rect key="frame" x="16" y="81" width="288" height="140"/>
+                                <rect key="frame" x="16" y="40" width="288" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="QXF-gT-gHO"/>
                                     <constraint firstAttribute="height" constant="140" id="xUq-RH-Bp0"/>
@@ -1307,7 +1295,16 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHs-iV-HFY">
-                                <rect key="frame" x="16" y="285" width="288" height="21"/>
+                                <rect key="frame" x="16" y="247" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-UU-1vB">
+                                <rect key="frame" x="16" y="306" width="288" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="DgC-fm-78f"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1315,10 +1312,10 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         </subviews>
                         <color key="backgroundColor" red="0.60631734132766724" green="0.75672107934951782" blue="0.78864830732345581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="d1t-UU-1vB" firstAttribute="top" secondItem="eHs-iV-HFY" secondAttribute="bottom" constant="18" id="2EM-nn-HYR"/>
-                            <constraint firstItem="aqO-PW-KZf" firstAttribute="top" secondItem="d1t-UU-1vB" secondAttribute="bottom" constant="18" id="4nK-7r-Tmn"/>
-                            <constraint firstItem="Eph-sB-pGA" firstAttribute="top" secondItem="6Nn-Tc-4YK" secondAttribute="bottom" constant="35" id="4oa-zM-f78"/>
-                            <constraint firstItem="6Nn-Tc-4YK" firstAttribute="top" secondItem="6VN-Qj-7Ne" secondAttribute="bottom" constant="61" id="60x-pK-1hW"/>
+                            <constraint firstItem="d1t-UU-1vB" firstAttribute="top" secondItem="eHs-iV-HFY" secondAttribute="bottom" constant="38" id="2EM-nn-HYR"/>
+                            <constraint firstItem="aqO-PW-KZf" firstAttribute="top" secondItem="d1t-UU-1vB" secondAttribute="bottom" constant="36" id="4nK-7r-Tmn"/>
+                            <constraint firstItem="Eph-sB-pGA" firstAttribute="top" secondItem="6Nn-Tc-4YK" secondAttribute="bottom" constant="26" id="4oa-zM-f78"/>
+                            <constraint firstItem="6Nn-Tc-4YK" firstAttribute="top" secondItem="6VN-Qj-7Ne" secondAttribute="bottom" constant="20" id="60x-pK-1hW"/>
                             <constraint firstItem="dx3-rh-A8F" firstAttribute="top" secondItem="aqO-PW-KZf" secondAttribute="bottom" constant="18" id="CaI-5z-heo"/>
                             <constraint firstItem="dx3-rh-A8F" firstAttribute="trailing" secondItem="aqO-PW-KZf" secondAttribute="trailing" id="DpQ-pD-2yV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Eph-sB-pGA" secondAttribute="trailing" id="DwK-XC-tyZ"/>
@@ -1329,8 +1326,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <constraint firstItem="eHs-iV-HFY" firstAttribute="trailing" secondItem="Eph-sB-pGA" secondAttribute="trailing" id="fYw-Cg-qUL"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Eph-sB-pGA" secondAttribute="leading" id="fm5-pf-EIo"/>
                             <constraint firstItem="aqO-PW-KZf" firstAttribute="trailing" secondItem="d1t-UU-1vB" secondAttribute="trailing" id="ib5-ow-dWt"/>
-                            <constraint firstItem="eHs-iV-HFY" firstAttribute="top" secondItem="Eph-sB-pGA" secondAttribute="bottom" constant="8" id="klx-88-kRh"/>
-                            <constraint firstItem="vSe-8c-JBQ" firstAttribute="top" secondItem="aqO-PW-KZf" secondAttribute="bottom" constant="68" id="m8m-YK-Ht2"/>
+                            <constraint firstItem="eHs-iV-HFY" firstAttribute="top" secondItem="Eph-sB-pGA" secondAttribute="bottom" constant="20" id="klx-88-kRh"/>
                             <constraint firstItem="6Nn-Tc-4YK" firstAttribute="centerX" secondItem="InN-1r-Lmy" secondAttribute="centerX" id="mvK-Ex-4m0"/>
                             <constraint firstItem="aqO-PW-KZf" firstAttribute="leading" secondItem="d1t-UU-1vB" secondAttribute="leading" id="uWH-Mf-QUK"/>
                         </constraints>
@@ -1355,7 +1351,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="WBX-Tt-hcy" customClass="VagaCandidato" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" rowHeight="70" id="WBX-Tt-hcy" customClass="VagaCandidato" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WBX-Tt-hcy" id="XIp-2y-wwI">
@@ -1370,14 +1366,14 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc0-Ll-Qgp">
-                                            <rect key="frame" x="76" y="4" width="42" height="21"/>
+                                            <rect key="frame" x="76" y="4" width="236" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcP-BK-Q6e">
-                                            <rect key="frame" x="76" y="40" width="42" height="21"/>
+                                            <rect key="frame" x="76" y="40" width="236" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>

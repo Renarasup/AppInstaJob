@@ -45,8 +45,9 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
                     if let newValue = valor[vagaAdd] as? NSDictionary {
                         let titulo = newValue["titulo"] as? String
                         let descricao = newValue["descricao"] as? String
+                        let empresa = newValue["empresa"] as? String
                         
-                        let vagaNew = Vagas(titulo: titulo!, descricao: descricao!, image: #imageLiteral(resourceName: "foto3x4"))
+                        let vagaNew = Vagas(titulo: titulo!, descricao: descricao!, image: #imageLiteral(resourceName: "foto3x4"), empresa: empresa!)
                         self.array.append(vagaNew)
                     }
                 }
@@ -105,7 +106,8 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
 
                 if let indexPath = tableView.indexPathForSelectedRow {
 
-                    let vagaSelecionada: Vagas
+                    var vagaSelecionada: Vagas
+                    
                     
                     if searchController.isActive && searchController.searchBar.text != ""{
                         
@@ -113,10 +115,9 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
                     }else{
                         vagaSelecionada = array[indexPath.row]
                     }
-
+                    
                     let VC = segue.destination as! VagasDetalhesCelulaEmpresaViewController
                     VC.Vaga = vagaSelecionada
-
                 }
             }
         }

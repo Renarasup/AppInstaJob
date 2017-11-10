@@ -20,17 +20,33 @@ class VagasDetalhesCelulaEmpresaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.imageVaga.image = Vaga.image
-        self.descricaoVaga.text = Vaga.descricao
-        self.tituloVaga.text = Vaga.titulo
-        self.empresaVaga.text = Vaga.empresa
+        self.dados()
     }
 
-    @IBAction func buttonFinalizarVaga(_ sender: Any) {
-    }
-   
     
     @IBAction func buttonDismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func buttonFinalizarVaga(_ sender: Any) {
+    }
+    
+    @IBAction func buttonCandidatos(_ sender: Any) {
+    }
+    
+    func dados() {
+        self.empresaVaga.text = Vaga.empresa
+        self.imageVaga.image = Vaga.image
+        self.descricaoVaga.text = Vaga.descricao
+        self.tituloVaga.text = Vaga.titulo
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "detalhesCandidatos" {
+            
+                let VC = segue.destination as! SelectionCandidatoViewController
+                VC.vaga = self.Vaga
+            }
+        }
 }
