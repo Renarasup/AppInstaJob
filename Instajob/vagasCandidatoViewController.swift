@@ -27,13 +27,18 @@ class vagasCandidatoViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        carregarDados()
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
                 
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        carregarDados()
+    }
+    
+    
     func carregarDados () {
         var ref: DatabaseReference!
         ref = Database.database().reference()

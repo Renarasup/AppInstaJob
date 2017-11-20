@@ -11,8 +11,8 @@ import CoreData
 import FirebaseDatabase
 import FirebaseAuth
 
-  var usuario = Auth.auth()
-  var docRef: DatabaseReference!
+
+
 
 class VagasEmpresaViewController: UIViewController {
     
@@ -23,6 +23,9 @@ class VagasEmpresaViewController: UIViewController {
     
     var razaoSocial:String = ""
     
+    var usuario = Auth.auth()
+    var docRef: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,7 +34,7 @@ class VagasEmpresaViewController: UIViewController {
         docRef = Database.database().reference()
         usuario.addStateDidChangeListener { (Auth, usuario) in
             if let usuarioLogado = usuario {
-               docRef.child("empresa").child(usuarioLogado.uid).observe(DataEventType.value, with: { (dados) in
+               self.docRef.child("empresa").child(usuarioLogado.uid).observe(DataEventType.value, with: { (dados) in
                     
                     if let valor = dados.value as? NSDictionary{
                         self.textNameEmpresa.text = (valor["Razao Social"] as? String)!

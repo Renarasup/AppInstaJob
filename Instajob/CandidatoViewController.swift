@@ -36,15 +36,14 @@ class CandidatoViewController: UIViewController {
                 print ("acesso autorizado")
                 self.textLogin.text = ""
                 self.textSenha.text = ""
+                self.performSegue(withIdentifier: "loginCandidato", sender: nil)
+
             }else {
-                DispatchQueue.main.async {
                     print ("erro ao logar no app")
-                    let alertaController = UIAlertController(title: "Sucesso", message: "seus dados foram salvos", preferredStyle: .alert)
+                    let alertaController = UIAlertController(title: "Erro", message: "seu login ou senha esta incorreto", preferredStyle: .alert)
                     let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: nil)
                     alertaController.addAction(alertaConfirmar)
                     self.present(alertaController, animated: true, completion: nil)
-                }
-                print("chegou aki")
             }
         }
     }

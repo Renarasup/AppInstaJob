@@ -23,6 +23,8 @@ class RegisterEmpresaViewController: UIViewController {
     @IBOutlet weak var buttonCadastrar: UIButton!
     @IBOutlet weak var buttonFechar: UIButton!
 
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,7 +35,7 @@ class RegisterEmpresaViewController: UIViewController {
     @IBAction func buttonCadastrarEmpresa(_ sender: Any) {
         
         let user = Auth.auth()
-        
+        var docRef: DatabaseReference!
         let dadosEmpresa = ["Razao Social" : textRazaoSocial.text,
                             "CNPJ" : textCnpj.text,
                             "Cidade" : cidadeEmpresa.text,

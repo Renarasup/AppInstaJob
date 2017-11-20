@@ -157,17 +157,17 @@
                             <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="b1" translatesAutoresizingMaskIntoConstraints="NO" id="P7X-pM-xtZ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HCv-sB-sob">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HCv-sB-sob">
                                 <rect key="frame" x="16" y="293" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FWc-FY-TSd">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FWc-FY-TSd">
                                 <rect key="frame" x="16" y="348" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yz-8S-2GC">
                                 <rect key="frame" x="16" y="403" width="288" height="30"/>
@@ -177,7 +177,6 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonEntrarEmpresa:" destination="dZN-Zx-XiV" eventType="touchUpInside" id="68h-b4-GqQ"/>
-                                    <segue destination="lNy-Aj-BLu" kind="showDetail" id="wSs-Cm-6XH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLH-bY-ADW">
@@ -255,6 +254,7 @@
                         <outlet property="buttonEntrarEmpresa" destination="0Yz-8S-2GC" id="Tok-P8-vH4"/>
                         <outlet property="loginEmpresaTextfield" destination="HCv-sB-sob" id="RMQ-Mb-fSI"/>
                         <outlet property="senhaEmpresaTextfield" destination="FWc-FY-TSd" id="JCN-uR-oT2"/>
+                        <segue destination="lNy-Aj-BLu" kind="show" identifier="loginEmpresa" id="QfY-aR-H4C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEr-4L-cEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -276,7 +276,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c2" translatesAutoresizingMaskIntoConstraints="NO" id="aM8-9x-jCH">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t3F-q4-3nf">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu Login" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="t3F-q4-3nf">
                                 <rect key="frame" x="16" y="295" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -285,11 +285,11 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ErA-CX-0nw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ErA-CX-0nw">
                                 <rect key="frame" x="16" y="350" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C64-oU-3Qx">
                                 <rect key="frame" x="16" y="399" width="288" height="30"/>
@@ -299,7 +299,6 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLC-pZ-ojC"/>
-                                    <segue destination="n2g-h6-alc" kind="showDetail" id="6g5-Mc-81h"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="staJob" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zz8-GZ-D2w">
@@ -384,6 +383,7 @@
                         <outlet property="resetSenha" destination="kFD-Qd-ztg" id="3Xv-8R-fJB"/>
                         <outlet property="textLogin" destination="t3F-q4-3nf" id="yja-DD-sSQ"/>
                         <outlet property="textSenha" destination="ErA-CX-0nw" id="HK5-wr-9oa"/>
+                        <segue destination="n2g-h6-alc" kind="show" identifier="loginCandidato" id="g2b-S4-8vu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -794,6 +794,17 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vl-z9-KkE">
+                                <rect key="frame" x="16" y="499" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.25891211629999999" green="0.75687366720000004" blue="0.57981240749999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Chat">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChat:" destination="O5a-LL-nTA" eventType="touchUpInside" id="Piu-BA-Tri"/>
+                                    <segue destination="aB2-Y4-lTU" kind="show" id="0bX-OR-eQa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -806,15 +817,19 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <constraint firstItem="yny-Z2-Clh" firstAttribute="top" secondItem="tQn-zq-EYD" secondAttribute="bottom" constant="14" id="SZV-xz-57K"/>
                             <constraint firstItem="yny-Z2-Clh" firstAttribute="leading" secondItem="tQn-zq-EYD" secondAttribute="leading" id="UzX-0B-UzQ"/>
                             <constraint firstItem="tQn-zq-EYD" firstAttribute="top" secondItem="g0n-FU-7sT" secondAttribute="bottom" constant="37" id="YSk-15-yun"/>
+                            <constraint firstItem="5vl-z9-KkE" firstAttribute="trailing" secondItem="4hk-7z-hUu" secondAttribute="trailing" id="c0F-n4-cQr"/>
                             <constraint firstItem="6mJ-9E-h3C" firstAttribute="leading" secondItem="tQn-zq-EYD" secondAttribute="leading" id="d9Q-2v-5SA"/>
                             <constraint firstItem="yny-Z2-Clh" firstAttribute="trailing" secondItem="tQn-zq-EYD" secondAttribute="trailing" id="f52-FF-p3V"/>
-                            <constraint firstItem="vn5-5U-gf6" firstAttribute="top" secondItem="4hk-7z-hUu" secondAttribute="bottom" constant="86" id="ln3-3b-Cf3"/>
+                            <constraint firstItem="5vl-z9-KkE" firstAttribute="top" secondItem="4hk-7z-hUu" secondAttribute="bottom" constant="17" id="gwZ-N6-m9e"/>
+                            <constraint firstItem="5vl-z9-KkE" firstAttribute="leading" secondItem="4hk-7z-hUu" secondAttribute="leading" id="kph-ww-Y0A"/>
                             <constraint firstItem="6mJ-9E-h3C" firstAttribute="trailing" secondItem="tQn-zq-EYD" secondAttribute="trailing" id="mhu-cx-7ct"/>
                             <constraint firstItem="4hk-7z-hUu" firstAttribute="top" secondItem="6mJ-9E-h3C" secondAttribute="bottom" constant="26" id="sbq-ev-lqq"/>
                             <constraint firstItem="4hk-7z-hUu" firstAttribute="leading" secondItem="6mJ-9E-h3C" secondAttribute="leading" id="vyU-Kn-d9T"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonCandidatar" destination="4hk-7z-hUu" id="FeG-6R-OlL"/>
+                        <outlet property="buttonChat" destination="5vl-z9-KkE" id="cRa-tH-i04"/>
                         <outlet property="vagaCandadidatoDescricao" destination="6mJ-9E-h3C" id="sEC-Xk-8pq"/>
                         <outlet property="vagaCandidatoEmpresa" destination="yny-Z2-Clh" id="Ma1-gp-snO"/>
                         <outlet property="vagaCandidatoImage" destination="g0n-FU-7sT" id="6MN-qF-PGz"/>
@@ -824,6 +839,24 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeS-bs-dfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5497.5" y="750"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8bS-Fb-8EU">
+            <objects>
+                <viewController id="aB2-Y4-lTU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A8o-JW-G1y"/>
+                        <viewControllerLayoutGuide type="bottom" id="CTY-0o-6JF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qqr-ir-ydA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUM-i8-RCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6356" y="750"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="S9G-qU-zgL">
@@ -840,35 +873,35 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a5" translatesAutoresizingMaskIntoConstraints="NO" id="GhL-nv-Hl1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brD-vl-wDv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="brD-vl-wDv">
                                 <rect key="frame" x="16" y="282" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bNu-0R-Okq">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome " textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bNu-0R-Okq">
                                 <rect key="frame" x="16" y="206" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sobrenome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWM-5b-fSu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sobrenome" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dWM-5b-fSu">
                                 <rect key="frame" x="16" y="244" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repita seu email " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccj-0K-4cu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repita seu email " textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ccj-0K-4cu">
                                 <rect key="frame" x="16" y="320" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="senha" textAlignment="natural" minimumFontSize="17" background="Digite sua senha" translatesAutoresizingMaskIntoConstraints="NO" id="FEB-9z-lON">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="senha" textAlignment="natural" minimumFontSize="17" background="Digite sua senha" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FEB-9z-lON">
                                 <rect key="frame" x="16" y="358" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9O-Is-gRr">
                                 <rect key="frame" x="16" y="448" width="288" height="30"/>
@@ -897,11 +930,11 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <constraint firstAttribute="width" constant="65" id="lFj-Rq-lFs"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repita sua senha " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MLr-Tx-HUr">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repita sua senha " textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MLr-Tx-HUr">
                                 <rect key="frame" x="16" y="396" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <navigationBar alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zh-LX-4ND">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -1389,6 +1422,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <outlet property="emailCandidatoLabel" destination="KcP-BK-Q6e" id="66O-Lt-G9s"/>
                                     <outlet property="fotoCandidato" destination="aaZ-wJ-zS5" id="pfE-es-3cS"/>
                                     <outlet property="nameCandidataoLabel" destination="Uc0-Ll-Qgp" id="Qhu-i2-pfZ"/>
+                                    <segue destination="ZzU-Fu-10X" kind="showDetail" id="Bzg-oH-rZI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1402,10 +1436,10 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
             </objects>
             <point key="canvasLocation" x="8720.625" y="-1714.4366197183099"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="ljD-Ev-eqM">
             <objects>
-                <viewController id="ZzU-Fu-10X" sceneMemberID="viewController">
+                <viewController id="ZzU-Fu-10X" customClass="ChatViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8fr-be-Q4R"/>
                         <viewControllerLayoutGuide type="bottom" id="ZXA-ER-FXp"/>
@@ -1442,35 +1476,35 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <constraint firstAttribute="height" constant="80" id="oNN-O8-2E6"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cnpj" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PuN-Kw-HFk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cnpj" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PuN-Kw-HFk">
                                 <rect key="frame" x="16" y="199" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="koJ-gM-kUl">
                                 <rect key="frame" x="16" y="237" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCS-Ra-GVq">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vCS-Ra-GVq">
                                 <rect key="frame" x="16" y="275" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H62-SG-agX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="H62-SG-agX">
                                 <rect key="frame" x="16" y="313" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Razao Social" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nqz-Ld-eg4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Razao Social" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Nqz-Ld-eg4">
                                 <rect key="frame" x="16" y="161" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgC-He-jph">
                                 <rect key="frame" x="16" y="424" width="288" height="30"/>
@@ -1803,48 +1837,48 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="e-1" translatesAutoresizingMaskIntoConstraints="NO" id="uER-o7-113">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Cnpj" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7q0-9N-mRc" customClass="JMMaskTextField" customModule="JMMaskTextField_Swift">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Cnpj" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7q0-9N-mRc" customClass="JMMaskTextField" customModule="JMMaskTextField_Swift">
                                 <rect key="frame" x="16" y="236" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade da Empresa" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uu7-Fr-SJR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade da Empresa" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Uu7-Fr-SJR">
                                 <rect key="frame" x="16" y="274" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7f-vR-VSf">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N7f-vR-VSf">
                                 <rect key="frame" x="16" y="350" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1o8-Q2-v8I">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1o8-Q2-v8I">
                                 <rect key="frame" x="16" y="312" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Razao Social" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6JL-tK-Kdh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Razao Social" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6JL-tK-Kdh">
                                 <rect key="frame" x="16" y="198" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY5-Pg-Tn7">
                                 <rect key="frame" x="16" y="439" width="288" height="30"/>
@@ -1886,11 +1920,11 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <action selector="buttonDismiss:" destination="iDK-pW-gaU" eventType="touchUpInside" id="L7s-D4-Dn9"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repita Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrx-XP-Rsk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repita Senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yrx-XP-Rsk">
                                 <rect key="frame" x="16" y="388" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="00.000.000/0000-00"/>
                                 </userDefinedRuntimeAttributes>
@@ -1910,7 +1944,6 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <constraint firstItem="N7f-vR-VSf" firstAttribute="trailing" secondItem="Uu7-Fr-SJR" secondAttribute="trailing" id="M8z-mM-alg"/>
                             <constraint firstItem="N7f-vR-VSf" firstAttribute="leading" secondItem="yrx-XP-Rsk" secondAttribute="leading" id="Ou7-PH-RTK"/>
                             <constraint firstItem="7q0-9N-mRc" firstAttribute="top" secondItem="6JL-tK-Kdh" secondAttribute="bottom" constant="8" id="Oxm-9S-F1k"/>
-                            <constraint firstItem="Mbu-LU-94H" firstAttribute="top" secondItem="uER-o7-113" secondAttribute="bottom" constant="-82" id="PO8-5W-d91"/>
                             <constraint firstItem="Uu7-Fr-SJR" firstAttribute="trailing" secondItem="7q0-9N-mRc" secondAttribute="trailing" id="PRN-op-cTQ"/>
                             <constraint firstItem="yrx-XP-Rsk" firstAttribute="top" secondItem="N7f-vR-VSf" secondAttribute="bottom" constant="8" symbolic="YES" id="VhK-LA-xmd"/>
                             <constraint firstItem="qpT-UK-ReR" firstAttribute="top" secondItem="uER-o7-113" secondAttribute="bottom" id="W33-lj-zAU"/>
@@ -1960,23 +1993,23 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                             <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b5" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-RU-yLi">
                                 <rect key="frame" x="0.0" y="0.0" width="304" height="519"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SobreNome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3a3-zV-bmi">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SobreNome" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3a3-zV-bmi">
                                 <rect key="frame" x="16" y="263" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="opt-ZP-tuz">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="opt-ZP-tuz">
                                 <rect key="frame" x="16" y="309" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FBx-p9-39S">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FBx-p9-39S">
                                 <rect key="frame" x="16" y="355" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm3-W6-PGM">
                                 <rect key="frame" x="16" y="408" width="288" height="30"/>
@@ -1998,11 +2031,11 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                                     <action selector="buttonDismiss:" destination="lFO-El-WL1" eventType="touchUpInside" id="s1l-fj-MfK"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xQg-wy-fpe">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xQg-wy-fpe">
                                 <rect key="frame" x="16" y="218" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto3x4" translatesAutoresizingMaskIntoConstraints="NO" id="iIO-Ph-4wu">
                                 <rect key="frame" x="16" y="28" width="80" height="80"/>
@@ -2015,30 +2048,27 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="opt-ZP-tuz" firstAttribute="leading" secondItem="3a3-zV-bmi" secondAttribute="leading" id="2Fu-VX-JZv"/>
-                            <constraint firstItem="cm3-W6-PGM" firstAttribute="centerX" secondItem="LbB-RU-yLi" secondAttribute="centerX" constant="8" id="3HB-6C-xxO"/>
                             <constraint firstItem="LbB-RU-yLi" firstAttribute="leading" secondItem="aEZ-B9-xk7" secondAttribute="leading" id="5lK-26-VrE"/>
                             <constraint firstItem="3a3-zV-bmi" firstAttribute="leading" secondItem="xQg-wy-fpe" secondAttribute="leading" id="6KV-a6-mr3"/>
                             <constraint firstItem="iFR-dq-7z6" firstAttribute="top" secondItem="cm3-W6-PGM" secondAttribute="bottom" constant="20" id="6Ky-mD-Epx"/>
-                            <constraint firstItem="iFR-dq-7z6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cm3-W6-PGM" secondAttribute="trailing" id="DNI-yP-erD"/>
                             <constraint firstItem="xQg-wy-fpe" firstAttribute="trailing" secondItem="LbB-RU-yLi" secondAttribute="trailing" id="F7U-7s-RCT"/>
                             <constraint firstItem="LbB-RU-yLi" firstAttribute="top" secondItem="aEZ-B9-xk7" secondAttribute="top" id="FNP-do-x17"/>
+                            <constraint firstItem="iFR-dq-7z6" firstAttribute="leading" secondItem="cm3-W6-PGM" secondAttribute="leading" id="H9q-5Y-CEm"/>
+                            <constraint firstItem="iFR-dq-7z6" firstAttribute="trailing" secondItem="cm3-W6-PGM" secondAttribute="trailing" id="ITY-OS-EpP"/>
                             <constraint firstItem="FBx-p9-39S" firstAttribute="top" secondItem="opt-ZP-tuz" secondAttribute="bottom" constant="16" id="IWo-Tr-kMA"/>
-                            <constraint firstItem="cm3-W6-PGM" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FBx-p9-39S" secondAttribute="trailing" id="Ivg-50-Fvf"/>
                             <constraint firstItem="xQg-wy-fpe" firstAttribute="leading" secondItem="iIO-Ph-4wu" secondAttribute="leading" id="JUP-e5-9af"/>
                             <constraint firstItem="3a3-zV-bmi" firstAttribute="top" secondItem="xQg-wy-fpe" secondAttribute="bottom" constant="15" id="KSX-1L-2y9"/>
-                            <constraint firstItem="iFR-dq-7z6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cm3-W6-PGM" secondAttribute="leading" id="Nq4-gW-7eb"/>
                             <constraint firstItem="3a3-zV-bmi" firstAttribute="trailing" secondItem="xQg-wy-fpe" secondAttribute="trailing" id="NwW-Ge-6Sc"/>
                             <constraint firstItem="cm3-W6-PGM" firstAttribute="top" secondItem="FBx-p9-39S" secondAttribute="bottom" constant="23" id="OC4-AU-nSt"/>
                             <constraint firstItem="LbB-RU-yLi" firstAttribute="bottom" secondItem="lwh-oq-rof" secondAttribute="top" id="PAu-ap-1ET"/>
-                            <constraint firstItem="iFR-dq-7z6" firstAttribute="centerX" secondItem="LbB-RU-yLi" secondAttribute="centerX" constant="8" id="PnQ-Ja-N8G"/>
                             <constraint firstItem="FBx-p9-39S" firstAttribute="trailing" secondItem="opt-ZP-tuz" secondAttribute="trailing" id="Ruy-9n-43u"/>
-                            <constraint firstItem="cm3-W6-PGM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FBx-p9-39S" secondAttribute="leading" id="UfC-FT-Ig5"/>
+                            <constraint firstItem="cm3-W6-PGM" firstAttribute="leading" secondItem="FBx-p9-39S" secondAttribute="leading" id="TqL-FE-gV1"/>
                             <constraint firstItem="xQg-wy-fpe" firstAttribute="trailing" secondItem="aEZ-B9-xk7" secondAttribute="trailingMargin" id="Wlc-mD-r4p"/>
                             <constraint firstItem="iIO-Ph-4wu" firstAttribute="top" secondItem="kH3-Jr-6Rl" secondAttribute="bottom" constant="8" id="Xcc-FX-qk1"/>
                             <constraint firstItem="FBx-p9-39S" firstAttribute="leading" secondItem="opt-ZP-tuz" secondAttribute="leading" id="XyO-OC-AxL"/>
                             <constraint firstItem="xQg-wy-fpe" firstAttribute="top" secondItem="iIO-Ph-4wu" secondAttribute="bottom" constant="110" id="a3a-t9-mjP"/>
+                            <constraint firstItem="cm3-W6-PGM" firstAttribute="trailing" secondItem="FBx-p9-39S" secondAttribute="trailing" id="ezX-cL-c9G"/>
                             <constraint firstItem="opt-ZP-tuz" firstAttribute="top" secondItem="3a3-zV-bmi" secondAttribute="bottom" constant="16" id="kEH-zj-qDL"/>
-                            <constraint firstItem="lwh-oq-rof" firstAttribute="top" secondItem="iFR-dq-7z6" secondAttribute="bottom" constant="31" id="mJE-od-Pig"/>
                             <constraint firstItem="iIO-Ph-4wu" firstAttribute="leading" secondItem="aEZ-B9-xk7" secondAttribute="leadingMargin" id="nhW-AC-Cy7"/>
                             <constraint firstItem="opt-ZP-tuz" firstAttribute="trailing" secondItem="3a3-zV-bmi" secondAttribute="trailing" id="wVm-xR-o08"/>
                         </constraints>

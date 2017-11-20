@@ -16,6 +16,8 @@ class vagasDetalhesCandidatoViewController: UIViewController {
     @IBOutlet weak var vagaCandidatoTitulo: UILabel!
     @IBOutlet weak var vagaCandadidatoDescricao: UILabel!
     @IBOutlet weak var vagaCandidatoEmpresa: UILabel!
+    @IBOutlet weak var buttonCandidatar: UIButton!
+    @IBOutlet weak var buttonChat: UIButton!
     
     var nomeVagaEmpresa = ""
     
@@ -25,6 +27,8 @@ class vagasDetalhesCandidatoViewController: UIViewController {
     var login:String = ""
     var name:String = ""
 
+    var docRef: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +36,7 @@ class vagasDetalhesCandidatoViewController: UIViewController {
         usuario.addStateDidChangeListener { (Auth, usuario) in
             if let usuarioLogado = usuario {
                self.id = usuarioLogado.uid
-               docRef.child("candidato").child(usuarioLogado.uid).observe(DataEventType.value, with: { (dados) in
+               self.docRef.child("candidato").child(usuarioLogado.uid).observe(DataEventType.value, with: { (dados) in
                     if let valor = dados.value as? NSDictionary{
                          self.login = valor["Login"] as! String
                          self.name = valor["Nome"] as! String
@@ -45,6 +49,8 @@ class vagasDetalhesCandidatoViewController: UIViewController {
         }
         infVaga()
         
+        self.buttonChat.isEnabled = false
+        self.buttonChat.alpha = 0
     }
 
     @IBAction func buttonCandidatar(_ sender: Any) {
@@ -62,7 +68,19 @@ class vagasDetalhesCandidatoViewController: UIViewController {
         let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertaController.addAction(alertaConfirmar)
         self.present(alertaController, animated: true, completion: nil)
+        
+        self.buttonCandidatar.isEnabled = false
+        
+        self.buttonChat.isEnabled = true
+        self.buttonChat.alpha = 1
     }
+    
+    @IBAction func buttonChat(_ sender: Any) {
+        
+    
+    }
+    
+    
 
     @IBAction func buttonCancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)

@@ -26,7 +26,9 @@ class PerfilViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //formatando botao
+        
         buttonSalvarPerfil.layer.cornerRadius = 10
         buttonFecharPerfil.layer.cornerRadius = 10
         fotoPerfil.layer.cornerRadius = 42
@@ -41,6 +43,7 @@ class PerfilViewController: UIViewController {
                         self.emailTextField.text = valor["Login"] as? String
                         self.nomeTextField.text = valor["Nome"] as? String
                         self.sobreNomeTextField.text = valor["SobreNome"] as? String
+                        self.senhaTextField.text = valor["Senha"] as? String
                     }
                 })
                 

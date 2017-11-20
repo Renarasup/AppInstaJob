@@ -5,13 +5,12 @@
 //  Created by Diego William Crozare on 05/09/17.
 //  Copyright © 2017 Diego William Crozare. All rights reserved.
 //
-
 import UIKit
 import FirebaseAuth
 import Firebase
 
 class registerViewController: UIViewController {
-
+    
     @IBOutlet weak var buttonCadastrar: UIButton!
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var sobreNomeTextField: UITextField!
@@ -25,7 +24,7 @@ class registerViewController: UIViewController {
         buttonCadastrar.layer.cornerRadius = 5
     }
     @IBAction func buttonCadastrar(_ sender: Any) {
-
+        
         let usuario = Auth.auth()
         
         let dadosUsuario = ["Nome": nomeTextField.text! ,
@@ -35,7 +34,7 @@ class registerViewController: UIViewController {
         
         usuario.createUser(withEmail: textRegisterlogin.text!, password: textRegisterSenha.text!) { (usuario, erro) in
             if erro == nil {
-                docRef = Database.database().reference()
+                let docRef = Database.database().reference()
                 let id = usuario?.uid
                 let criarVaga = docRef.child("candidato").child(id!)
                 criarVaga.setValue(dadosUsuario)
@@ -44,7 +43,7 @@ class registerViewController: UIViewController {
             }
         }
         dismiss(animated: true, completion: nil)
-        }
+    }
     
     @IBAction func buttonCancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)

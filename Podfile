@@ -7,11 +7,12 @@ target ‘testPersistencia’ do
 
   # Pods for testPersistencia
 
-    pod "JMMaskTextField-Swift"
-    pod "SwiftMaskTextfield"
+    pod 'JMMaskTextField-Swift'
+    pod 'SwiftMaskTextfield'
     pod 'Firebase/Core'
     pod 'Firebase/Database'
     pod 'Firebase/Auth'
     pod 'Firebase/Firestore'
+    pod 'JSQMessagesViewController'
 end
 

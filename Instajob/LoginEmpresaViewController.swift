@@ -19,17 +19,12 @@ class LoginEmpresaViewController: UIViewController {
     @IBOutlet weak var buttonEntrarEmpresa: UIButton!
     @IBOutlet weak var buttonCadastrarEmpresa: UIButton!
     
+    let usuario = Auth.auth()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let database = Database.database().reference()
-//        let usuario = database.child("usuarioEmpresa")
-//        usuario.observe(DataEventType.value, with: { (dados) in
-//            print (dados)
-//            
-//            
-//        })
+
        self.buttonEntrarEmpresa.layer.cornerRadius = 10
        self.buttonCadastrarEmpresa.layer.cornerRadius = 10
         
@@ -37,14 +32,14 @@ class LoginEmpresaViewController: UIViewController {
 
     @IBAction func buttonEntrarEmpresa(_ sender: Any) {
         
-        let usuario = Auth.auth()
         
-        usuario.signIn(withEmail: loginEmpresaTextfield.text!, password: senhaEmpresaTextfield.text!) { (usuario, erro) in
+        
+        self.usuario.signIn(withEmail: loginEmpresaTextfield.text!, password: senhaEmpresaTextfield.text!) { (usuario, erro) in
             
             if usuario != nil{
                 
                 print ("acesso autorizado")
-                
+                self.performSegue(withIdentifier: "loginEmpresa", sender: nil)
             }else {
                 
                 self.alert()

@@ -26,6 +26,7 @@
 		226789B81F78A2980074BC3A /* VagasDetalhesCelulaEmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226789B71F78A2980074BC3A /* VagasDetalhesCelulaEmpresaViewController.swift */; };
 		226789BA1F78AFDC0074BC3A /* VagaCelulaCandidato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226789B91F78AFDC0074BC3A /* VagaCelulaCandidato.swift */; };
 		22A00D141FA558A5002F221F /* CandidatoVagaCelulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A00D131FA558A5002F221F /* CandidatoVagaCelulaViewController.swift */; };
+		22DD941E1FC08EC900192ADE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD941D1FC08EC900192ADE /* ChatViewController.swift */; };
 		F585E8BA1F69734900BF9D04 /* NoticiasCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585E8B91F69734900BF9D04 /* NoticiasCandidatoViewController.swift */; };
 		F585E8BC1F699BEA00BF9D04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F585E8BB1F699BEA00BF9D04 /* GoogleService-Info.plist */; };
 		F5890F221F5F216D0049C731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890F211F5F216D0049C731 /* AppDelegate.swift */; };
@@ -67,6 +68,7 @@
 		226789B71F78A2980074BC3A /* VagasDetalhesCelulaEmpresaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VagasDetalhesCelulaEmpresaViewController.swift; sourceTree = "<group>"; };
 		226789B91F78AFDC0074BC3A /* VagaCelulaCandidato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VagaCelulaCandidato.swift; sourceTree = "<group>"; };
 		22A00D131FA558A5002F221F /* CandidatoVagaCelulaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatoVagaCelulaViewController.swift; sourceTree = "<group>"; };
+		22DD941D1FC08EC900192ADE /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		6783B62CDF09D62F8548C27B /* Pods_testPersistencia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testPersistencia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8198776B593C138EA9B1B9FF /* Pods-testPersistencia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPersistencia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia.debug.xcconfig"; sourceTree = "<group>"; };
 		917A6FB032FB5BD24C22D1F5 /* Pods-testPersistencia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPersistencia.release.xcconfig"; path = "Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				220F4DCE1F6B53B1006DD1A0 /* PrincipalViewController.swift */,
 				224900C41FA693AA0094F0D0 /* animationViewController.swift */,
 				224900C01FA63AC30094F0D0 /* LaunchScreen.swift */,
+				22DD941D1FC08EC900192ADE /* ChatViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -371,6 +374,8 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/JMMaskTextField-Swift/JMMaskTextField_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMaskTextfield/SwiftMaskTextfield.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
@@ -386,6 +391,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JMMaskTextField_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMaskTextfield.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
@@ -438,6 +445,7 @@
 				226789B81F78A2980074BC3A /* VagasDetalhesCelulaEmpresaViewController.swift in Sources */,
 				226789B61F78704A0074BC3A /* VagaCelula.swift in Sources */,
 				F5D7211E1F66F5FC00BA94C7 /* PerfilViewController.swift in Sources */,
+				22DD941E1FC08EC900192ADE /* ChatViewController.swift in Sources */,
 				2260FCB71FB005F900735805 /* SelectionCandidatoViewController.swift in Sources */,
 				F59293FB1F7D1EC300923D65 /* Noticia2ViewController.swift in Sources */,
 				F58F8F4D1F966C2B005425AA /* NoticiaCandidato2ViewController.swift in Sources */,
