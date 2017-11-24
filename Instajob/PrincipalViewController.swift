@@ -36,18 +36,13 @@ class PrincipalViewController: UIViewController {
         UIView.animate(withDuration: 3) {
             self.subTitle.alpha = 1
         }
-        
-        
     }
 
     @IBAction func buttonCandidato(_ sender: UIButton) {
-        sender.pulse()
-        
+
     }
     
     @IBAction func buttonEmpresa(_ sender: UIButton) {
-        sender.pulse()
+
     }
-    
-    
 }

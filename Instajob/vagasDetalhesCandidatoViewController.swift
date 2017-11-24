@@ -53,6 +53,10 @@ class vagasDetalhesCandidatoViewController: UIViewController {
         self.buttonChat.alpha = 0
     }
 
+    deinit {
+        self.docRef.child("candidato").removeAllObservers()
+    }
+    
     @IBAction func buttonCandidatar(_ sender: Any) {
     
         let dataBase = Database.database().reference()
@@ -76,12 +80,9 @@ class vagasDetalhesCandidatoViewController: UIViewController {
     }
     
     @IBAction func buttonChat(_ sender: Any) {
-        
-    
+
     }
     
-    
-
     @IBAction func buttonCancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

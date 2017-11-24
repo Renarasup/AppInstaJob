@@ -10,7 +10,5 @@ import Foundation
 import UIKit
 
 class VagaCelulaCandidato: UITableViewCell {
-    
-    
-    
+
 }

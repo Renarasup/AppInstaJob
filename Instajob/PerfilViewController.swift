@@ -11,7 +11,7 @@ import FirebaseAuth
 import FirebaseDatabase
 
 class PerfilViewController: UIViewController {
-
+    
     @IBOutlet weak var buttonSalvarPerfil: UIButton!
     @IBOutlet weak var buttonFecharPerfil: UIButton!
     @IBOutlet weak var nomeTextField: UITextField!
@@ -51,19 +51,20 @@ class PerfilViewController: UIViewController {
                 print("usuario nao logado")
             }
         }
+    }
+    
+    deinit {
+        self.docRef.child("candidato").removeAllObservers()
+    }
+    @IBAction func buttonSalvarPerfil(_ sender: Any) {
         
+        nomeTextField.text = ""
+        sobreNomeTextField.text = ""
+        emailTextField.text = ""
+        senhaTextField.text = ""
         
     }
     
-    @IBAction func buttonSalvarPerfil(_ sender: Any) {
-
-      nomeTextField.text = ""
-      sobreNomeTextField.text = ""
-      emailTextField.text = ""
-      senhaTextField.text = ""
-        
-         }
-   
     @IBAction func buttonDismiss(_ sender: Any) {
         
         let usuario = veja.usuario
@@ -74,10 +75,10 @@ class PerfilViewController: UIViewController {
         } catch {
             print("erro ao deslogar usuario")
         }
-
+        
         dismiss(animated: true, completion: nil)
     }
-   
+    
     
 }
 

@@ -16,6 +16,9 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
     var array:[Vagas] = []
     let searchController = UISearchController(searchResultsController: nil)
     var filtroVagas = [Vagas]()
+    var ref: DatabaseReference!
+    
+    
     
     func filterContentForSearchText(searchText:String, scope: String = "All"){
         
@@ -28,16 +31,12 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        carregarDados()
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
-
-    }
-    func carregarDados () {
-        var ref: DatabaseReference!
         ref = Database.database().reference()
+        
         
         ref.child("vaga").observe(DataEventType.value) { (dados, erro) in
             if let valor = dados.value as? NSDictionary{
@@ -56,10 +55,12 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
                 print("ocorreu um erro ao carregar dados")
             }
         }
+        
     }
     
-    
- 
+    deinit {
+        ref.child("vaga").removeAllObservers()
+    }
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {

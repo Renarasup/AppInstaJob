@@ -52,6 +52,10 @@ class PerfilEmpresaViewController: UIViewController {
         
     }
     
+    deinit {
+        self.docRef.child("empresa").removeAllObservers()
+    }
+    
     @IBAction func salvarButton(_ sender: Any) {
     }
     

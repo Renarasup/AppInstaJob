@@ -16,6 +16,7 @@ class SelectionCandidatoViewController: UITableViewController {
     var vaga: Vagas!
     var nameEmpresa: String = ""
     var nameTitulo: String = ""
+    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,27 +24,19 @@ class SelectionCandidatoViewController: UITableViewController {
         self.nameEmpresa = vaga.empresa
         self.nameTitulo = vaga.titulo
         
-        self.carregarDados()
-    }
-
-   
-    
-
-    func carregarDados () {
-        var ref: DatabaseReference!
         ref = Database.database().reference()
         
         ref.child("vaga").child("\(nameTitulo)+\(nameEmpresa)").child("candidatos").observe(DataEventType.value) { (dados, erro) in
             if let valor = dados.value as? NSDictionary{
                 for vagaAdd in valor.allKeys{
-                   if let newValue = valor[vagaAdd] as? NSDictionary {
-
+                    if let newValue = valor[vagaAdd] as? NSDictionary {
+                        
                         let email = newValue["email"] as? String
                         let nome = newValue["nome"] as? String
-
+                        
                         let vagaNew = InfoCandidato(email: email!, nome: nome!, foto: #imageLiteral(resourceName: "foto3x4"))
                         self.arrayCandidatos.append(vagaNew)
-                   }
+                    }
                 }
                 self.tableView.reloadData()
             }else{
@@ -52,8 +45,9 @@ class SelectionCandidatoViewController: UITableViewController {
         }
     }
 
-    
-    
+    deinit {
+        ref.child("vaga").removeAllObservers()
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

@@ -15,5 +15,4 @@ class VagaCandidato: UITableViewCell  {
     @IBOutlet weak var emailCandidatoLabel: UILabel!
     @IBOutlet weak var fotoCandidato: UIImageView!
     
-    
 }

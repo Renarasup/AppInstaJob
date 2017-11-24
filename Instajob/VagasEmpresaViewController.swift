@@ -45,6 +45,10 @@ class VagasEmpresaViewController: UIViewController {
             }
         }
     }
+    deinit {
+        self.docRef.child("empresa").removeAllObservers()
+    }
+    
     @IBAction func buttonCadastrarVaga(_ sender: Any) {
         var docRef: DatabaseReference!
         docRef = Database.database().reference()
