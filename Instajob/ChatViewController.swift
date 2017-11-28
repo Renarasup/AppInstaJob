@@ -15,16 +15,15 @@ import FirebaseAuth
 
 class ChatViewController: JSQMessagesViewController {
 
-    
       var messages:[JSQMessage] = []
       var docRef: DatabaseReference!
-    
+      var idEmpresa = Auth.auth().currentUser?.uid
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-      self.senderId = "1"
-      self.senderDisplayName = "Diego"
+        let numeroAleatorio = arc4random_uniform( 5000 )
+      self.senderId = String(numeroAleatorio)
+      self.senderDisplayName = String(numeroAleatorio)
         
     }
 
@@ -55,18 +54,19 @@ class ChatViewController: JSQMessagesViewController {
 
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
         
-        
-        messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text))
-        collectionView.reloadData()
-        
+        addMessage(withId: senderId, displayName: senderDisplayName, text: text)
         let msg = ["senderId": senderId!, "senderDisplayName": senderDisplayName!, "mensagem" : text!]
         docRef = Database.database().reference()
-        docRef.child("mensagem").setValue(msg)
-        
+        docRef.child("mensagem").child("2").setValue(msg)
         
         finishSendingMessage()
+        
     }
 
-    
+    private func addMessage(withId senderId: String, displayName: String, text: String) {
+        if let message = JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text) {
+            messages.append(message)
+        }
+    }
     
 }

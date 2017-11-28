@@ -14,22 +14,39 @@ import FirebaseDatabase
 import FirebaseAuth
 
 class ChatCandidatoViewController: JSQMessagesViewController {
-    
-    
     var messages:[JSQMessage] = []
     var docRef: DatabaseReference!
     var idCandidato = Auth.auth().currentUser?.uid
+    var random = arc4random_uniform( 4000 )
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.senderId = "2"
-        self.senderDisplayName = "Gustavo"
         
+        self.senderId = String(random)
+        self.senderDisplayName = String(random)
+        self.docRef = Database.database().reference()
         
+        docRef.child("mensagem").observe(DataEventType.childChanged) { (dados, erro) in
+            if let messageData = dados.value as? NSDictionary{
+                for message in messageData.allKeys {
+                    if let newValue = messageData[message] as? NSDictionary{
+                        let id = newValue["senderId"] as? String
+                        let name = newValue["senderDisplayName"] as? String
+                        let text = newValue["mensagem"] as? String
+                        
+                        if let message1 = JSQMessage(senderId: id!, displayName: name!, text: text!) {
+                            self.messages.append(message1)
+                        }
+                    }
+                }
+            }
+            self.collectionView.reloadData()
+            //self.finishReceivingMessage()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        observeMessages()
+    //    self.observeMessages()
     }
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
@@ -58,18 +75,17 @@ class ChatCandidatoViewController: JSQMessagesViewController {
     }
     
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
-        
-//        messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text))
-//        collectionView.reloadData()
+
         addMessage(withId: senderId, displayName: senderDisplayName, text: text)
         let msg = ["senderId": senderId!, "senderDisplayName": senderDisplayName!, "mensagem" : text!]
         docRef = Database.database().reference()
-        docRef.child("mensagem").child(self.idCandidato!).setValue(msg)
+        docRef.child("mensagem").child("1").setValue(msg)
         
         finishSendingMessage()
+        self.collectionView.reloadData()
     }
     
-    private func addMessage(withId senderId: String, displayName: String, text: String) {
+    private func addMessage(withId _senderId: String, displayName: String, text: String) {
         if let message = JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text) {
             messages.append(message)
         }
@@ -78,19 +94,26 @@ class ChatCandidatoViewController: JSQMessagesViewController {
     private func observeMessages() {
         self.docRef = Database.database().reference()
 
-        docRef.child("mensagem").observe(DataEventType.childAdded, with: { (snapshot) -> Void in
-
+        docRef.child("mensagem").observe(DataEventType.childChanged, with: { (snapshot) in
             if let messageData = snapshot.value as? NSDictionary{
-                let id = messageData["senderId"] as? String
-                let name = messageData["senderDisplayName"] as? String
-                let text = messageData["mensagem"] as? String
-                self.addMessage(withId: id!, displayName: name!, text: text!)
+                for message in messageData.allKeys {
+                    if let newValue = messageData[message] as? NSDictionary{
+                      //  let id = newValue["senderId"] as? String
+                     //   let name = newValue["senderDisplayName"] as? String
+                        let text = newValue["mensagem"] as? String
+
+                        if let message1 = JSQMessage(senderId: nil , displayName: nil, text: text!) {
+                            self.messages.append(message1)
+                        }
+                    }
+                }
             }
-//                self.finishReceivingMessage()
+            self.collectionView.reloadData()
+            //                self.finishReceivingMessage()
         })
     }
-    deinit {
-        self.docRef.child("mensagem").removeAllObservers()
-    }
+//    deinit {
+//        self.docRef.child("mensagem").removeAllObservers()
+//    }
 }
 
