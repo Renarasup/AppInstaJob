@@ -32,6 +32,9 @@ class vagasDetalhesCandidatoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        buttonCandidatar.layer.cornerRadius = 15
+        buttonChat.layer.cornerRadius = 15
+        
         docRef = Database.database().reference()
         usuario.addStateDidChangeListener { (Auth, usuario) in
             if let usuarioLogado = usuario {

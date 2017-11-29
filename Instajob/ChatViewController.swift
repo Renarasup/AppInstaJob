@@ -57,7 +57,7 @@ class ChatViewController: JSQMessagesViewController {
         addMessage(withId: senderId, displayName: senderDisplayName, text: text)
         let msg = ["senderId": senderId!, "senderDisplayName": senderDisplayName!, "mensagem" : text!]
         docRef = Database.database().reference()
-        docRef.child("mensagem").child("2").setValue(msg)
+        docRef.child("mensagem").childByAutoId().setValue(msg)
         
         finishSendingMessage()
         

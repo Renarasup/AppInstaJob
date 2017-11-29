@@ -14,11 +14,16 @@ class VagasDetalhesCelulaEmpresaViewController: UIViewController {
     @IBOutlet weak var descricaoVaga: UILabel!
     @IBOutlet weak var tituloVaga: UILabel!
     @IBOutlet weak var empresaVaga: UILabel!
+    @IBOutlet weak var finalizarButton: UIButton!
+    @IBOutlet weak var candidatosButton: UIButton!
     
     var Vaga: Vagas!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        finalizarButton.layer.cornerRadius = 15
+        candidatosButton.layer.cornerRadius = 15
+        
         
         self.dados()
     }

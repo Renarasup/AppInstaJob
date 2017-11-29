@@ -993,6 +993,7 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         <outlet property="textRegisterSenha" destination="FEB-9z-lON" id="gSm-k0-BXH"/>
                         <outlet property="textRegisterSenhaRepeat" destination="MLr-Tx-HUr" id="xZw-p7-h8e"/>
                         <outlet property="textRegisterlogin" destination="brD-vl-wDv" id="0xK-yS-TB9"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="home" id="1oc-Gb-ueG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vbz-Ua-3gj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1364,8 +1365,10 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="candidatosButton" destination="dx3-rh-A8F" id="Gfl-3s-OJa"/>
                         <outlet property="descricaoVaga" destination="d1t-UU-1vB" id="CGX-yX-7bq"/>
                         <outlet property="empresaVaga" destination="eHs-iV-HFY" id="2WA-Ni-Zbt"/>
+                        <outlet property="finalizarButton" destination="aqO-PW-KZf" id="SfD-gq-2Yl"/>
                         <outlet property="imageVaga" destination="6Nn-Tc-4YK" id="fvp-3d-6iE"/>
                         <outlet property="tituloVaga" destination="Eph-sB-pGA" id="hZk-hT-CRB"/>
                     </connections>
@@ -2113,5 +2116,6 @@ Duis tempor erat orci, sed scelerisque turpis eleifend </string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Wzh-kU-W8e"/>
+        <segue reference="1oc-Gb-ueG"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -26,7 +26,7 @@ class ChatCandidatoViewController: JSQMessagesViewController {
         self.senderDisplayName = String(random)
         self.docRef = Database.database().reference()
         
-        docRef.child("mensagem").observe(DataEventType.childChanged) { (dados, erro) in
+        docRef.child("mensagem").observe(DataEventType.value) { (dados, erro) in
             if let messageData = dados.value as? NSDictionary{
                 for message in messageData.allKeys {
                     if let newValue = messageData[message] as? NSDictionary{
@@ -34,19 +34,18 @@ class ChatCandidatoViewController: JSQMessagesViewController {
                         let name = newValue["senderDisplayName"] as? String
                         let text = newValue["mensagem"] as? String
                         
-                        if let message1 = JSQMessage(senderId: id!, displayName: name!, text: text!) {
-                            self.messages.append(message1)
-                        }
+                        self.addMessage(withId: id!, displayName: name!, text: text!)
                     }
                 }
             }
+            self.finishReceivingMessage()
             self.collectionView.reloadData()
-            //self.finishReceivingMessage()
         }
     }
     
     override func viewDidAppear(_ animated: Bool) {
     //    self.observeMessages()
+   
     }
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
@@ -79,12 +78,12 @@ class ChatCandidatoViewController: JSQMessagesViewController {
         addMessage(withId: senderId, displayName: senderDisplayName, text: text)
         let msg = ["senderId": senderId!, "senderDisplayName": senderDisplayName!, "mensagem" : text!]
         docRef = Database.database().reference()
-        docRef.child("mensagem").child("1").setValue(msg)
+        docRef.child("mensagem").childByAutoId().setValue(msg)
         
         finishSendingMessage()
         self.collectionView.reloadData()
     }
-    
+
     private func addMessage(withId _senderId: String, displayName: String, text: String) {
         if let message = JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text) {
             messages.append(message)
@@ -98,22 +97,21 @@ class ChatCandidatoViewController: JSQMessagesViewController {
             if let messageData = snapshot.value as? NSDictionary{
                 for message in messageData.allKeys {
                     if let newValue = messageData[message] as? NSDictionary{
-                      //  let id = newValue["senderId"] as? String
-                     //   let name = newValue["senderDisplayName"] as? String
+                        let id = newValue["senderId"] as? String
+                        let name = newValue["senderDisplayName"] as? String
                         let text = newValue["mensagem"] as? String
 
-                        if let message1 = JSQMessage(senderId: nil , displayName: nil, text: text!) {
+                        if let message1 = JSQMessage(senderId: id! , displayName: name!, text: text!) {
                             self.messages.append(message1)
                         }
                     }
                 }
             }
             self.collectionView.reloadData()
-            //                self.finishReceivingMessage()
         })
     }
-//    deinit {
-//        self.docRef.child("mensagem").removeAllObservers()
-//    }
+    deinit {
+        self.docRef.child("mensagem").removeAllObservers()
+    }
 }
 
