@@ -25,6 +25,7 @@
 		226789BA1F78AFDC0074BC3A /* VagaCelulaCandidato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226789B91F78AFDC0074BC3A /* VagaCelulaCandidato.swift */; };
 		22A00D141FA558A5002F221F /* CandidatoVagaCelulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A00D131FA558A5002F221F /* CandidatoVagaCelulaViewController.swift */; };
 		22DD941E1FC08EC900192ADE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD941D1FC08EC900192ADE /* ChatViewController.swift */; };
+		D4DA046FA87896E89A68B03C /* Pods_testPersistencia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299B443BF0F609915D2AFB23 /* Pods_testPersistencia.framework */; };
 		F576E03D1FC83EE400174E2C /* ChatCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F576E03C1FC83EE400174E2C /* ChatCandidatoViewController.swift */; };
 		F585E8BA1F69734900BF9D04 /* NoticiasCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585E8B91F69734900BF9D04 /* NoticiasCandidatoViewController.swift */; };
 		F585E8BC1F699BEA00BF9D04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F585E8BB1F699BEA00BF9D04 /* GoogleService-Info.plist */; };
@@ -44,7 +45,9 @@
 		F59293FD1F7D1ED200923D65 /* Noticia3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59293FC1F7D1ED200923D65 /* Noticia3ViewController.swift */; };
 		F5D7211C1F66D56D00BA94C7 /* vagasCandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7211B1F66D56D00BA94C7 /* vagasCandidatoViewController.swift */; };
 		F5D7211E1F66F5FC00BA94C7 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7211D1F66F5FC00BA94C7 /* PerfilViewController.swift */; };
-		F8F653AB21412B0629131B1A /* Pods_testPersistencia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6783B62CDF09D62F8548C27B /* Pods_testPersistencia.framework */; };
+		F5FF3285205B52FD00189403 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FF3284205B52FD00189403 /* News.storyboard */; };
+		F5FF3287205B534300189403 /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FF3286205B534300189403 /* Business.storyboard */; };
+		F5FF3289205B536E00189403 /* Candidate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FF3288205B536E00189403 /* Candidate.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,7 +69,7 @@
 		226789B91F78AFDC0074BC3A /* VagaCelulaCandidato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VagaCelulaCandidato.swift; sourceTree = "<group>"; };
 		22A00D131FA558A5002F221F /* CandidatoVagaCelulaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatoVagaCelulaViewController.swift; sourceTree = "<group>"; };
 		22DD941D1FC08EC900192ADE /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		6783B62CDF09D62F8548C27B /* Pods_testPersistencia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testPersistencia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		299B443BF0F609915D2AFB23 /* Pods_testPersistencia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testPersistencia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8198776B593C138EA9B1B9FF /* Pods-testPersistencia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPersistencia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia.debug.xcconfig"; sourceTree = "<group>"; };
 		917A6FB032FB5BD24C22D1F5 /* Pods-testPersistencia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPersistencia.release.xcconfig"; path = "Pods/Target Support Files/Pods-testPersistencia/Pods-testPersistencia.release.xcconfig"; sourceTree = "<group>"; };
 		F576E03C1FC83EE400174E2C /* ChatCandidatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCandidatoViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +93,9 @@
 		F59293FC1F7D1ED200923D65 /* Noticia3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia3ViewController.swift; sourceTree = "<group>"; };
 		F5D7211B1F66D56D00BA94C7 /* vagasCandidatoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vagasCandidatoViewController.swift; sourceTree = "<group>"; };
 		F5D7211D1F66F5FC00BA94C7 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		F5FF3284205B52FD00189403 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		F5FF3286205B534300189403 /* Business.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
+		F5FF3288205B536E00189403 /* Candidate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Candidate.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,31 +103,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8F653AB21412B0629131B1A /* Pods_testPersistencia.framework in Frameworks */,
+				D4DA046FA87896E89A68B03C /* Pods_testPersistencia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2267899B1F7853370074BC3A /* SupportFiles */ = {
-			isa = PBXGroup;
-			children = (
-				F5890F211F5F216D0049C731 /* AppDelegate.swift */,
-				F5890F281F5F216D0049C731 /* Assets.xcassets */,
-				220F4DD41F6B635A006DD1A0 /* fonts */,
-				F5890F2D1F5F216D0049C731 /* Instajob.temp_caseinsensitive_renameinfo.plist */,
-				F585E8BB1F699BEA00BF9D04 /* GoogleService-Info.plist */,
-				224A07971F83178B005001A7 /* Instajob.xcdatamodeld */,
-			);
-			name = SupportFiles;
-			sourceTree = "<group>";
-		};
 		2267899C1F7853670074BC3A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F5890F2A1F5F216D0049C731 /* LaunchScreen.storyboard */,
-				F5890F251F5F216D0049C731 /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -140,8 +131,6 @@
 		2267899E1F7853930074BC3A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				226789AE1F7858710074BC3A /* Candidato */,
-				226789AD1F7858650074BC3A /* Empresa */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -214,21 +203,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		82B0E002AB0E28AACB55A5EC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6783B62CDF09D62F8548C27B /* Pods_testPersistencia.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		F5890F151F5F216D0049C731 = {
 			isa = PBXGroup;
 			children = (
 				F5890F201F5F216D0049C731 /* Instajob */,
 				F5890F1F1F5F216D0049C731 /* Products */,
 				6BFC3A04AD51C4AD1C088450 /* Pods */,
-				82B0E002AB0E28AACB55A5EC /* Frameworks */,
+				F7A1E65B68EB48A19DE97AE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -243,10 +224,8 @@
 		F5890F201F5F216D0049C731 /* Instajob */ = {
 			isa = PBXGroup;
 			children = (
-				2267899E1F7853930074BC3A /* Model */,
-				2267899D1F7853830074BC3A /* Controller */,
-				2267899C1F7853670074BC3A /* View */,
-				2267899B1F7853370074BC3A /* SupportFiles */,
+				F5FF327E205B511100189403 /* Resource */,
+				F5FF327D205B510400189403 /* Source */,
 			);
 			path = Instajob;
 			sourceTree = "<group>";
@@ -270,6 +249,52 @@
 				F59293FC1F7D1ED200923D65 /* Noticia3ViewController.swift */,
 			);
 			name = Noticias;
+			sourceTree = "<group>";
+		};
+		F5FF327D205B510400189403 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2267899C1F7853670074BC3A /* View */,
+				226789AD1F7858650074BC3A /* Empresa */,
+				226789AE1F7858710074BC3A /* Candidato */,
+				2267899D1F7853830074BC3A /* Controller */,
+				2267899E1F7853930074BC3A /* Model */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		F5FF327E205B511100189403 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F5FF3283205B525700189403 /* Storyboard */,
+				F5890F211F5F216D0049C731 /* AppDelegate.swift */,
+				F5890F281F5F216D0049C731 /* Assets.xcassets */,
+				220F4DD41F6B635A006DD1A0 /* fonts */,
+				F5890F2D1F5F216D0049C731 /* Instajob.temp_caseinsensitive_renameinfo.plist */,
+				F585E8BB1F699BEA00BF9D04 /* GoogleService-Info.plist */,
+				224A07971F83178B005001A7 /* Instajob.xcdatamodeld */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		F5FF3283205B525700189403 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F5890F2A1F5F216D0049C731 /* LaunchScreen.storyboard */,
+				F5890F251F5F216D0049C731 /* Main.storyboard */,
+				F5FF3284205B52FD00189403 /* News.storyboard */,
+				F5FF3286205B534300189403 /* Business.storyboard */,
+				F5FF3288205B536E00189403 /* Candidate.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		F7A1E65B68EB48A19DE97AE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				299B443BF0F609915D2AFB23 /* Pods_testPersistencia.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +359,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FF3289205B536E00189403 /* Candidate.storyboard in Resources */,
+				F5FF3287205B534300189403 /* Business.storyboard in Resources */,
 				F5890F2C1F5F216D0049C731 /* LaunchScreen.storyboard in Resources */,
+				F5FF3285205B52FD00189403 /* News.storyboard in Resources */,
 				220F4DD51F6B635A006DD1A0 /* fonts in Resources */,
 				F585E8BC1F699BEA00BF9D04 /* GoogleService-Info.plist in Resources */,
 				F5890F291F5F216D0049C731 /* Assets.xcassets in Resources */,

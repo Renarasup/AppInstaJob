@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '690065E44997EB468782D83A905791C3'
-               BlueprintName = 'SwiftMaskTextfield'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftMaskTextfield.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "690065E44997EB468782D83A905791C3"
+               BlueprintName = "SwiftMaskTextfield"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "SwiftMaskTextfield.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

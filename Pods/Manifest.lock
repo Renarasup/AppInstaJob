@@ -110,11 +110,11 @@ SPEC CHECKSUMS:
   JMMaskTextField-Swift: c47d4f6a16faa49a1abaa8d3bd59ca0892db0e09
   JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
-  leveldb-library: 4f9eedf84ab46b4fa3b7893bf30714b2a1a74022
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   SwiftMaskTextfield: 22e993bee1f4968bfca8be7654c9046f952631d8
 
 PODFILE CHECKSUM: a770c5b132c970716f84ffeadbe2906b09062ed5
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.4.0
