@@ -1,7 +1,562 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HhL-eh-c62">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <customFonts key="customFonts">
+        <array key="Optima.ttc">
+            <string>Optima-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Noticias-->
+        <scene sceneID="Dc7-YP-DZn">
+            <objects>
+                <viewController id="Dau-Yz-Xa8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dWT-I7-jCq"/>
+                        <viewControllerLayoutGuide type="bottom" id="1et-UM-evO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PQe-9c-ps2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foto3x4" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-j2-aku">
+                                <rect key="frame" x="244" y="43" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="22 Outubro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rE1-qq-h4t">
+                                <rect key="frame" x="16" y="65" width="220" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tecnologia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3z-AC-fKi">
+                                <rect key="frame" x="16" y="43" width="96" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="baunaojnfioasiofaiofnasijofnajonosunfonfoasnoifasonfaiosnfasnfs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qP-06-eRb">
+                                <rect key="frame" x="16" y="277" width="288" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ihushuashduudhudhasudh" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcN-mb-UQf">
+                                <rect key="frame" x="16" y="435" width="118" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ihushuashduudhudhasudh" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofv-og-cqA">
+                                <rect key="frame" x="186" y="435" width="118" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCk-lo-euc">
+                                <rect key="frame" x="16" y="130" width="288" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="corporativoapp"/>
+                                <connections>
+                                    <segue destination="dHq-l7-9pT" kind="showDetail" id="yFx-h1-fcL">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEv-NW-ivt">
+                                <rect key="frame" x="186" y="345" width="118" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="principal2"/>
+                                <connections>
+                                    <segue destination="5Rm-xL-knU" kind="showDetail" id="J7C-re-yOZ">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Az3-tS-Rta">
+                                <rect key="frame" x="16" y="345" width="118" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="corp3"/>
+                                <connections>
+                                    <segue destination="Tq7-fE-3zF" kind="showDetail" id="uvN-ey-zNY">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92468649150000004" green="0.92538815740000002" blue="0.92479509120000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="hHa-Ra-xy8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Noticias" image="newspaper" id="GNZ-l4-U7o"/>
+                    <navigationItem key="navigationItem" id="3lx-ZV-GyT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EKo-UA-4W3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5064.8000000000002" y="-2579.4602698650679"/>
+        </scene>
+        <!--Noticia1 View Controller-->
+        <scene sceneID="BTD-ov-g5a">
+            <objects>
+                <viewController id="dHq-l7-9pT" customClass="Noticia1ViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kbX-RX-vIx"/>
+                        <viewControllerLayoutGuide type="bottom" id="KMb-Af-foo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Qm-IC-pIG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" fixedFrame="YES" image="corporativoapp" translatesAutoresizingMaskIntoConstraints="NO" id="WqS-Ud-U0d">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="235.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw8-R4-Huw">
+                                <rect key="frame" x="16" y="243" width="288" height="304.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget 
+
+Duis tempor erat orci, sed scelerisque turpis eleifend </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4H8-Ws-sQo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="txB-pR-Gjm">
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="stop" id="4cm-Yb-2t6">
+                                            <color key="tintColor" red="0.084465034310000006" green="0.085187248889999997" blue="0.11537895350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="buttonDismiss:" destination="dHq-l7-9pT" id="0xq-3I-YhK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="FzG-Q8-jdV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9b-Fc-GSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5923" y="-3971"/>
+        </scene>
+        <!--Noticia2 View Controller-->
+        <scene sceneID="7wv-3N-OtE">
+            <objects>
+                <viewController id="Tq7-fE-3zF" customClass="Noticia2ViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="twf-or-A9c"/>
+                        <viewControllerLayoutGuide type="bottom" id="ymy-Kd-90O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="exJ-n8-HBg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" fixedFrame="YES" image="corp3" translatesAutoresizingMaskIntoConstraints="NO" id="ojP-vP-Cs7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="235.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fL-Pt-9L9">
+                                <rect key="frame" x="16" y="243" width="288" height="304.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget 
+
+Duis tempor erat orci, sed scelerisque turpis eleifend </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K6g-2z-Kbh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="wVt-xe-4XS">
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="stop" id="VqD-Na-nZj">
+                                            <color key="tintColor" red="0.084465034310000006" green="0.085187248889999997" blue="0.11537895350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="buttonDismiss:" destination="Tq7-fE-3zF" id="0LV-f0-60b"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6Cx-3c-Eez"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ow-Xn-pRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6728" y="-3442"/>
+        </scene>
+        <!--Noticia3 View Controller-->
+        <scene sceneID="kJ8-nV-Ule">
+            <objects>
+                <viewController id="5Rm-xL-knU" customClass="Noticia3ViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gNn-Q8-4nu"/>
+                        <viewControllerLayoutGuide type="bottom" id="dzT-Rl-TL8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XEP-kE-SAq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" fixedFrame="YES" image="principal2" translatesAutoresizingMaskIntoConstraints="NO" id="Ph5-lD-Iie">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="235.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbY-dy-xyd">
+                                <rect key="frame" x="16" y="243" width="288" height="304.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget 
+
+Duis tempor erat orci, sed scelerisque turpis eleifend </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LWI-ZM-iEY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="cFa-zh-onN">
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="stop" id="HbM-PQ-RKB">
+                                            <color key="tintColor" red="0.084465034310000006" green="0.085187248889999997" blue="0.11537895350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="buttonDismiss:" destination="5Rm-xL-knU" id="R8A-50-3KY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="i96-lY-kEY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZ0-vm-1tI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7461.6000000000004" y="-2780.0599700149928"/>
+        </scene>
+        <!--Noticias-->
+        <scene sceneID="0L5-y6-Zkb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HhL-eh-c62" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Noticias" image="newspaper" selectedImage="newspaper" id="bFc-rn-MBq"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uHu-85-zJj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dau-Yz-Xa8" kind="relationship" relationship="rootViewController" id="bVP-g1-n5V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rmt-1w-4Py" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3863" y="-2579"/>
+        </scene>
+        <!--Noticias Candidato View Controller-->
+        <scene sceneID="zar-9J-qH1">
+            <objects>
+                <viewController id="huG-NZ-pA8" customClass="NoticiasCandidatoViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HeB-3n-98y"/>
+                        <viewControllerLayoutGuide type="bottom" id="w51-TL-WdV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NnK-bd-pWY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foto3x4" translatesAutoresizingMaskIntoConstraints="NO" id="vAY-Yi-1v2">
+                                <rect key="frame" x="244" y="52" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="22 Outubro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLZ-aI-Qtq">
+                                <rect key="frame" x="16" y="74" width="220" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="baunaojnfioasiofaiofnasijofnajonosunfonfoasnoifasonfaiosnfasnfs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyr-DH-WSi">
+                                <rect key="frame" x="16" y="278" width="288" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ihushuashduudhudhasudh" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-pj-TT5">
+                                <rect key="frame" x="16" y="436" width="118" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ihushuashduudhudhasudh" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeL-Ya-Wnz">
+                                <rect key="frame" x="186" y="436" width="118" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4un-3x-xQD">
+                                <rect key="frame" x="16" y="121" width="288" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Bitmap"/>
+                                <connections>
+                                    <segue destination="clt-uh-Y6E" kind="showDetail" id="zap-QJ-juK">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mej-B9-Evg">
+                                <rect key="frame" x="186" y="346" width="118" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="iphone-x"/>
+                                <connections>
+                                    <segue destination="wO2-RX-ZoV" kind="showDetail" id="pg0-QP-yIR">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c06-ZZ-kPj">
+                                <rect key="frame" x="16" y="346" width="118" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="bitcoin"/>
+                                <connections>
+                                    <segue destination="gvm-mY-Qdt" kind="showDetail" id="fIq-QA-DNP">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tecnologia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6V-fx-ziR">
+                                <rect key="frame" x="16" y="52" width="96" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92468649150000004" green="0.92538815740000002" blue="0.92479509120000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ABX-VK-Xr9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="skW-DA-dyc"/>
+                    <connections>
+                        <outlet property="img1" destination="4un-3x-xQD" id="mx1-cJ-Gad"/>
+                        <outlet property="img2" destination="c06-ZZ-kPj" id="TxP-rd-XJL"/>
+                        <outlet property="img3" destination="Mej-B9-Evg" id="bka-7X-V86"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRL-kK-yPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5065" y="-1595"/>
+        </scene>
+        <!--Noticia Candidato2 View Controller-->
+        <scene sceneID="ucO-IW-K0E">
+            <objects>
+                <viewController id="wO2-RX-ZoV" customClass="NoticiaCandidato2ViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xRo-hK-fbh"/>
+                        <viewControllerLayoutGuide type="bottom" id="bEs-9S-ZDl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ayH-U3-tIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" fixedFrame="YES" image="iphone-x" translatesAutoresizingMaskIntoConstraints="NO" id="a2P-Ux-FrF">
+                                <rect key="frame" x="0.0" y="20" width="320" height="235.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msi-2z-8SO">
+                                <rect key="frame" x="16" y="263" width="288" height="304.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget 
+
+Duis tempor erat orci, sed scelerisque turpis eleifend </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOq-dl-tC0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="9nF-18-5hZ">
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="stop" id="KHm-nB-3aZ">
+                                            <color key="tintColor" red="0.084465034310000006" green="0.085187248889999997" blue="0.11537895350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="buttonDismiss:" destination="wO2-RX-ZoV" id="Use-Nb-GUd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="5N9-eR-ZUV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUC-5l-qKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7800.8000000000002" y="-1093.4032983508246"/>
+        </scene>
+        <!--Noticia Candidato3 View Controller-->
+        <scene sceneID="CKo-ub-A4e">
+            <objects>
+                <viewController id="gvm-mY-Qdt" customClass="NoticiaCandidato3ViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w2G-4n-iNA"/>
+                        <viewControllerLayoutGuide type="bottom" id="mI5-6f-m4o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eeq-tS-QyF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" fixedFrame="YES" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="BUh-4O-jMD">
+                                <rect key="frame" x="0.0" y="20" width="320" height="235.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPq-rN-X9G">
+                                <rect key="frame" x="16" y="263" width="288" height="304.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget 
+
+Duis tempor erat orci, sed scelerisque turpis eleifend </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ktm-3j-cmz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="Bac-EX-F1p">
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="stop" id="udD-ti-ZWi">
+                                            <color key="tintColor" red="0.084465034310000006" green="0.085187248889999997" blue="0.11537895350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="buttonDismiss:" destination="gvm-mY-Qdt" id="ChZ-KM-uaH"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="RiI-k6-xNh"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonDismiss" destination="udD-ti-ZWi" id="i0x-37-0J1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4R-AQ-prz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7462" y="-313"/>
+        </scene>
+        <!--Noticia Candidato1 View Controller-->
+        <scene sceneID="bca-j7-eGc">
+            <objects>
+                <viewController id="clt-uh-Y6E" customClass="NoticiaCandidato1ViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="thW-yk-w6Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="41P-Vt-9vM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Oo-kq-yOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="Bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="ls2-MT-YT3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8Y-s8-ZYd">
+                                <rect key="frame" x="16" y="403" width="343" height="264"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat luctus eros et malesuada. Nam accumsan maximus orci, id fringilla magna euismod nec. Nam eu nulla finibus, eleifend ipsum at, rutrum felis. Curabitur eu lacus sed dolor cursus pharetra ac at eros. Nulla  libero. Fusce vel bibendum mi, hendrerit mollis ligula. In fermentum feugiat ipsum, sit amet ultrices ex. Donec eget 
+
+Duis tempor erat orci, sed scelerisque turpis eleifend </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qzS-Ar-idD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="K7Y-Js-PDt">
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="stop" id="2Mc-57-6xK">
+                                            <color key="tintColor" red="0.084465034310000006" green="0.085187248889999997" blue="0.11537895350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="ButtonFechar:" destination="clt-uh-Y6E" id="tS2-Qy-IhJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e8Y-s8-ZYd" firstAttribute="top" secondItem="ls2-MT-YT3" secondAttribute="bottom" constant="8" id="ASF-RG-68G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e8Y-s8-ZYd" secondAttribute="trailing" id="GS2-ww-XTv"/>
+                            <constraint firstItem="e8Y-s8-ZYd" firstAttribute="trailing" secondItem="9Oo-kq-yOZ" secondAttribute="trailingMargin" id="Sde-2j-MaI"/>
+                            <constraint firstItem="ls2-MT-YT3" firstAttribute="top" secondItem="thW-yk-w6Y" secondAttribute="bottom" id="Tk4-km-qk8"/>
+                            <constraint firstItem="41P-Vt-9vM" firstAttribute="top" secondItem="e8Y-s8-ZYd" secondAttribute="bottom" id="aE8-sB-zLN"/>
+                            <constraint firstItem="e8Y-s8-ZYd" firstAttribute="leading" secondItem="9Oo-kq-yOZ" secondAttribute="leadingMargin" id="aIz-AX-4G1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="e8Y-s8-ZYd" secondAttribute="leading" id="dvw-As-Sz1"/>
+                            <constraint firstAttribute="trailing" secondItem="ls2-MT-YT3" secondAttribute="trailing" id="gwT-5p-8Qf"/>
+                            <constraint firstItem="ls2-MT-YT3" firstAttribute="leading" secondItem="9Oo-kq-yOZ" secondAttribute="leading" id="rxh-zs-i5O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lO9-Pb-47B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dle-Cs-osp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7800.8000000000002" y="-1965.0674662668666"/>
+        </scene>
+        <!--news-->
+        <scene sceneID="Ucb-73-Dji">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xub-p7-ZRZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="news" image="newspaper" id="BKV-NP-DGz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HLE-tc-WP7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="huG-NZ-pA8" kind="relationship" relationship="rootViewController" id="tUw-bA-gyN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMg-ve-NWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3862" y="-1595"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bitmap" width="351" height="170"/>
+        <image name="bitcoin" width="300" height="168"/>
+        <image name="corp3" width="800" height="800"/>
+        <image name="corporativoapp" width="600" height="400"/>
+        <image name="foto3x4" width="200" height="200"/>
+        <image name="iphone-x" width="259" height="194"/>
+        <image name="newspaper" width="32" height="32"/>
+        <image name="principal2" width="271" height="186"/>
+    </resources>
 </document>
