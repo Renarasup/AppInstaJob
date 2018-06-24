@@ -11,7 +11,6 @@ import JMMaskTextField_Swift
 import FirebaseAuth
 import FirebaseDatabase
 
-
 class RegisterEmpresaViewController: UIViewController {
 
     @IBOutlet weak var textRazaoSocial: UITextField!
@@ -26,12 +25,24 @@ class RegisterEmpresaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      self.buttonCadastrar.layer.cornerRadius = 10
-      self.buttonFechar.layer.cornerRadius = 10
+      setupLayout()
     }
     
     @IBAction func buttonCadastrarEmpresa(_ sender: Any) {
-        
+        createCompany()
+        dismiss(animated: true, completion: nil)
+    }
+
+    @IBAction func buttonDismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func setupLayout() {
+        self.buttonCadastrar.layer.cornerRadius = 10
+        self.buttonFechar.layer.cornerRadius = 10
+    }
+    
+    func createCompany() {
         let user = Auth.auth()
         var docRef: DatabaseReference!
         let dadosEmpresa = ["Razao Social" : textRazaoSocial.text,
@@ -39,7 +50,6 @@ class RegisterEmpresaViewController: UIViewController {
                             "Cidade" : cidadeEmpresa.text,
                             "Email" : textEmailEmpresa.text,
                             "Senha" : textSenha.text]
-        
         user.createUser(withEmail: textEmailEmpresa.text!, password: textSenha.text!) { (usuario, erro) in
             if erro == nil {
                 docRef = Database.database().reference()
@@ -50,10 +60,6 @@ class RegisterEmpresaViewController: UIViewController {
                 print ("usuario nao logado" + String( describing: erro?.localizedDescription ))
             }
         }
-        dismiss(animated: true, completion: nil)
-    }
 
-    @IBAction func buttonDismiss(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
     }
 }

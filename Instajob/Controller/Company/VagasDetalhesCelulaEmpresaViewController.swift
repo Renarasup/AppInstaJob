@@ -17,18 +17,15 @@ class VagasDetalhesCelulaEmpresaViewController: UIViewController {
     @IBOutlet weak var finalizarButton: UIButton!
     @IBOutlet weak var candidatosButton: UIButton!
     
-    var Vaga: Vagas!
+    var Vaga: CompanyJobs!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        finalizarButton.layer.cornerRadius = 15
-        candidatosButton.layer.cornerRadius = 15
         
-        
-        self.dados()
+        setupLayout()
+        dados()
     }
 
-    
     @IBAction func buttonDismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -46,8 +43,11 @@ class VagasDetalhesCelulaEmpresaViewController: UIViewController {
         self.tituloVaga.text = Vaga.titulo
     }
     
+    func setupLayout() {
+        finalizarButton.layer.cornerRadius = 15
+        candidatosButton.layer.cornerRadius = 15
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == "detalhesCandidatos" {
             
                 let VC = segue.destination as! SelectionCandidatoViewController

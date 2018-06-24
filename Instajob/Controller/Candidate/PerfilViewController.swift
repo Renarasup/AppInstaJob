@@ -21,19 +21,45 @@ class PerfilViewController: UIViewController {
     @IBOutlet weak var fotoPerfil: UIImageView!
     @IBOutlet var labelDark: UIView!
     
-    let veja = CandidatoViewController()
+    let veja = CandidateViewController()
     var docRef: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //formatando botao
+        setupLayout()
+        recoveryInfoUser()
+    }
+    
+    @IBAction func buttonSalvarPerfil(_ sender: Any) {
         
+        nomeTextField.text = String()
+        sobreNomeTextField.text = String()
+        emailTextField.text = String()
+        senhaTextField.text = String()
+    }
+    
+    @IBAction func buttonDismiss(_ sender: Any) {
+        
+        let usuario = veja.usuario
+        
+        do {
+            try usuario.signOut()
+        } catch {
+            //Handle Error
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func setupLayout() {
         buttonSalvarPerfil.layer.cornerRadius = 10
         buttonFecharPerfil.layer.cornerRadius = 10
         fotoPerfil.layer.cornerRadius = 42
         fotoPerfil.clipsToBounds = true
-        
+    }
+    
+    func recoveryInfoUser() {
         docRef = Database.database().reference()
         veja.usuario.addStateDidChangeListener { (Auth, usuario) in
             if let usuarioLogado = usuario {
@@ -46,7 +72,6 @@ class PerfilViewController: UIViewController {
                         self.senhaTextField.text = valor["Senha"] as? String
                     }
                 })
-                
             }else {
                 print("usuario nao logado")
             }
@@ -56,29 +81,6 @@ class PerfilViewController: UIViewController {
     deinit {
         self.docRef.child("candidato").removeAllObservers()
     }
-    @IBAction func buttonSalvarPerfil(_ sender: Any) {
-        
-        nomeTextField.text = ""
-        sobreNomeTextField.text = ""
-        emailTextField.text = ""
-        senhaTextField.text = ""
-        
-    }
-    
-    @IBAction func buttonDismiss(_ sender: Any) {
-        
-        let usuario = veja.usuario
-        
-        do {
-            try usuario.signOut()
-            print("deslogado com sucesso")
-        } catch {
-            print("erro ao deslogar usuario")
-        }
-        
-        dismiss(animated: true, completion: nil)
-    }
-    
     
 }
 

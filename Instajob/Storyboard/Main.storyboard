@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aI4-Hj-zAb">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aI4-Hj-zAb">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Optima.ttc">
-            <string>Optima-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
-        <!--Principal View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="kob-2w-lZo">
             <objects>
-                <viewController id="aI4-Hj-zAb" customClass="PrincipalViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aI4-Hj-zAb" customClass="MainViewController" customModule="Instajob_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RKu-Rr-3Yc"/>
                         <viewControllerLayoutGuide type="bottom" id="tYI-Tf-ywy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="G7G-bd-5q2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c1" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-xx-Rxc">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="tintColor" red="0.39145767688751221" green="0.51867276430130005" blue="0.57994157075881958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z55-Sb-Gag">
-                                <rect key="frame" x="45" y="318" width="231" height="30"/>
+                                <rect key="frame" x="49" y="350" width="503" height="30"/>
                                 <color key="backgroundColor" red="0.25928044319999999" green="0.75823050739999998" blue="0.58208823200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Candidato">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,7 +34,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cau-EA-S3y">
-                                <rect key="frame" x="45" y="383" width="231" height="30"/>
+                                <rect key="frame" x="49" y="415" width="503" height="30"/>
                                 <color key="backgroundColor" red="0.25928044319999999" green="0.75823050739999998" blue="0.58208823200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Empresa">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,7 +58,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esteja entre os Melhores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqt-iH-OLG">
-                                <rect key="frame" x="9" y="241" width="288" height="21"/>
+                                <rect key="frame" x="13" y="241" width="560" height="53"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
                                 <color key="textColor" red="0.25891211629999999" green="0.75687366720000004" blue="0.57981240749999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>

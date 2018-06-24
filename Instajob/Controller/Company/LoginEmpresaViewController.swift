@@ -10,9 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-
 class LoginEmpresaViewController: UIViewController {
-
     
     @IBOutlet weak var loginEmpresaTextfield: UITextField!
     @IBOutlet weak var senhaEmpresaTextfield: UITextField!
@@ -23,17 +21,23 @@ class LoginEmpresaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-       self.buttonEntrarEmpresa.layer.cornerRadius = 10
-       self.buttonCadastrarEmpresa.layer.cornerRadius = 10
         
+        setupLayout()
     }
-
+    
     @IBAction func buttonEntrarEmpresa(_ sender: Any) {
         
-        
-        
+        signCompany()
+    }
+    
+    @IBAction func buttonCadastrarEmpresa(_ sender: Any) {
+    }
+    
+    @IBAction func buttonDismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func signCompany() {
         self.usuario.signIn(withEmail: loginEmpresaTextfield.text!, password: senhaEmpresaTextfield.text!) { (usuario, erro) in
             
             if usuario != nil{
@@ -48,23 +52,17 @@ class LoginEmpresaViewController: UIViewController {
             
         }
     }
- 
+    
+    func  setupLayout() {
+        self.buttonEntrarEmpresa.layer.cornerRadius = 10
+        self.buttonCadastrarEmpresa.layer.cornerRadius = 10
+    }
+    
     func alert(){
         let alertController = UIAlertController(title: "Acesso negado", message: "Email ou Senha incorretos", preferredStyle: .alert)
-
+        
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
     
-    
-    @IBAction func buttonCadastrarEmpresa(_ sender: Any) {
-    }
-    
-    @IBAction func buttonDismiss(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
-    
-
 }

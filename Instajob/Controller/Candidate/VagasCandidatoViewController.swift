@@ -1,23 +1,25 @@
 //
-//  VagasDetalhesEmpresaViewController.swift
-//  Instajob
+//  VagasCandidatoViewController.swift
+//  testPersistencia
 //
-//  Created by Diego Crozare on 24/09/17.
+//  Created by Diego William Crozare on 11/09/17.
 //  Copyright © 2017 Diego William Crozare. All rights reserved.
 //
 
 import UIKit
-import Firebase
+import CoreData
 import FirebaseDatabase
 
-class VagasDetalhesEmpresaViewController: UITableViewController {
+class VagasCandidatoViewController: UITableViewController {
     
     var array:[CompanyJobs] = []
     let searchController = UISearchController(searchResultsController: nil)
     var filtroVagas = [CompanyJobs]()
     var ref: DatabaseReference!
-
+    var business = JobsBusiness()
+    
     func filterContentForSearchText(searchText:String, scope: String = "All"){
+        
         filtroVagas = array.filter({ (resultVaga) in
             return resultVaga.titulo.lowercased().contains(searchText.lowercased())
         })
@@ -28,9 +30,14 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
         super.viewDidLoad()
         
         setupSearchBar()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
         recoveryJobs()
     }
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -44,10 +51,9 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let celulaReuso = "celulaReuso"
+        let celulaReuso = "celulaReuso1"
         let cell = tableView.dequeueReusableCell(withIdentifier: celulaReuso, for: indexPath) as! VagaCompanyCell
-
+        
         var company: CompanyJobs
         
         if searchController.isActive && searchController.searchBar.text != ""{
@@ -60,24 +66,32 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
         return cell
     }
     
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "detalhesVagas" {
-                if let indexPath = tableView.indexPathForSelectedRow {
-
-                    var vagaSelecionada: CompanyJobs
-                    
-                    if searchController.isActive && searchController.searchBar.text != ""{
-                        
-                        vagaSelecionada = filtroVagas[indexPath.row]
-                    }else{
-                        vagaSelecionada = array[indexPath.row]
-                    }
-                    
-                    let VC = segue.destination as! VagasDetalhesCelulaEmpresaViewController
-                    VC.Vaga = vagaSelecionada
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "detalhesVagasCandidato" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let vagaSelecionada: CompanyJobs
+                
+                if searchController.isActive && searchController.searchBar.text != ""{
+                    vagaSelecionada = filtroVagas[indexPath.row]
+                }else{
+                    vagaSelecionada = array[indexPath.row]
                 }
+                
+                let VC = segue.destination as! VagasDetalhesCandidatoViewController
+                VC.Vaga = vagaSelecionada
+                
             }
         }
+    }
+    
+    func recoveryJobs() {
+        business.recoveryJobs(success: { (jobs) in
+            self.array.append(jobs)
+        }) { (error) in
+            //implement alert
+        }
+    }
     
     func setupSearchBar() {
         searchController.searchResultsUpdater = self
@@ -86,33 +100,12 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
         tableView.tableHeaderView = searchController.searchBar
     }
     
-    func recoveryJobs() {
-        ref = Database.database().reference()
-        
-        ref.child("vaga").observe(DataEventType.value) { (dados, erro) in
-            if let valor = dados.value as? NSDictionary{
-                for vagaAdd in valor.allKeys{
-                    if let newValue = valor[vagaAdd] as? NSDictionary {
-                        let titulo = newValue["titulo"] as? String
-                        let descricao = newValue["descricao"] as? String
-                        let empresa = newValue["empresa"] as? String
-                        
-                        let vagaNew = CompanyJobs(titulo: titulo!, descricao: descricao!, image: #imageLiteral(resourceName: "foto3x4"), empresa: empresa!)
-                        self.array.append(vagaNew)
-                    }
-                }
-                self.tableView.reloadData()
-            }else {
-                //alert erro ao recuperar dados
-            }
-        }
-    }
-    
     deinit {
         ref.child("vaga").removeAllObservers()
     }
 }
-extension VagasDetalhesEmpresaViewController: UISearchResultsUpdating {
+
+extension VagasCandidatoViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchText: searchController.searchBar.text!)

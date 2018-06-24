@@ -9,7 +9,7 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class registerViewController: UIViewController {
+class RegisterViewController: UIViewController {
     
     @IBOutlet weak var buttonCadastrar: UIButton!
     @IBOutlet weak var nomeTextField: UITextField!
@@ -23,27 +23,12 @@ class registerViewController: UIViewController {
         super.viewDidLoad()
         buttonCadastrar.layer.cornerRadius = 10
     }
+    
     @IBAction func buttonCadastrar(_ sender: Any) {
-        
-            let usuario = Auth.auth()
-            let dadosUsuario = ["Nome": nomeTextField.text!,
-                                "SobreNome":sobreNomeTextField.text!,
-                                "Login":textRegisterlogin.text!,
-                                "Senha" : textRegisterSenha.text!]
-            
-            usuario.createUser(withEmail: textRegisterlogin.text!, password: textRegisterSenha.text!) { (usuario, erro) in
-                if erro == nil {
-                    let docRef = Database.database().reference()
-                    let id = usuario?.uid
-                    let criarVaga = docRef.child("candidato").child(id!)
-                    criarVaga.setValue(dadosUsuario)
-                }else {
-                    print ("usuario nao logado" + String( describing: erro?.localizedDescription ))
-                }
-            }
-            performSegue(withIdentifier: "home", sender: nil)
-        
+        createUser()
+        performSegue(withIdentifier: "home", sender: nil)
     }
+    
     @IBAction func buttonCancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -53,5 +38,24 @@ class registerViewController: UIViewController {
         
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func createUser() {
+        let usuario = Auth.auth()
+        let dadosUsuario = ["Nome": nomeTextField.text!,
+                            "SobreNome":sobreNomeTextField.text!,
+                            "Login":textRegisterlogin.text!,
+                            "Senha" : textRegisterSenha.text!]
+        
+        usuario.createUser(withEmail: textRegisterlogin.text!, password: textRegisterSenha.text!) { (usuario, erro) in
+            if erro == nil {
+                let docRef = Database.database().reference()
+                let id = usuario?.uid
+                let criarVaga = docRef.child("candidato").child(id!)
+                criarVaga.setValue(dadosUsuario)
+            }else {
+                print ("usuario nao logado" + String( describing: erro?.localizedDescription ))
+            }
+        }
     }
 }

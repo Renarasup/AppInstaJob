@@ -11,9 +11,6 @@ import CoreData
 import FirebaseDatabase
 import FirebaseAuth
 
-
-
-
 class VagasEmpresaViewController: UIViewController {
     
     @IBOutlet weak var textTituloVaga: UITextField!
@@ -29,12 +26,28 @@ class VagasEmpresaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupLayout()
+        recoveryInfoCompany()
+    }
+    
+    @IBAction func buttonCadastrarVaga(_ sender: Any) {
+         applyJobs()
+    }
+    
+    @IBAction func buttonDismiss(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func setupLayout() {
         textDescriptionVaga.alpha = 0.7
         self.buttonCadastrar.layer.cornerRadius = 10
+    }
+    
+    func recoveryInfoCompany() {
         docRef = Database.database().reference()
         usuario.addStateDidChangeListener { (Auth, usuario) in
             if let usuarioLogado = usuario {
-               self.docRef.child("empresa").child(usuarioLogado.uid).observe(DataEventType.value, with: { (dados) in
+                self.docRef.child("empresa").child(usuarioLogado.uid).observe(DataEventType.value, with: { (dados) in
                     
                     if let valor = dados.value as? NSDictionary{
                         self.textNameEmpresa.text = (valor["Razao Social"] as? String)!
@@ -45,21 +58,17 @@ class VagasEmpresaViewController: UIViewController {
             }
         }
     }
-    deinit {
-        self.docRef.child("empresa").removeAllObservers()
-    }
     
-    @IBAction func buttonCadastrarVaga(_ sender: Any) {
+    func applyJobs() {
         var docRef: DatabaseReference!
         docRef = Database.database().reference()
         
         let dadosVaga = ["titulo" : textTituloVaga.text, "descricao" : textDescriptionVaga.text, "empresa" : textNameEmpresa.text]
         let result = docRef.child("vaga")
         result.child("\(String(describing: textTituloVaga.text!))+\(textNameEmpresa.text!)").setValue(dadosVaga)
-        }
-    
-    @IBAction func buttonDismiss(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
     }
     
+    deinit {
+        self.docRef.child("empresa").removeAllObservers()
+    }
 }

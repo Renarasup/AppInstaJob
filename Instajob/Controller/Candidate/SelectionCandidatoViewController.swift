@@ -13,7 +13,7 @@ class SelectionCandidatoViewController: UITableViewController {
 
     var arrayCandidatos:[InfoCandidato] = []
     
-    var vaga: Vagas!
+    var vaga: CompanyJobs!
     var nameEmpresa: String = ""
     var nameTitulo: String = ""
     var ref: DatabaseReference!
@@ -23,7 +23,31 @@ class SelectionCandidatoViewController: UITableViewController {
 
         self.nameEmpresa = vaga.empresa
         self.nameTitulo = vaga.titulo
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        viewDidAppear(true)
+        recoveryJob()
+    }
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
+        return arrayCandidatos.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celulaReuso = "celulaReuso"
+        let cell = tableView.dequeueReusableCell(withIdentifier: celulaReuso, for: indexPath) as! VagaCandidateCell
+        let candidate = arrayCandidatos[indexPath.row]
+        cell.candidate = candidate
         
+        return cell
+    }
+    
+    func recoveryJob() {
         ref = Database.database().reference()
         
         ref.child("vaga").child("\(nameTitulo)+\(nameEmpresa)").child("candidatos").observe(DataEventType.value) { (dados, erro) in
@@ -44,37 +68,9 @@ class SelectionCandidatoViewController: UITableViewController {
             }
         }
     }
-
+    
     deinit {
         ref.child("vaga").removeAllObservers()
     }
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
-        return arrayCandidatos.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let celulaReuso = "celulaReuso"
-        
-        let celula = tableView.dequeueReusableCell(withIdentifier: celulaReuso, for: indexPath) as! VagaCandidato
-        
-        celula.fotoCandidato.layer.cornerRadius = 45
-        celula.fotoCandidato.clipsToBounds = true
-        
-        var candidatoResult: InfoCandidato
-        
-        candidatoResult = arrayCandidatos[indexPath.row]
-        
-        celula.nameCandidataoLabel.text = candidatoResult.nome
-        celula.emailCandidatoLabel.text = candidatoResult.email
-        celula.fotoCandidato.image = candidatoResult.foto
-        
-        return celula
-    
-    }
 }

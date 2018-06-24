@@ -10,19 +10,17 @@ import UIKit
 
 class OptionVagasViewController: UIViewController {
 
- 
     @IBOutlet weak var cadastrarVaga: UIButton!
     @IBOutlet weak var visualizarVaga: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.cadastrarVaga.layer.cornerRadius = 15
-        self.visualizarVaga.layer.cornerRadius = 15
-    
+        setupLayout()
     }
 
- 
-
+    func setupLayout() {
+        self.cadastrarVaga.layer.cornerRadius = 15
+        self.visualizarVaga.layer.cornerRadius = 15
+    }
 }

@@ -1,5 +1,5 @@
 //
-//  vagasDetalhesCandidatoViewController.swift
+//  VagasDetalhesCandidatoViewController.swift
 //  Instajob
 //
 //  Created by Diego Crozare on 21/10/17.
@@ -10,7 +10,7 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
-class vagasDetalhesCandidatoViewController: UIViewController {
+class VagasDetalhesCandidatoViewController: UIViewController {
     
     @IBOutlet weak var vagaCandidatoImage: UIImageView!
     @IBOutlet weak var vagaCandidatoTitulo: UILabel!
@@ -21,12 +21,12 @@ class vagasDetalhesCandidatoViewController: UIViewController {
     
     var nomeVagaEmpresa = ""
     
-    var Vaga: Vagas!
+    var Vaga: CompanyJobs!
     let usuario = Auth.auth()
     var id = ""
     var login:String = ""
     var name:String = ""
-
+    
     var docRef: DatabaseReference!
     
     override func viewDidLoad() {
@@ -38,14 +38,13 @@ class vagasDetalhesCandidatoViewController: UIViewController {
         docRef = Database.database().reference()
         usuario.addStateDidChangeListener { (Auth, usuario) in
             if let usuarioLogado = usuario {
-               self.id = usuarioLogado.uid
-               self.docRef.child("candidato").child(usuarioLogado.uid).observe(DataEventType.value, with: { (dados) in
+                self.id = usuarioLogado.uid
+                self.docRef.child("candidato").child(usuarioLogado.uid).observe(DataEventType.value, with: { (dados) in
                     if let valor = dados.value as? NSDictionary{
-                         self.login = valor["Login"] as! String
-                         self.name = valor["Nome"] as! String
+                        self.login = valor["Login"] as! String
+                        self.name = valor["Nome"] as! String
                     }
                 })
-                
             }else {
                 print("usuario nao logado")
             }
@@ -55,35 +54,23 @@ class vagasDetalhesCandidatoViewController: UIViewController {
         self.buttonChat.isEnabled = false
         self.buttonChat.alpha = 0
     }
-
+    
     deinit {
         self.docRef.child("candidato").removeAllObservers()
     }
     
     @IBAction func buttonCandidatar(_ sender: Any) {
-    
-        let dataBase = Database.database().reference()
-        let dadosVagaCandidato = ["nome" : self.name,
-                                  "email" : self.login ]
         
-        let vagaSelecionada: String = "\(Vaga.titulo!)+\(Vaga.empresa!)"
-        
-        let userEmpresa = dataBase.child("vaga").child(vagaSelecionada)
-        userEmpresa.child("candidatos").child(self.id).setValue(dadosVagaCandidato)
-        
+        applyJob()
         let alertaController = UIAlertController(title: "Sucesso", message: "seus dados foram salvos", preferredStyle: .alert)
         let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertaController.addAction(alertaConfirmar)
         self.present(alertaController, animated: true, completion: nil)
-        
-        self.buttonCandidatar.isEnabled = false
-        
-        self.buttonChat.isEnabled = true
-        self.buttonChat.alpha = 1
+        setupLayout()
     }
     
     @IBAction func buttonChat(_ sender: Any) {
-
+        
     }
     
     @IBAction func buttonCancel(_ sender: Any) {
@@ -97,4 +84,20 @@ class vagasDetalhesCandidatoViewController: UIViewController {
         self.vagaCandidatoEmpresa.text = Vaga.empresa
     }
     
+    func applyJob() {
+        let dataBase = Database.database().reference()
+        let dadosVagaCandidato = ["nome" : self.name,
+                                  "email" : self.login ]
+        
+        let vagaSelecionada: String = "\(Vaga.titulo!)+\(Vaga.empresa!)"
+        
+        let userEmpresa = dataBase.child("vaga").child(vagaSelecionada)
+        userEmpresa.child("candidatos").child(self.id).setValue(dadosVagaCandidato)
+    }
+    
+    func setupLayout() {
+        self.buttonCandidatar.isEnabled = false
+        self.buttonChat.isEnabled = true
+        self.buttonChat.alpha = 1
+    }
 }

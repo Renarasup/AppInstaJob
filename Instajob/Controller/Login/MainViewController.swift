@@ -1,5 +1,5 @@
 //
-//  PrincipalViewController.swift
+//  MainViewController.swift
 //  Instajob
 //
 //  Created by Diego Crozare on 14/09/17.
@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class PrincipalViewController: UIViewController {
+class MainViewController: UIViewController {
 
     @IBOutlet weak var butonCandidato: UIButton!
     @IBOutlet weak var buttonEmpresa: UIButton!
