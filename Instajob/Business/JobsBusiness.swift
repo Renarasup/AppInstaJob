@@ -21,4 +21,8 @@ class JobsBusiness: NSObject {
             failure(error)
         }
     }
+    
+    func applyJobs(dataJobCandidate: [String:String], jobSelected: String, id: String) {
+        provider.applyJobs(dataJobCandidate: dataJobCandidate, jobSelected: jobSelected, id: id)
+    }
 }

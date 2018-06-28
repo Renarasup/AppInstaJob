@@ -17,6 +17,7 @@ class JobsProvider: NSObject {
 
     var ref: DatabaseReference!
     
+    
     func recoveryJobs(success: @escaping SuccessCalbackCompany, failure: @escaping FailureCallbackCompany) {
         ref = Database.database().reference()
         
@@ -37,4 +38,12 @@ class JobsProvider: NSObject {
             }
         }
     }
+    
+    func applyJobs(dataJobCandidate: [String:String], jobSelected: String, id: String) {
+        let dataBase = Database.database().reference()
+        
+        let userEmpresa = dataBase.child("vaga").child(jobSelected)
+        userEmpresa.child("candidatos").child(id).setValue(dataJobCandidate)
+    }
+    
 }

@@ -79,7 +79,7 @@ class VagasCandidatoViewController: UITableViewController {
                 }
                 
                 let VC = segue.destination as! VagasDetalhesCandidatoViewController
-                VC.Vaga = vagaSelecionada
+                VC.vaga = vagaSelecionada
                 
             }
         }

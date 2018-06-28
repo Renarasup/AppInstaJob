@@ -19,9 +19,10 @@ class VagasDetalhesCandidatoViewController: UIViewController {
     @IBOutlet weak var buttonCandidatar: UIButton!
     @IBOutlet weak var buttonChat: UIButton!
     
-    var nomeVagaEmpresa = ""
     
-    var Vaga: CompanyJobs!
+    var nomeVagaEmpresa = ""
+    var business = JobsBusiness()
+    var vaga: CompanyJobs!
     let usuario = Auth.auth()
     var id = ""
     var login:String = ""
@@ -32,9 +33,7 @@ class VagasDetalhesCandidatoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        buttonCandidatar.layer.cornerRadius = 15
-        buttonChat.layer.cornerRadius = 15
-        
+        setupLayout()
         docRef = Database.database().reference()
         usuario.addStateDidChangeListener { (Auth, usuario) in
             if let usuarioLogado = usuario {
@@ -49,10 +48,14 @@ class VagasDetalhesCandidatoViewController: UIViewController {
                 print("usuario nao logado")
             }
         }
-        infVaga()
         
-        self.buttonChat.isEnabled = false
-        self.buttonChat.alpha = 0
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        infVaga()
     }
     
     deinit {
@@ -60,13 +63,9 @@ class VagasDetalhesCandidatoViewController: UIViewController {
     }
     
     @IBAction func buttonCandidatar(_ sender: Any) {
-        
         applyJob()
-        let alertaController = UIAlertController(title: "Sucesso", message: "seus dados foram salvos", preferredStyle: .alert)
-        let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertaController.addAction(alertaConfirmar)
-        self.present(alertaController, animated: true, completion: nil)
-        setupLayout()
+        Alert.alert(message: "seus dados foram salvos", buttonTitle: "OK", viewController: self)
+        setupLayoutButton()
     }
     
     @IBAction func buttonChat(_ sender: Any) {
@@ -78,26 +77,29 @@ class VagasDetalhesCandidatoViewController: UIViewController {
     }
     
     func infVaga(){
-        self.vagaCandidatoImage.image = Vaga.image
-        self.vagaCandidatoTitulo.text = Vaga.titulo
-        self.vagaCandadidatoDescricao.text = Vaga.descricao
-        self.vagaCandidatoEmpresa.text = Vaga.empresa
+        self.vagaCandidatoImage.image = vaga.image
+        self.vagaCandidatoTitulo.text = vaga.titulo
+        self.vagaCandadidatoDescricao.text = vaga.descricao
+        self.vagaCandidatoEmpresa.text = vaga.empresa
     }
     
     func applyJob() {
-        let dataBase = Database.database().reference()
-        let dadosVagaCandidato = ["nome" : self.name,
-                                  "email" : self.login ]
+        let dadosCandidato = ["nome" : self.name, "email" : self.login ]
+        let vagaSelecionada: String = "\(vaga.titulo!)+\(vaga.empresa!)"
         
-        let vagaSelecionada: String = "\(Vaga.titulo!)+\(Vaga.empresa!)"
-        
-        let userEmpresa = dataBase.child("vaga").child(vagaSelecionada)
-        userEmpresa.child("candidatos").child(self.id).setValue(dadosVagaCandidato)
+        business.applyJobs(dataJobCandidate: dadosCandidato, jobSelected: vagaSelecionada, id: self.id)
     }
     
-    func setupLayout() {
+    func setupLayoutButton() {
         self.buttonCandidatar.isEnabled = false
         self.buttonChat.isEnabled = true
         self.buttonChat.alpha = 1
+    }
+    
+    func setupLayout() {
+        buttonCandidatar.layer.cornerRadius = 15
+        buttonChat.layer.cornerRadius = 15
+        buttonChat.isEnabled = false
+        buttonChat.alpha = 0
     }
 }

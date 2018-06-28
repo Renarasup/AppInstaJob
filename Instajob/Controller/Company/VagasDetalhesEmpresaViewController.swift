@@ -16,7 +16,8 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
     let searchController = UISearchController(searchResultsController: nil)
     var filtroVagas = [CompanyJobs]()
     var ref: DatabaseReference!
-
+    var business = JobsBusiness()
+    
     func filterContentForSearchText(searchText:String, scope: String = "All"){
         filtroVagas = array.filter({ (resultVaga) in
             return resultVaga.titulo.lowercased().contains(searchText.lowercased())
@@ -87,24 +88,10 @@ class VagasDetalhesEmpresaViewController: UITableViewController {
     }
     
     func recoveryJobs() {
-        ref = Database.database().reference()
-        
-        ref.child("vaga").observe(DataEventType.value) { (dados, erro) in
-            if let valor = dados.value as? NSDictionary{
-                for vagaAdd in valor.allKeys{
-                    if let newValue = valor[vagaAdd] as? NSDictionary {
-                        let titulo = newValue["titulo"] as? String
-                        let descricao = newValue["descricao"] as? String
-                        let empresa = newValue["empresa"] as? String
-                        
-                        let vagaNew = CompanyJobs(titulo: titulo!, descricao: descricao!, image: #imageLiteral(resourceName: "foto3x4"), empresa: empresa!)
-                        self.array.append(vagaNew)
-                    }
-                }
-                self.tableView.reloadData()
-            }else {
-                //alert erro ao recuperar dados
-            }
+        business.recoveryJobs(success: { (jobs) in
+            self.array.append(jobs)
+        }) { (error) in
+            //implement alert
         }
     }
     
